@@ -20,4 +20,6 @@
 \contentsline {section}{\numberline {3.1}Architettura generale del sistema}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Livello Fisico}{9}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Ingresso}{10}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Filtraggio}{11}{subsection.3.2.2}%
+\contentsline {paragraph}{FFT, bin e asse delle frequenze}{11}{section*.5}%
+\contentsline {paragraph}{Simmetria dello spettro}{12}{section*.6}%
+\contentsline {subsection}{\numberline {3.2.2}Filtraggio}{12}{subsection.3.2.2}%

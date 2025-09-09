@@ -54,11 +54,35 @@ Questo significa che, a fronte di una finestra temporale di $10.7\,\text{ms}$, l
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{immagini/fft_spectrum.png}
-    \caption{Diagramma contentente lo spettro di frequenza calcolato tramite FFT} su un blocco di $512$ campioni acquisiti a $48\,\text{kHz}$.
+    \caption{Grafico contentente lo spettro di frequenza calcolato tramite FFT} su un blocco di $512$ campioni acquisiti a $48\,\text{kHz}$.
     \label{fig:spettro}
 \end{figure}
 
-Come da Fig.~\ref{fig:spettro}, si può osservare che lo spettro di frequenza ottenuto dalla FFT mostra picchi alle frequenze di interesse, ma mostra anche un rumore di fondo.
+\paragraph{FFT, bin e asse delle frequenze}
+L'algoritmo FFT non calcola direttamente lo spettro in frequenza continua, bensì restituisce $N$ valori discreti $X[k]$ detti \emph{bin}, con indici
+\[
+k=0,1,\dots,N-1.
+\]
+Questi bin rappresentano i coefficienti della trasformata discreta e contengono l’informazione spettrale su griglie di frequenza equispaziate. 
+Per $N=512$ e frequenza di campionamento $F_s=48~\mathrm{kHz}$, ciascun bin corrisponde alla frequenza
+\[
+f_k \;=\; k\,\frac{F_s}{N},
+\qquad \Delta f = \frac{F_s}{N} = \frac{48\,000}{512} = 93.75~\mathrm{Hz}.
+\]
+Dunque l’asse $x$ del grafico, che mostra le frequenze in Hz, è in realtà una \emph{ridenominazione} dei bin calcolati dall’FFT. 
+Ogni valore sull’asse delle ascisse non è una misura continua, ma la mappatura del bin discreto $k$ nella corrispondente frequenza $f_k$.
+
+\paragraph{Simmetria dello spettro}
+Poiché il segnale è reale, vale la simmetria
+\[
+X[N-k] = \overline{X[k]} \quad \Rightarrow \quad |X[N-k]|=|X[k]|.
+\]
+Per questo motivo lo spettro viene spesso mostrato soltanto fino al bin $N/2$, ossia da $k=0$ a $k=256$. 
+In particolare, il bin $k=256$ corrisponde alla frequenza massima non ambigua, cioè la frequenza di Nyquist:
+\[
+f_{256} = 256 \cdot \frac{48\,000}{512} = 24~\mathrm{kHz}.
+\]
+
 Durante la creazione di questo protocollo sono emerse diverse difficoltà legate alla presenza di rumore ambientale,
 questa condizione ha reso necessario l'uso di tecniche di filtraggio.
 \subsection{Filtraggio}
@@ -71,3 +95,16 @@ Al fine di calcolare queste soglie, è stato utilizzato un algoritmo di \textit{
 y = \beta_{} + \beta_{}x + \varepsilon \rightarrow y = -301.751324 \times x + 48531.689491
 \]
 Dove x rappresenta il numero del Bin.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{immagini/fft_regression_check.png}
+    \caption{Grafico contentente lo spettro di frequenza di 3 frequenze (bassa, media, alta), per identificare l'attenuazione in frequenza del microfono.}
+    \label{fig:spettro2}
+\end{figure}
+
+
+TO DO:
+SPIEGA PRIMA DEL FILTRAGGIO MOSTRA LE FREQUENZE RICERCATE, SPIEGANDO CHE SONO QUELLE LE FREQUENZE CHE VUOLE RINTRACCIARE E PER CUI SI APPLICA IL filtro
+Spiega la tecnica del picco locale attorno ai 6 bins attorno
+Spiega l'interpolazione parabolica che eseguo per verificare se il picco è effettivamente un picco, a volte a causa della bassa risoluzione avvengono errori
+Spiega l'invio ultimo al livello Bit del pacchetto con le 3 frequenze master le 3 frequenze slave e le 3 config. 

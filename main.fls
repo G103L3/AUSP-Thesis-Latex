@@ -359,6 +359,11 @@ INPUT ./immagini/fft_spectrum.png
 INPUT ./immagini/fft_spectrum.png
 INPUT ./immagini/fft_spectrum.png
 INPUT ./immagini/fft_spectrum.png
+INPUT ./immagini/fft_regression_check.png
+INPUT ./immagini/fft_regression_check.png
+INPUT ./immagini/fft_regression_check.png
+INPUT ./immagini/fft_regression_check.png
+INPUT ./immagini/fft_regression_check.png
 OUTPUT capitoli/requisiti.aux
 OUTPUT capitoli/implementazione_hw.aux
 OUTPUT capitoli/implementazione_sw.aux
