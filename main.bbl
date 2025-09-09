@@ -1,0 +1,73 @@
+\begin{thebibliography}{10}
+
+\bibitem{akyildiz2006}
+I.~F. Akyildiz and E.~P. Stuntebeck, ``Wireless underground sensor networks: Research challenges,'' {\em Ad Hoc Networks}, vol.~4, no.~6, pp.~669--686, 2006.
+
+\bibitem{jacksha2016}
+R.~Jacksha and C.~Zhou, ``Measurement of rf propagation around corners in underground mines and tunnels,'' {\em Transactions of the Society for Mining, Metallurgy, and Exploration}, vol.~340, no.~1, pp.~30--37, 2016.
+
+\bibitem{Kinsler}
+L.~E. Kinsler, A.~R. Frey, A.~B. Coppens, and J.~V. Sanders, {\em Fundamentals of Acoustics}.
+\newblock Wiley, 4th~ed., 2000.
+
+\bibitem{MorseIngard}
+P.~M. Morse and K.~U. Ingard, {\em Theoretical Acoustics}.
+\newblock Princeton University Press, 1986.
+
+\bibitem{Pierce}
+A.~D. Pierce, {\em Acoustics: An Introduction to Its Physical Principles and Applications}.
+\newblock Acoustical Society of America, 1989.
+
+\bibitem{Heifetz2017ANL}
+A.~Heifetz, S.~Bakhtiari, X.~Huang, R.~Ponciroli, and R.~B. Vilim, ``First annual progress report on transmission of information by acoustic communication along metal pathways in nuclear facilities,'' anl/ne-17/30 technical report, Argonne National Laboratory, Nuclear Engineering Division, Argonne, Illinois, Sept.~30 2017.
+\newblock Prepared under contract DE-AC02-06CH11357, UChicago Argonne, LLC.
+
+\bibitem{acoustic2024}
+M.~A. Al~Moshi {\em et~al.}, ``Wireless underground sensor communication using acoustic technology: A review,'' {\em Sensors}, 2024.
+\newblock Open access review on acoustic WUSNs.
+
+\bibitem{salam2023survey}
+A.~Salam {\em et~al.}, ``Taking wireless underground: A comprehensive summary,'' {\em ACM Computing Surveys}, 2023.
+
+\bibitem{fishta2023inpipe}
+M.~Fishta, G.~Franceschinis, A.~Braglia, Alj, S.~Bagheri, and C.~Seceleanu, ``From radio to in-pipe acoustic communication for smart water networks,'' {\em Information}, vol.~14, no.~8, p.~435, 2023.
+
+\bibitem{heifetz2017pipes}
+A.~Heifetz and et~al., ``Transmission of information by acoustic communication along metal pathways,'' Tech. Rep. ANL-17/13, Argonne National Laboratory, 2017.
+
+\bibitem{farai2023mdpe}
+O.~O. Farai, J.~M. Muggleton, E.~Rustighi, and M.~J. Brennan, ``Analysis of acoustic signal propagation for reliable digital communication along mdpe pipes,'' {\em Applied Sciences}, vol.~13, no.~15, p.~8886, 2023.
+
+\bibitem{heifetz2020shear}
+A.~Heifetz and et~al., ``Transmission of images with ultrasonic elastic shear waves on pipes,'' Tech. Rep. ANL-20/35, Argonne National Laboratory, 2020.
+
+\bibitem{yang2020soil}
+S.~Yang, A.~Kalantari, S.~Markham, J.~Saniie, and F.~Kong, ``Development of an underground through-soil wireless acoustic communication system.'' Technical Report, University of Illinois Chicago, 2020.
+
+\bibitem{raza2020wuc}
+U.~Raza, A.~Salam, T.~Y. Al-Naffouri, and M.-S. Alouini, ``A survey on wireless underground communication with acoustic waves,'' {\em Signals}, vol.~1, no.~1, pp.~21--52, 2020.
+
+\bibitem{acm2023wusn}
+A.~Salam, U.~Raza, T.~Y. Al-Naffouri, and M.-S. Alouini, ``Wireless underground sensor networks: A comprehensive survey and tutorial,'' {\em ACM Computing Surveys}, vol.~55, no.~12, pp.~1--38, 2023.
+
+\bibitem{farai2021phd}
+O.~O. Farai, {\em Acoustic Communication in Polymeric Pipes}.
+\newblock PhD thesis, University of Birmingham, 2021.
+
+\bibitem{zheng2023mud}
+Z.~Zheng, J.~He, Y.~Li, X.~Liu, and B.~Han, ``Acoustic wave data transmission while drilling using drilling fluid channel,'' {\em IET Communications}, vol.~17, no.~5, pp.~593--602, 2023.
+
+\bibitem{shannon1949}
+C.~E. Shannon, ``Communication in the presence of noise,'' {\em Proceedings of the IRE}, vol.~37, no.~1, pp.~10--21, 1949.
+
+\bibitem{zwicker1999psychoacoustics}
+E.~Zwicker and H.~Fastl, {\em Psychoacoustics: Facts and Models}.
+\newblock Springer, 2nd~ed., 1999.
+
+\bibitem{cooley1965fft}
+J.~W. Cooley and J.~W. Tukey, ``An algorithm for the machine calculation of complex fourier series,'' {\em Mathematics of Computation}, vol.~19, no.~90, pp.~297--301, 1965.
+
+\bibitem{esp32techref}
+Espressif Systems, {\em ESP32 Technical Reference Manual}, 2020.
+
+\end{thebibliography}

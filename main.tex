@@ -1,0 +1,38 @@
+\documentclass[12pt,a4paper]{report}
+
+% File con pacchetti e impostazioni
+\input{settings}
+
+\begin{document}
+
+
+
+\tableofcontents
+
+
+% Capitoli
+\include{capitoli/introduzione}
+\include{capitoli/stato_arte}
+\include{capitoli/design_protocollo}
+\include{capitoli/requisiti}
+\include{capitoli/implementazione_hw}
+\include{capitoli/implementazione_sw}
+\include{capitoli/protocollo}
+\include{capitoli/sperimentazione}
+\include{capitoli/discussione}
+\include{capitoli/conclusioni}
+
+% Liste
+\listoffigures
+\listoftables
+
+% Appendici
+\appendix
+\include{appendici/appendiceA}
+\include{appendici/appendiceB}
+
+% Bibliografia
+\bibliographystyle{ieeetr} % o plain, alpha, apa, ecc.
+\bibliography{bibliografia}
+
+\end{document}

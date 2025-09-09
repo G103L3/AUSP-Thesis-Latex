@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: capitoli/introduzione.aux
+A level-1 auxiliary file: capitoli/stato_arte.aux
+A level-1 auxiliary file: capitoli/design_protocollo.aux
+A level-1 auxiliary file: capitoli/requisiti.aux
+A level-1 auxiliary file: capitoli/implementazione_hw.aux
+A level-1 auxiliary file: capitoli/implementazione_sw.aux
+A level-1 auxiliary file: capitoli/protocollo.aux
+A level-1 auxiliary file: capitoli/sperimentazione.aux
+A level-1 auxiliary file: capitoli/discussione.aux
+A level-1 auxiliary file: capitoli/conclusioni.aux
+A level-1 auxiliary file: appendici/appendiceA.aux
+A level-1 auxiliary file: appendici/appendiceB.aux
+The style file: ieeetr.bst
+Database file #1: bibliografia.bib
+You've used 21 entries,
+            1876 wiz_defined-function locations,
+            615 strings with 7025 characters,
+and the built_in function-call counts, 4653 in all, are:
+= -- 459
+> -- 212
+< -- 2
++ -- 79
+- -- 58
+* -- 325
+:= -- 708
+add.period$ -- 28
+call.type$ -- 21
+change.case$ -- 18
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 232
+empty$ -- 432
+format.name$ -- 58
+if$ -- 1120
+int.to.chr$ -- 0
+int.to.str$ -- 21
+missing$ -- 19
+newline$ -- 73
+num.names$ -- 20
+pop$ -- 55
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 131
+stack$ -- 0
+substring$ -- 201
+swap$ -- 79
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 43
+width$ -- 23
+write$ -- 212

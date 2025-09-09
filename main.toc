@@ -1,0 +1,23 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduzione}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Contesto e limiti delle onde elettromagnetiche}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Motivazione dell’approccio acustico}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Richiami teorici sulla propagazione acustica}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Motivazioni sperimentali e obiettivi della tesi}{4}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Contributi attesi}{4}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Stato dell'Arte}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Tecnologie IoT}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Comunicazione in ambienti sotterranei}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Radio frequenze}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Onde acustiche}{7}{subsection.2.2.2}%
+\contentsline {paragraph}{Modello di canale (cenni).}{7}{section*.1}%
+\contentsline {paragraph}{Hardware e trasduttori.}{7}{section*.2}%
+\contentsline {paragraph}{Tecniche di modulazione e codifica.}{7}{section*.3}%
+\contentsline {paragraph}{Prestazioni riportate in letteratura.}{8}{section*.4}%
+\contentsline {section}{\numberline {2.3}Applicazione della letteratura alla tesi}{8}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Design del Protocollo}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Architettura generale del sistema}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Livello Fisico}{9}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Ingresso}{10}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Filtraggio}{11}{subsection.3.2.2}%

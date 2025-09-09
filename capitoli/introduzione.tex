@@ -1,0 +1,64 @@
+\chapter{Introduzione}
+\label{chap:introduzione}
+
+\section{Contesto e limiti delle onde elettromagnetiche}
+Le reti di sensori in ambienti sotterranei pongono sfide peculiari alla comunicazione wireless. 
+La propagazione delle \emph{onde elettromagnetiche} nel sottosuolo soffre di attenuazioni elevate dovute alla 
+permittività, alla conducibilità del terreno e all'umidità, con conseguente riduzione drastica della portata e 
+dell'affidabilità dei link radio \cite{akyildiz2006}. 
+
+Alcune soluzioni proposte in letteratura includono l'uso di frequenze super-high ed ultra-high (SHF, UHF) con l'obiettivo 
+di implementare sistemi di tracking e monitoraggio in miniere di carbone, gallerie o condotti \cite{jacksha2016}.
+Tuttavia, queste frequenze a causa della loro natura fisica sono soggette a forti perdite di segnale e riflessioni multipath,
+limitando la copertura a range dai 10 ai 33 metri in condizioni ottimali con l'ausilio di antenne direzionali con un altezza 
+pari a 1.2 metri l'una; questa tecnologia inoltre mostra tutta la sua vulnerabilità in presenza di curve strette (90°) o ostacoli.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.35\textwidth]{immagini/corner_loss_em.jpg}
+    \caption{Corner Loss \textasciitilde 30 dB in un condotto con angolo di 90° per radio frequenze HF/SHF \cite{jacksha2016}.}
+    \label{fig:esempio}
+\end{figure}
+
+\section{Motivazione dell’approccio acustico}
+Da questa problematica nasce la presente tesi, che si pone l’obiettivo di progettare e validare un 
+\textbf{protocollo di comunicazione acustica} per reti \textbf{master--slave} in ambienti sotterranei, che dovrà essere: \textbf{efficiente, robusta ed economica}. 
+
+L’idea è sfruttare la \emph{propagazione del suono nell’aria} presente in cavità, condotti o tunnel, trattando l’aria 
+come un canale guida all'interno degli spazi confinati, e più in generale impiegare l’onda acustica come 
+mezzo portante laddove il canale elettromagnetico è troppo penalizzato. 
+
+\section{Richiami teorici sulla propagazione acustica}
+In effetti, l’aria può essere modellata come un fluido compressibile: le variazioni locali di pressione e densità generate da una sorgente si propagano come onde longitudinali, 
+la cui dinamica è descritta dall’equazione delle onde acustiche. 
+La velocità di propagazione, che in condizioni standard 
+è circa \SI{343}{m/s}, dipende da temperatura, pressione e composizione del gas, secondo la relazione 
+$c = \sqrt{\gamma p_0 / \rho_0}$. 
+
+Questa visione permette di trattare l’aria non solo come “spazio vuoto”, ma come un 
+vero e proprio \emph{canale fisico}, caratterizzato da attenuazioni dovute a dispersione geometrica, assorbimento atmosferico 
+e riverberi dovuti alle superfici \cite{Kinsler,MorseIngard,Pierce}. 
+
+Il fine ultimo della rete sarà quello di permettere lo scambio di dati tra nodi utilizzando frequenze sonore sub-9kHz, appartenenti al range 1-10kHz: 
+queste frequenze sono scelte per il loro compromesso tra portata e qualità del segnale \cite{Heifetz2017ANL}. 
+L'applicazione principale è destinata al monitoraggio post-disastro, considerando che in altri contesti l'utilizzo di segnali acustici potrebbe risultare disturbante. 
+I sensori saranno, inoltre, in grado di rilevare la presenza di corpi umani o gas tossici a seguito di crolli o esplosioni,
+e trasmettere queste informazioni a un nodo master situato in superficie o in una zona sicura. 
+
+\section{Motivazioni sperimentali e obiettivi della tesi}
+La letteratura recente indica che, in scenari confinati, segnali acustici a bassa frequenza possono mantenere 
+un rapporto segnale/rumore utilizzabile su distanze dell'ordine delle decine di metri, con modalità di propagazione 
+\emph{lungo condotti} (ad esempio tubazioni o gallerie) e con modelli di attenuazione prevedibili 
+\cite{acoustic2024}.  
+
+Queste evidenze motivano la definizione di un protocollo leggero e robusto (rilevazione spettrale, soglie adattive con ausilio di machine learning) che faccia uso di componenti economici e facilmente integrabili (microfoni/codec, 
+amplificatori, altoparlanti) per creare un \emph{layer fisico} acustico e il relativo \emph{protocollo di accesso}.
+
+\section{Contributi attesi}
+In sintesi, i contributi attesi sono: 
+\begin{enumerate}
+\item modellazione e scelta dei parametri del canale acustico in aria in ambienti confinati;
+\item progettazione di un protocollo master--slave basato su pattern di frequenze, ACK e gestione del ritardo casuale;
+\item implementazione hardware/software a basso costo;
+\item validazione sperimentale mediante misure di SPL a diverse distanze, con stima dei livelli attesi per amplificazioni maggiori tramite traslazione dei valori rilevati.
+\end{enumerate}
