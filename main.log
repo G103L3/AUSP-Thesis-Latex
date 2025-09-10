@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.3)  10 SEP 2025 01:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.3)  10 SEP 2025 19:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -211,57 +211,6 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \extratabsurround=\skip51
 \backup@length=\skip52
 \ar@cellbox=\box62
-)) (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
-Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
-Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip53
-\cftbeforetoctitleskip=\skip54
-\cftaftertoctitleskip=\skip55
-\cftbeforepartskip=\skip56
-\cftpartnumwidth=\skip57
-\cftpartindent=\skip58
-\cftbeforechapskip=\skip59
-\cftchapindent=\skip60
-\cftchapnumwidth=\skip61
-\cftbeforesecskip=\skip62
-\cftsecindent=\skip63
-\cftsecnumwidth=\skip64
-\cftbeforesubsecskip=\skip65
-\cftsubsecindent=\skip66
-\cftsubsecnumwidth=\skip67
-\cftbeforesubsubsecskip=\skip68
-\cftsubsubsecindent=\skip69
-\cftsubsubsecnumwidth=\skip70
-\cftbeforeparaskip=\skip71
-\cftparaindent=\skip72
-\cftparanumwidth=\skip73
-\cftbeforesubparaskip=\skip74
-\cftsubparaindent=\skip75
-\cftsubparanumwidth=\skip76
-\cftbeforeloftitleskip=\skip77
-\cftafterloftitleskip=\skip78
-\cftbeforefigskip=\skip79
-\cftfigindent=\skip80
-\cftfignumwidth=\skip81
-\c@lofdepth=\count294
-\c@lotdepth=\count295
-\cftbeforelottitleskip=\skip82
-\cftafterlottitleskip=\skip83
-\cftbeforetabskip=\skip84
-\cfttabindent=\skip85
-\cfttabnumwidth=\skip86
-) (/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxtext.sty
-Package: newtxtext 2024/01/11 v1.737(Michael Sharpe) latex and unicode latex support for TeXGyreTermesX
- `newtxtext' v1.737, 2024/01/11 Text macros taking advantage of TeXGyre Termes and its extensions (msharpe) (/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-01-22 L3 programming layer (loader) 
- (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count296
-\l__pdf_internal_box=\box63
-))
-Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
- (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2023-10-10 L3 Experimental document command parser
 )) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -280,19 +229,75 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-) (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks24
+\minrowclearance=\skip53
+\rownum=\count294
+) (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip54
+\cftbeforetoctitleskip=\skip55
+\cftaftertoctitleskip=\skip56
+\cftbeforepartskip=\skip57
+\cftpartnumwidth=\skip58
+\cftpartindent=\skip59
+\cftbeforechapskip=\skip60
+\cftchapindent=\skip61
+\cftchapnumwidth=\skip62
+\cftbeforesecskip=\skip63
+\cftsecindent=\skip64
+\cftsecnumwidth=\skip65
+\cftbeforesubsecskip=\skip66
+\cftsubsecindent=\skip67
+\cftsubsecnumwidth=\skip68
+\cftbeforesubsubsecskip=\skip69
+\cftsubsubsecindent=\skip70
+\cftsubsubsecnumwidth=\skip71
+\cftbeforeparaskip=\skip72
+\cftparaindent=\skip73
+\cftparanumwidth=\skip74
+\cftbeforesubparaskip=\skip75
+\cftsubparaindent=\skip76
+\cftsubparanumwidth=\skip77
+\cftbeforeloftitleskip=\skip78
+\cftafterloftitleskip=\skip79
+\cftbeforefigskip=\skip80
+\cftfigindent=\skip81
+\cftfignumwidth=\skip82
+\c@lofdepth=\count295
+\c@lotdepth=\count296
+\cftbeforelottitleskip=\skip83
+\cftafterlottitleskip=\skip84
+\cftbeforetabskip=\skip85
+\cfttabindent=\skip86
+\cfttabnumwidth=\skip87
+) (/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxtext.sty
+Package: newtxtext 2024/01/11 v1.737(Michael Sharpe) latex and unicode latex support for TeXGyreTermesX
+ `newtxtext' v1.737, 2024/01/11 Text macros taking advantage of TeXGyre Termes and its extensions (msharpe) (/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-01-22 L3 programming layer (loader) 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count297
+\l__pdf_internal_box=\box63
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+ (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)) (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks24
-\XKV@tempa@toks=\toks25
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
 )
-\XKV@depth=\count297
+\XKV@depth=\count298
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count298
-\xs_countb=\count299
+\xs_counta=\count299
+\xs_countb=\count300
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
@@ -303,8 +308,8 @@ LaTeX Font Info:    Setting ntxTLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting ntxOsF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting ntxTOsF sub-encoding to TS1/0 on input line 24.
  (/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
-\ntx@tmpcnta=\count300
-\ntx@cnt=\count301
+\ntx@tmpcnta=\count301
+\ntx@cnt=\count302
  (/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
@@ -337,7 +342,7 @@ LaTeX Info: Redefining \oldstylenums on input line 893.
 Package: newtxmath 2023/11/05 v1.732
  `newtxmath' v1.732, 2023/11/05 Math macros based originally on txfonts (msharpe) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip87
+\@mathmargin=\skip88
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -346,14 +351,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count302
+\inf@bad=\count303
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count303
-\leftroot@=\count304
+\uproot@=\count304
+\leftroot@=\count305
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count305
-\DOTSCASE@=\count306
+\classnum@=\count306
+\DOTSCASE@=\count307
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -366,42 +371,42 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen169
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count307
+\macc@depth=\count308
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count308
+\c@MaxMatrixCols=\count309
 \dotsspace@=\muskip17
-\c@parentequation=\count309
-\dspbrk@lvl=\count310
-\tag@help=\toks26
-\row@=\count311
-\column@=\count312
-\maxfields@=\count313
-\andhelp@=\toks27
+\c@parentequation=\count310
+\dspbrk@lvl=\count311
+\tag@help=\toks27
+\row@=\count312
+\column@=\count313
+\maxfields@=\count314
+\andhelp@=\toks28
 \eqnshift@=\dimen170
 \alignsep@=\dimen171
 \tagshift@=\dimen172
 \tagwidth@=\dimen173
 \totwidth@=\dimen174
 \lineht@=\dimen175
-\@envbody=\toks28
-\multlinegap=\skip88
-\multlinetaggap=\skip89
-\mathdisplay@stack=\toks29
+\@envbody=\toks29
+\multlinegap=\skip89
+\multlinetaggap=\skip90
+\mathdisplay@stack=\toks30
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
-\tx@cntz=\count314
+\tx@cntz=\count315
  (/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
-\tx@Isdigit=\count315
-\tx@IsAlNum=\count316
-\tx@tA=\toks30
-\tx@tB=\toks31
+\tx@Isdigit=\count316
+\tx@IsAlNum=\count317
+\tx@tA=\toks31
+\tx@tB=\toks32
 \tx@su=\read3
 
 amsthm NOT loaded
@@ -483,7 +488,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \symlargesymbolsTXA=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
 (Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 658.
-\tx@sbptoks=\toks32
+\tx@sbptoks=\toks33
 LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 881.
 LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 882.
 LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 883.
@@ -525,19 +530,19 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen185
 \cmidrulekern=\dimen186
 \defaultaddspace=\dimen187
-\@cmidla=\count317
-\@cmidlb=\count318
+\@cmidla=\count318
+\@cmidlb=\count319
 \@aboverulesep=\dimen188
 \@belowrulesep=\dimen189
-\@thisruleclass=\count319
-\@lastruleclass=\count320
+\@thisruleclass=\count320
+\@lastruleclass=\count321
 \@thisrulewidth=\dimen190
 ) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 35.
+Package hyperref Info: Option `colorlinks' set `true' on input line 39.
 )
 LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
@@ -604,25 +609,25 @@ Package hyperref Info: Link coloring ON on input line 6.
 Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 6.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
+\scratchcounter=\count322
 \scratchdimen=\dimen191
 \scratchbox=\box66
-\nofMPsegments=\count322
-\nofMParguments=\count323
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count324
+\nofMPsegments=\count323
+\nofMParguments=\count324
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count325
 \MPscratchDim=\dimen192
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
-\everyMPtoPDFconversion=\toks34
+\MPnumerator=\count326
+\makeMPintoPDFobject=\count327
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@mv@tabular=\count327
-\c@mv@boldtabular=\count328
+\c@mv@tabular=\count328
+\c@mv@boldtabular=\count329
 LaTeX Info: Command `\dddot' is already robust on input line 6.
 LaTeX Info: Command `\ddddot' is already robust on input line 6.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
@@ -713,6 +718,9 @@ File: immagini/layers.png Graphic file (type png)
 <use immagini/layers.png>
 Package pdftex.def Info: immagini/layers.png  used on input line 6.
 (pdftex.def)             Requested size: 136.50238pt x 136.49397pt.
+
+LaTeX Warning: Reference `chap:implementazione_hardware' on page 9 undefined on input line 15.
+
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.8pt on input line 16.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
@@ -732,19 +740,78 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-[10]
-<immagini/fft_spectrum.png, id=220, 1248.665pt x 756.8275pt>
+<immagini/audacity_spectrum.png, id=210, 3694.80376pt x 752.8125pt>
+File: immagini/audacity_spectrum.png Graphic file (type png)
+<use immagini/audacity_spectrum.png>
+Package pdftex.def Info: immagini/audacity_spectrum.png  used on input line 44.
+(pdftex.def)             Requested size: 350.99762pt x 71.50644pt.
+[10 <./immagini/audacity_spectrum.png>]
+<immagini/fft_spectrum.png, id=221, 1248.665pt x 756.8275pt>
 File: immagini/fft_spectrum.png Graphic file (type png)
 <use immagini/fft_spectrum.png>
-Package pdftex.def Info: immagini/fft_spectrum.png  used on input line 56.
-(pdftex.def)             Requested size: 350.99762pt x 212.74173pt.
+Package pdftex.def Info: immagini/fft_spectrum.png  used on input line 65.
+(pdftex.def)             Requested size: 253.49762pt x 153.63782pt.
  [11 <./immagini/fft_spectrum.png>]
-<immagini/fft_regression_check.png, id=228, 1282.7925pt x 1011.78pt>
+Underfull \hbox (badness 10000) in paragraph at lines 170--175
+
+ []
+
+[12]
+<immagini/fft_regression_check.png, id=238, 1282.7925pt x 1011.78pt>
 File: immagini/fft_regression_check.png Graphic file (type png)
 <use immagini/fft_regression_check.png>
-Package pdftex.def Info: immagini/fft_regression_check.png  used on input line 100.
-(pdftex.def)             Requested size: 350.99762pt x 276.84317pt.
- [12]) [13 <./immagini/fft_regression_check.png>]
+Package pdftex.def Info: immagini/fft_regression_check.png  used on input line 184.
+(pdftex.def)             Requested size: 253.49762pt x 199.92856pt.
+ [13 <./immagini/fft_regression_check.png>]
+<immagini/local_peak.png, id=247, 1027.84pt x 1027.84pt>
+File: immagini/local_peak.png Graphic file (type png)
+<use immagini/local_peak.png>
+Package pdftex.def Info: immagini/local_peak.png  used on input line 201.
+(pdftex.def)             Requested size: 195.0pt x 194.99364pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--204
+
+ []
+
+<immagini/parabolic_interpolation.png, id=248, 1248.665pt x 894.34125pt>
+File: immagini/parabolic_interpolation.png Graphic file (type png)
+<use immagini/parabolic_interpolation.png>
+Package pdftex.def Info: immagini/parabolic_interpolation.png  used on input line 215.
+(pdftex.def)             Requested size: 195.0pt x 139.65858pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--218
+
+ []
+
+[14 <./immagini/local_peak.png>]
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 221.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtt.fd
+File: t1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 221.
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <12> not available
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 221.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
+(Font)              scaled to size 12.0pt on input line 221.
+
+
+LaTeX Warning: Reference `chap:implementazione_hardware' on page 15 undefined on input line 225.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--236
+
+ []
+
+[15 <./immagini/parabolic_interpolation.png>]
+<immagini/window_listening.png, id=266, 1027.84pt x 1027.84pt>
+File: immagini/window_listening.png Graphic file (type png)
+<use immagini/window_listening.png>
+Package pdftex.def Info: immagini/window_listening.png  used on input line 248.
+(pdftex.def)             Requested size: 195.0pt x 194.99364pt.
+) [16 <./immagini/window_listening.png>]
 \openout2 = `capitoli/requisiti.aux'.
 
 
@@ -775,7 +842,7 @@ No file capitoli/conclusioni.tex.
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [14
+ [17
 
 
 
@@ -807,7 +874,7 @@ No file appendici/appendiceA.tex.
 \openout2 = `appendici/appendiceB.aux'.
 
 No file appendici/appendiceB.tex.
-(./main.bbl [15
+(./main.bbl [18
 
 
 
@@ -815,31 +882,52 @@ No file appendici/appendiceB.tex.
 
 
 
-]) [16] (./main.aux (./capitoli/introduzione.aux) (./capitoli/stato_arte.aux) (./capitoli/design_protocollo.aux) (./capitoli/requisiti.aux) (./capitoli/implementazione_hw.aux) (./capitoli/implementazione_sw.aux) (./capitoli/protocollo.aux) (./capitoli/sperimentazione.aux) (./capitoli/discussione.aux) (./capitoli/conclusioni.aux) (./appendici/appendiceA.aux) (./appendici/appendiceB.aux))
+]
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 75.
+
+Underfull \hbox (badness 7777) in paragraph at lines 74--76
+[]\T1/ntxtlf/m/n/12 J. Smith and X. Ser-ra, ``Qua-dra-tic in-ter-po-la-tion of spec-tral
+ []
+
+
+Underfull \hbox (badness 7273) in paragraph at lines 74--76
+\T1/ntxtlf/m/n/12 peaks.'' On-li-ne, CCR-MA, Stan-ford Uni-ver-si-ty, n.d.  Avai-la-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
+\T1/ntxtlf/m/n/12 ble at [][]$\T1/ntxtt/m/n/12 https : / / ccrma . stanford . edu / ~jos / sasp / Quadratic _
+ []
+
+) [19] (./main.aux (./capitoli/introduzione.aux) (./capitoli/stato_arte.aux) (./capitoli/design_protocollo.aux) (./capitoli/requisiti.aux) (./capitoli/implementazione_hw.aux) (./capitoli/implementazione_sw.aux) (./capitoli/protocollo.aux) (./capitoli/sperimentazione.aux) (./capitoli/discussione.aux) (./capitoli/conclusioni.aux) (./appendici/appendiceA.aux) (./appendici/appendiceB.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A0276C915652AEE9A8F282A0477AA390;3136.
+(rerunfilecheck)             Checksum: BDE69B4A9C11476F02FD83B0CC672CDE;3116.
  ) 
 Here is how much of TeX's memory you used:
- 19207 strings out of 474222
- 345876 string characters out of 5748733
- 1933975 words of memory out of 5000000
- 41061 multiletter control sequences out of 15000+600000
- 608000 words of font info for 86 fonts, out of 8000000 for 9000
+ 19433 strings out of 474222
+ 350122 string characters out of 5748733
+ 1936975 words of memory out of 5000000
+ 41255 multiletter control sequences out of 15000+600000
+ 612347 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,7n,96p,660b,1054s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (16 pages, 2641198 bytes).
+ 85i,16n,96p,660b,1056s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (19 pages, 4658094 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 389 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

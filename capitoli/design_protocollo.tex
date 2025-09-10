@@ -12,7 +12,7 @@ Il protocollo è strutturaro in quattro livelli principali, ognuno con una funzi
 Il livello fisico è responsabile della tramissione dei bit precedentemente composti dal livello Bit.
 Questo sfrutta uno speaker per la trasmissione e un microfono per la ricezione dei bit che vengono trasmessi mediante coppie superimposte di frequenze.
 \subsection{Ingresso}
-Il microfono I2S è collegato al microcontrollore ESP32 tramite il bus I2S, sfruttando uno dei due canali disponibili.  
+Il microfono I2S (descritto nel capitolo~\ref{chap:implementazione_hardware}) è collegato al microcontrollore ESP32 tramite il bus I2S, sfruttando uno dei due canali disponibili.  
 Il segnale audio viene campionato a $48\,\text{kHz}$ con una risoluzione di 16 bit, per poi essere gestito mediante due array in swapping, concetto che verrà approfondito successivamente. \\
 
 \noindent
@@ -38,6 +38,15 @@ Per l’elaborazione, i campioni vengono raccolti in blocchi di lunghezza $N = 5
 T_{\text{blocco}} = \frac{N}{f_s} = \frac{512}{48 \cdot 10^3} \approx 0.01066\,\text{s}.
 \]
 Ogni blocco di dati rappresenta quindi un intervallo di circa $10.7\,\text{ms}$ di segnale audio.  
+Questa durata, successivamente a una attenta analisi effettuata sul software Audacity, si è rivelata sufficiente per poter catturare in modo affidabile i toni.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{immagini/audacity_spectrum.png}
+    \caption{Verifica della cattura del tono a 9kHz con campionamento a 48kHz nel periodo 0-0.010 secondi, utilizzando finestra di Hann su 512 elementi}.
+    \label{fig:spettro_audacity}
+\end{figure}
+
+
 
 \noindent
 Una volta acquisito il blocco, viene calcolata la \textbf{trasformata veloce di Fourier (FFT)} \cite{cooley1965fft} per analizzare lo spettro in frequenza. La complessità della FFT cresce come $N \log_2 N$, e per $N=512$ si hanno circa:
@@ -53,7 +62,7 @@ Questo significa che, a fronte di una finestra temporale di $10.7\,\text{ms}$, l
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{immagini/fft_spectrum.png}
+    \includegraphics[width=0.65\textwidth]{immagini/fft_spectrum.png}
     \caption{Grafico contentente lo spettro di frequenza calcolato tramite FFT} su un blocco di $512$ campioni acquisiti a $48\,\text{kHz}$.
     \label{fig:spettro}
 \end{figure}
@@ -85,26 +94,172 @@ f_{256} = 256 \cdot \frac{48\,000}{512} = 24~\mathrm{kHz}.
 
 Durante la creazione di questo protocollo sono emerse diverse difficoltà legate alla presenza di rumore ambientale,
 questa condizione ha reso necessario l'uso di tecniche di filtraggio.
-\subsection{Filtraggio}
-L'idea iniziale, quando il protocollo era ancora nelle prime fasi di vita, era quella di utilizzare una semplice soglia fissa (filtro passa-basso) per discriminare i picchi dal rumore.
-Tuttavia, questa soluzione si è rivelata inefficace, in quanto i microfoni presentano una risposta in frequenza che cala sulle alte, quindi i livelli in dB delle frequenze alte risultavano attenuati, non facendogli superare la soglia passa basso.
-Inoltre, il rumore ambientale non è costante, ma varia nel tempo e nello spettro, rendendo difficile stabilire una soglia fissa che funzioni in tutte le condizioni.\\ 
-Successivamente si è pensato di utilizzare delle soglie fisse, che variassero per ogni frequenza, in modo da tenere conto della risposta in frequenza del microfono.
-Al fine di calcolare queste soglie, è stato utilizzato un algoritmo di \textit{regressione lineare} per stimare la retta che meglio approssima l'andamento della soglia minima:
+\subsubsection{Filtraggio e riconoscimento dei toni}
+\label{subsec:filtraggio}
+Una parte cruciale del processo di design del protocollo è stata la scelta delle frequenze da utilizzare per la trasmissione dei dati. 
+I picchi che vengono selezionati dalla fase di filtraggio devono appartenere a un insieme di frequenze predefinite, così da poter essere riconosciuti dal \textbf{Livello Bit}. \\ 
+La seguente tabella riporta l’insieme delle frequenze adottate, distinguendo quelle di tipo \emph{carrier} da quelle destinate al trasferimento dei dati:
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{c c}
+        % --- prima tabella ---
+        \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Frequenza [Hz]} & \textbf{Tipo} \\
+        \hline
+        1000  & \cellcolor{red!50} Carrier \\
+        \hline
+        1400  & \cellcolor{yellow!50} Data \\
+        \hline
+        1800  & \cellcolor{yellow!50} Data \\
+        \hline
+        2200  & \cellcolor{yellow!50} Data \\
+        \hline
+        2600  & \cellcolor{yellow!50} Data \\
+        \hline
+        3000  & \cellcolor{yellow!50} Data \\
+        \hline
+        3400  & \cellcolor{yellow!50} Data \\
+        \hline
+        3800  & \cellcolor{yellow!50} Data \\
+        \hline
+        4200  & \cellcolor{yellow!50} Data \\
+        \hline
+        4600  & \cellcolor{yellow!50} Data \\
+        \hline
+        5000  & \cellcolor{yellow!50} Data \\
+        \hline
+        \end{tabular}
+        &
+        \hspace{0.5cm} % <-- spazio in mezzo
+        % --- seconda tabella ---
+        \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Frequenza [Hz]} & \textbf{Tipo} \\
+        \hline
+        5400  & \cellcolor{yellow!50} Data \\
+        \hline
+        5800  & \cellcolor{yellow!50} Data \\
+        \hline
+        6200  & \cellcolor{yellow!50} Data \\
+        \hline
+        6600  & \cellcolor{yellow!50} Data \\
+        \hline
+        7000  & \cellcolor{yellow!50} Data \\
+        \hline
+        7400  & \cellcolor{yellow!50} Data \\
+        \hline
+        7800  & \cellcolor{yellow!50} Data \\
+        \hline
+        8200  & \cellcolor{yellow!50} Data \\
+        \hline
+        8600  & \cellcolor{red!50} Carrier \\
+        \hline
+        9000  & \cellcolor{red!50} Carrier \\
+        \hline
+              & \cellcolor{white!50}      \\
+        \hline
+        \end{tabular}
+    \end{tabular}
+    \caption{Frequenze e tipi di segnale}
+    \label{tab:frequenze}
+    \end{table}
+    
+
+Il filtraggio avviene nel dominio della frequenza, dopo l’applicazione della trasformata FFT a 512 punti.
+ A differenza dei filtri digitali convenzionali (IIR/FIR), la selezione dei toni non si basa su maschere statiche ma su un insieme di procedure che rendono il sistema adattivo al rumore e preciso nell’identificazione dei picchi. 
+ Inizialmente, quando il protocollo era ancora nelle sue fasi embrionali, era stato deciso di utilizzare una semplice soglia fissa (filtro passa-basso) per discriminare i picchi delle frequenze predefinite dal rumore. 
+ Questa soluzione, tuttavia, si è rivelata inefficace: i microfoni presentano una risposta in frequenza che degrada sulle alte frequenze, rendendo i livelli in dB di queste ultime attenuati al punto da non superare la soglia prefissata. 
+ Inoltre, il rumore ambientale non è mai costante ma varia nel tempo e nello spettro, il che rendeva difficile definire un limite statico in grado di funzionare in tutte le condizioni.\\
+
+In un’evoluzione successiva si è quindi ipotizzato l’impiego di soglie fisse ma differenziate per ciascuna frequenza, così da compensare la risposta non piatta del microfono. \\
+ Per calcolare tali soglie è stato utilizzato un algoritmo di regressione lineare, in grado di stimare la retta che meglio approssima l’andamento della soglia minima:
 \[
 y = \beta_{} + \beta_{}x + \varepsilon \rightarrow y = -301.751324 \times x + 48531.689491
 \]
-Dove x rappresenta il numero del Bin.
+dove $x$ rappresenta il numero del bin. La Figura~\ref{fig:spettro2} mostra lo spettro in frequenza di tre toni (basso, medio e alto) e mette in evidenza l’attenuazione introdotta dalla risposta del microfono.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{immagini/fft_regression_check.png}
-    \caption{Grafico contentente lo spettro di frequenza di 3 frequenze (bassa, media, alta), per identificare l'attenuazione in frequenza del microfono.}
+    \includegraphics[width=0.65\textwidth]{immagini/fft_regression_check.png}
+    \caption{Grafico contenente lo spettro di frequenza di tre frequenze (bassa, media, alta), utilizzato per identificare l'attenuazione in frequenza del microfono.}
     \label{fig:spettro2}
 \end{figure}
 
+Il sistema attuale ha superato queste limitazioni introducendo una catena di elaborazione più robusta.
+ In primo luogo viene stimato il livello medio di rumore calcolando la media delle ampiezze spettrali:
+\[
+\text{noise\_floor} = \frac{1}{N}\sum_{k=0}^{N-1} |X[k]|
+\]
+dove $X[k]$ è il modulo del $k$-esimo bin. A partire da questa misura viene definita una soglia dinamica, 
+proporzionale al rumore, che permette di adattarsi alle condizioni del segnale: un picco viene considerato 
+valido solo se la sua ampiezza supera di almeno otto volte il livello medio di rumore. Per ridurre ulteriormente 
+i falsi positivi, ogni frequenza candidata deve corrispondere a un \textbf{massimo locale}, ossia il \textbf{bin identificato}
+ deve avere ampiezza superiore rispetto ai sei \textbf{bin adiacenti a sinistra e a destra}. \\
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{immagini/local_peak.png}
+    \caption{Picco Locale nell'intorno dei sei Bins}
+    \label{fig:bins_local_peak}
+\end{figure}
+ A questo punto, per migliorare 
+ la risoluzione in frequenza oltre i limiti del singolo bin FFT, viene applicata un’\textbf{interpolazione parabolica} basata
+  sui valori $X[k-1]$, $X[k]$ e $X[k+1]$, secondo la formula
+\[
+p = \tfrac{1}{2}\,\frac{\alpha - \gamma}{\alpha - 2\beta + \gamma},
+\]
+dove $\alpha = |X[k-1]|$, $\beta = |X[k]|$ e $\gamma = |X[k+1]|$. La frequenza stimata diventa così $f_k + p\,\Delta f$, con $\Delta f = 93.75\,\text{Hz}$, 
+ottenendo una risoluzione sub-bin.\\ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{immagini/parabolic_interpolation.png}
+    \caption{Interpolazione Parabolica \cite{QuadraticInterpolationSpectralPeaks}}
+    \label{fig:interpolazione_parabolica}
+\end{figure}
+È inoltre disponibile, sebbene disattivato di default, un modulo di regressione lineare che consente di compensare eventuali 
+pendenze dello spettro in condizioni particolarmente critiche. Infine, i \textbf{picchi confermati vengono incapsulati in una struttura dati (\texttt{struct\_tone\_frequencies})
+ e inoltrati al \emph{Livello Bit}}, che li utilizza per ricostruire i bit associati ai canali \emph{master}, \emph{slave} e \emph{config}.
+\subsection{Uscita}
+Il livello fisico si occupa anche della trasmissione dei dati, convertendo coppie di frequenze ricevute dal Livello Bit in segnali audio.
+Questa operazione viene eseguita mediante la sintesi digitale di due toni sinusoidali, che vengono sommati, sistemati in fase, sistemati in ampiezza
+ed infine inviati attraverso il bus I2S ad un amplificatore di potenza (descritto nel capitolo~\ref{chap:implementazione_hardware}).
 
-TO DO:
-SPIEGA PRIMA DEL FILTRAGGIO MOSTRA LE FREQUENZE RICERCATE, SPIEGANDO CHE SONO QUELLE LE FREQUENZE CHE VUOLE RINTRACCIARE E PER CUI SI APPLICA IL filtro
-Spiega la tecnica del picco locale attorno ai 6 bins attorno
-Spiega l'interpolazione parabolica che eseguo per verificare se il picco è effettivamente un picco, a volte a causa della bassa risoluzione avvengono errori
-Spiega l'invio ultimo al livello Bit del pacchetto con le 3 frequenze master le 3 frequenze slave e le 3 config. 
+\paragraph{Sintesi dei toni}
+L'emissione di una coppia di frequenze superimposte è un operazione che coinvole l'utilizzo di diverse tecniche di sintesi digitale.\\
+In primo luogo viene calcolato il numero necessario di campioni che comporanno la \textbf{sinusoide}, 
+per far ciò è necessario utilizzare la stessa frequenza di campionamento adottata per l'acquisizione, ovvero $48\,\text{kHz}$, ed la durata d'emissione che
+è stata fissata a $0.024\,\text{s}$.
+La scelta di questa durata deriva dalla finestra temporale di $10.7\,\text{ms}$ utilizzata per l'analisi FFT, quindi $24\,\text{ms}$ 
+è un compromesso che consente di avere un segnale sufficientemente lungo per essere percepito e demodulato, evitando cosi che \textbf{la finestra di ascolto (FFT)}
+possa essere in mezzo tra un tono e l'altro, rendendo cosi difficile la demodulazione.
+Con questa durata, quindi, si avrà sempre una serie di 512 campioni in ingresso che conterranno, sicuramente, i toni.\\
+
+Il numero di campioni necessari per la sintesi è quindi 
+\begin{equation}
+    N = f_s \cdot T
+    \end{equation}
+    
+    \begin{equation}
+    N = 48\,000 \,\text{Hz} \cdot 0.024 \,\text{s} = 1152 \,\text{campioni}
+    \end{equation}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{immagini/window_listening.png}
+        \caption{Finestra d'ascolto della FFT sul segnale emesso}
+        \label{fig:finestra_ascolto}
+    \end{figure}
+
+A seguito di diversi test, dove è stato riscontrato un "fruscio" tra l'emissione di un tono e l'altro,
+ è stato implementato un sistema di allineamento di fase. \\
+Questo funziona attraverso una variabile che tiene traccia della fase dell'ultimo campione emesso,
+ in questo modo il primo campione del nuovo tono sarà sempre in fase con l'ultimo campione del tono precedente.
+ Ciò consente di evitare discontinuità nel segnale che si traducono in rumore udibile.\\
+ La sintesi di ciascuna sinusoide avviene quindi secondo la formula
+\begin{equation}
+    x[n] = A \cdot \frac{\sin(\phi_1)+\sin(\phi_2)}{2}
+\end{equation}
+formula semplificata dove $A$ è l'ampiezza del segnale, $\phi_1$ e $\phi_2$ sono le fasi delle due sinusoidi calcolate come 
+\begin{equation}
+    \phi = \frac{2 \pi f}{f_s}
+\end{equation}

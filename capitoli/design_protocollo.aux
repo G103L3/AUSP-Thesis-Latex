@@ -11,18 +11,32 @@
 \citation{shannon1949}
 \citation{zwicker1999psychoacoustics}
 \citation{cooley1965fft}
-\citation{esp32techref}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Ingresso}{10}{subsection.3.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Grafico contentente lo spettro di frequenza calcolato tramite FFT}}{11}{figure.3.2}\protected@file@percent }
-\newlabel{fig:spettro}{{3.2}{11}{Grafico contentente lo spettro di frequenza calcolato tramite FFT}{figure.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Verifica della cattura del tono a 9kHz con campionamento a 48kHz nel periodo 0-0.010 secondi, utilizzando finestra di Hann su 512 elementi}}{10}{figure.3.2}\protected@file@percent }
+\newlabel{fig:spettro_audacity}{{3.2}{10}{Verifica della cattura del tono a 9kHz con campionamento a 48kHz nel periodo 0-0.010 secondi, utilizzando finestra di Hann su 512 elementi}{figure.3.2}{}}
+\citation{esp32techref}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Grafico contentente lo spettro di frequenza calcolato tramite FFT}}{11}{figure.3.3}\protected@file@percent }
+\newlabel{fig:spettro}{{3.3}{11}{Grafico contentente lo spettro di frequenza calcolato tramite FFT}{figure.3.3}{}}
 \@writefile{toc}{\contentsline {paragraph}{FFT, bin e asse delle frequenze}{11}{section*.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{Simmetria dello spettro}{12}{section*.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Filtraggio}{12}{subsection.3.2.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Grafico contentente lo spettro di frequenza di 3 frequenze (bassa, media, alta), per identificare l'attenuazione in frequenza del microfono.}}{13}{figure.3.3}\protected@file@percent }
-\newlabel{fig:spettro2}{{3.3}{13}{Grafico contentente lo spettro di frequenza di 3 frequenze (bassa, media, alta), per identificare l'attenuazione in frequenza del microfono}{figure.3.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1.1}Filtraggio e riconoscimento dei toni}{12}{subsubsection.3.2.1.1}\protected@file@percent }
+\newlabel{subsec:filtraggio}{{3.2.1.1}{12}{Filtraggio e riconoscimento dei toni}{subsubsection.3.2.1.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Frequenze e tipi di segnale}}{13}{table.3.1}\protected@file@percent }
+\newlabel{tab:frequenze}{{3.1}{13}{Frequenze e tipi di segnale}{table.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Grafico contenente lo spettro di frequenza di tre frequenze (bassa, media, alta), utilizzato per identificare l'attenuazione in frequenza del microfono.}}{13}{figure.3.4}\protected@file@percent }
+\newlabel{fig:spettro2}{{3.4}{13}{Grafico contenente lo spettro di frequenza di tre frequenze (bassa, media, alta), utilizzato per identificare l'attenuazione in frequenza del microfono}{figure.3.4}{}}
+\citation{QuadraticInterpolationSpectralPeaks}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Picco Locale nell'intorno dei sei Bins}}{14}{figure.3.5}\protected@file@percent }
+\newlabel{fig:bins_local_peak}{{3.5}{14}{Picco Locale nell'intorno dei sei Bins}{figure.3.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Interpolazione Parabolica \cite  {QuadraticInterpolationSpectralPeaks}}}{15}{figure.3.6}\protected@file@percent }
+\newlabel{fig:interpolazione_parabolica}{{3.6}{15}{Interpolazione Parabolica \cite {QuadraticInterpolationSpectralPeaks}}{figure.3.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Uscita}{15}{subsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Sintesi dei toni}{15}{section*.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Finestra d'ascolto della FFT sul segnale emesso}}{16}{figure.3.7}\protected@file@percent }
+\newlabel{fig:finestra_ascolto}{{3.7}{16}{Finestra d'ascolto della FFT sul segnale emesso}{figure.3.7}{}}
 \@setckpt{capitoli/design_protocollo}{
-\setcounter{page}{14}
-\setcounter{equation}{0}
+\setcounter{page}{17}
+\setcounter{equation}{4}
 \setcounter{enumi}{4}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
@@ -36,10 +50,10 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{3}
-\setcounter{table}{0}
+\setcounter{figure}{7}
+\setcounter{table}{1}
 \setcounter{float@type}{4}
-\setcounter{section@level}{2}
+\setcounter{section@level}{4}
 \setcounter{Item}{4}
 \setcounter{Hfootnote}{0}
 \setcounter{bookmark@seq@number}{17}

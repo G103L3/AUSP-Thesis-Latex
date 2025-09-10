@@ -22,4 +22,6 @@
 \contentsline {subsection}{\numberline {3.2.1}Ingresso}{10}{subsection.3.2.1}%
 \contentsline {paragraph}{FFT, bin e asse delle frequenze}{11}{section*.5}%
 \contentsline {paragraph}{Simmetria dello spettro}{12}{section*.6}%
-\contentsline {subsection}{\numberline {3.2.2}Filtraggio}{12}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}Filtraggio e riconoscimento dei toni}{12}{subsubsection.3.2.1.1}%
+\contentsline {subsection}{\numberline {3.2.2}Uscita}{15}{subsection.3.2.2}%
+\contentsline {paragraph}{Sintesi dei toni}{15}{section*.7}%

@@ -15,36 +15,36 @@ A level-1 auxiliary file: appendici/appendiceA.aux
 A level-1 auxiliary file: appendici/appendiceB.aux
 The style file: ieeetr.bst
 Database file #1: bibliografia.bib
-You've used 21 entries,
+You've used 22 entries,
             1876 wiz_defined-function locations,
-            615 strings with 7025 characters,
-and the built_in function-call counts, 4653 in all, are:
-= -- 459
-> -- 212
+            622 strings with 7299 characters,
+and the built_in function-call counts, 4807 in all, are:
+= -- 474
+> -- 220
 < -- 2
-+ -- 79
-- -- 58
-* -- 325
-:= -- 708
-add.period$ -- 28
-call.type$ -- 21
-change.case$ -- 18
++ -- 82
+- -- 60
+* -- 332
+:= -- 731
+add.period$ -- 30
+call.type$ -- 22
+change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 232
-empty$ -- 432
-format.name$ -- 58
-if$ -- 1120
+cite$ -- 22
+duplicate$ -- 236
+empty$ -- 450
+format.name$ -- 60
+if$ -- 1159
 int.to.chr$ -- 0
-int.to.str$ -- 21
+int.to.str$ -- 22
 missing$ -- 19
-newline$ -- 73
-num.names$ -- 20
-pop$ -- 55
+newline$ -- 77
+num.names$ -- 21
+pop$ -- 61
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 131
+skip$ -- 135
 stack$ -- 0
 substring$ -- 201
 swap$ -- 79
@@ -53,6 +53,6 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 43
-width$ -- 23
-write$ -- 212
+while$ -- 44
+width$ -- 24
+write$ -- 222
