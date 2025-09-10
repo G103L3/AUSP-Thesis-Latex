@@ -100,7 +100,7 @@ Una parte cruciale del processo di design del protocollo è stata la scelta dell
 I picchi che vengono selezionati dalla fase di filtraggio devono appartenere a un insieme di frequenze predefinite, così da poter essere riconosciuti dal \textbf{Livello Bit}. \\ 
 La seguente tabella riporta l’insieme delle frequenze adottate, distinguendo quelle di tipo \emph{carrier} da quelle destinate al trasferimento dei dati:
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \begin{tabular}{c c}
         % --- prima tabella ---
@@ -263,3 +263,112 @@ formula semplificata dove $A$ è l'ampiezza del segnale, $\phi_1$ e $\phi_2$ son
 \begin{equation}
     \phi = \frac{2 \pi f}{f_s}
 \end{equation}
+
+\section{Livello Bit}
+Il Livello Bit si occupa di convertire le frequenze ricevute dal Livello Fisico in bit, e viceversa.
+Il pacchetto con cui il livello Bit comunica con il Livello Fisico è la seguente struttura dati 
+
+\definecolor{lightgray}{RGB}{235,235,235}
+\definecolor{white}{RGB}{255,255,255}
+
+
+\begin{table}[H]
+\centering
+\label{tab:master_slave_config}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{
+|>{\columncolor{white}}c
+|>{\columncolor{white}}c
+|>{\columncolor{white}}c|
+>{\columncolor{lightgray}}c
+|>{\columncolor{lightgray}}c
+|>{\columncolor{lightgray}}c|
+>{\columncolor{white}}c
+|>{\columncolor{white}}c
+|>{\columncolor{white}}c|
+}
+\hline
+\multicolumn{3}{|c|}{\cellcolor{white} Master} &
+\multicolumn{3}{c|}{\cellcolor{lightgray} Slave} &
+\multicolumn{3}{c|}{\cellcolor{white} Config} \\
+\hline
+Frequenza 1 & Frequenza 2 & Frequenza 3 &
+Frequenza 1 & Frequenza 2 & Frequenza 3 &
+Frequenza 1 & Frequenza 2 & Frequenza 3 \\
+\hline
+
+\end{tabular}
+}
+\caption{Struttura di comunicazione tra Livello Bit e Livello Fisico}
+\end{table}
+
+Ogni gruppo (master, slave, config) rappresenta un gruppo a sè stante, che può essere utiilizzato per diversi scopi, 
+questo avviene al fine di evitare conflitti tra i nodi, in quanto il ruolo è già indicato dalle frequenze che usano.
+Il livello Fisico quindi restituisce per ogni gruppo una struttura dati contenente 2 frequenze, se le 3 frequenze fossero tutte presenti allo stesso momento si avrebbe,
+allo stato attuale della tecnologia un errore Multi-Tone.
+In ogni gruppo, le frequenze seguono una logica definita come segue:
+\begin{itemize}
+\item La prima frequenza rappresenta quale \textbf{Signal Code} utilizzare dal lato sinistro della tabella che segue
+\item La seconda frequenza è la portante ed è sempre la stessa per ogni gruppo, questa serve successivamente per la decodifica
+\item La terza frequenza rappresenta quale \textbf{Signal Code} utilizzare dal lato destro della tabella che segue
+\end{itemize}
+
+
+
+    \begin{table}[H]
+    \centering
+    \label{tab:freq_codici}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|l|>{\columncolor{lightgray}}l|l|>{\columncolor{lightgray}}l|}
+    \hline
+    \textbf{Frequenza} & \textbf{Signal Code} & \textbf{Portante} & \textbf{Signal Code} \\
+    \hline
+    1000 & & Master Carrier & \\
+    1400 & (0) Bits: 0 & & \\
+    1800 & (1) Bits: 00 & & \\
+    2200 & (2) Bits: 000 & & \\
+    2600 & (3) Bits: 0000 & & \\
+    3000 & (4) Bits: 00000 & & \\
+    3400 & (5) Bits: 000000 & & \\
+    3800 & (6) Bits: 0000000 & & \\
+    4200 & (7) Bits: 0000000 0000000 & & \\
+    4600 & (8) Bits: 0000000 0000000 000000 & & \\
+    5000 & & & (9) Bits: 1 \\
+    5400 & & & (10) Bits: 11 \\
+    5800 & & & (11) Bits: 111 \\
+    6200 & & & (12) Bits: 1111 \\
+    6600 & & & (13) Bits: 11111 \\
+    7000 & & & (14) Bits: 111111 \\
+    7400 & & & (15) Bits: 1111111 \\
+    7800 & & & (16) Bits: 1111111 1111111 \\
+    8200 & & & (17) Bits: 1111111 1111111 111111 \\
+    8600 & & Config Carrier & \\
+    9000 & & Slave Carrier & \\
+    \hline
+    \end{tabular}
+    }
+    \caption{Mappatura frequenze, codici e portanti}
+    \end{table}
+
+
+L'utilizzo di questo schema di codifica, viene dopo l'esecuzione di diversi test, in quanto in origine i dati venivano trasmessi utilizzando 3 frequenze per ogni gruppo:
+\begin{itemize}
+\item La prima frequenza rappresentava se era uno 0
+\item La seconda frequenza era la portante
+\item La terza frequenza rappresentava se era un 1
+\end{itemize}
+L'utilizzo del \ref{tab:freq_codici} ha permesso di comprimere i pacchetti di dati a livello di bit, in quanto ora è possibile trasmettere più bit con una sola frequenza.\\
+Questo ha permesso di aumentale la velocità di trasmissione fino a 5(codes per second), nel caso più favorevole \textbf{30bps}, 
+che seppur bassa è comunque un miglioraremento rispetto alla versione precedente che raggiungeva al massimo 5bps.\\
+Inoltre, grazie a questa codifica, è possibile trasmettere il codice 8 (21 volte 0) 
+con estrema facilità, questo corrisponde alla ripetizione del carattere ASCII NUL per tre volte, che, nel protocollo corrisponde all' End of Packet (EOP).\\
+
+\subsection{Decodifica}
+In fase di decodifica, come preannunciato, il Livello Bit riceve dal Livello antecedente una struttura dati contenente fino a 2 frequenze per ogni gruppo (master, slave, config).
+Questo associa la frequenza data al corrispondente \textbf{Signal Code}, attraverso
+\begin{equation}
+s[n] = \frac{f-base}{step} = \frac{f-1000}{400}
+\end{equation}
+Dove \texttt{base} è la frequenza minima (1000Hz), \texttt{step} è la differenza tra una frequenza e l'altra (400Hz) e \texttt{f} è la frequenza ricevuta.
+
+Questo permette di ottenere il \textbf{Signal Code} che può essere compreso tra 0 e 17,

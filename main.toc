@@ -25,3 +25,5 @@
 \contentsline {subsubsection}{\numberline {3.2.1.1}Filtraggio e riconoscimento dei toni}{12}{subsubsection.3.2.1.1}%
 \contentsline {subsection}{\numberline {3.2.2}Uscita}{15}{subsection.3.2.2}%
 \contentsline {paragraph}{Sintesi dei toni}{15}{section*.7}%
+\contentsline {section}{\numberline {3.3}Livello Bit}{17}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Decodifica}{18}{subsection.3.3.1}%
