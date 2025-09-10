@@ -371,4 +371,22 @@ s[n] = \frac{f-base}{step} = \frac{f-1000}{400}
 \end{equation}
 Dove \texttt{base} è la frequenza minima (1000Hz), \texttt{step} è la differenza tra una frequenza e l'altra (400Hz) e \texttt{f} è la frequenza ricevuta.
 
-Questo permette di ottenere il \textbf{Signal Code} che può essere compreso tra 0 e 17,
+Questo permette di ottenere il \textbf{Signal Code} che può essere compreso tra 0 e 17, che viene successivamente convertito in bit attraverso
+la tabella \ref{tab:freq_codici}.\\
+Durante la fase di conversione tra Signal Code e bit, nel momento in cui viene identificato il Codice 8 (21 volte 0) viene interpretato come End of Packet (EOP),
+avviene quindi la \textbf{memorizzazione del pacchetto in bits nell'apposito buffer}, differenziato per tipo di pacchetto (master, slave, config), 
+in attesa che il Livello Link li svuoti.\\
+
+\subsection{Codifica}
+La codifica avviene in maniera opposta alla decodifica, il Livello Bit riceve dal Livello Link un buffer di caratteri ASCII da trasmettere.
+Ogni carattere ASCII (7 bits) viene convertito in bit, successivamente i bit vengono convertiti in \textbf{Signal Code} attraverso la tabella \ref{tab:freq_codici}.
+Infine i \textbf{Signal Code} vengono convertiti in frequenze attraverso la formula inversa
+\begin{equation}
+f = base + (code*step) = 1000 * (code*400)
+\end{equation}
+
+Dove \texttt{base} è la frequenza minima (1000Hz), \texttt{step} è la differenza tra una frequenza e l'altra (400Hz) e \texttt{code} è il Signal Code da convertire.\\
+
+Il buffer di frequenze viene successivamente inviato al Livello Fisico per la trasmissione.
+
+\section{Livello Link}

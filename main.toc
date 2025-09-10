@@ -27,3 +27,5 @@
 \contentsline {paragraph}{Sintesi dei toni}{15}{section*.7}%
 \contentsline {section}{\numberline {3.3}Livello Bit}{17}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Decodifica}{18}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Codifica}{19}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Livello Link}{19}{section.3.4}%
