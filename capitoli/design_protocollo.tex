@@ -390,3 +390,175 @@ Dove \texttt{base} è la frequenza minima (1000Hz), \texttt{step} è la differen
 Il buffer di frequenze viene successivamente inviato al Livello Fisico per la trasmissione.
 
 \section{Livello Link}
+
+Il \textbf{Livello Link} riceve le sequenze ASCII dal Livello Bit e realizza l’incapsulamento logico dei messaggi. 
+Le comunicazioni vengono suddivise in tre canali distinti: \emph{config}, \emph{master} e \emph{slave}. 
+Ogni pacchetto segue lo schema generale:
+
+\begin{verbatim}
+ID:destinatario{OP}k{mittente}
+\end{verbatim}
+
+dove i campi rappresentano, rispettivamente, l’ID del destinatario, l’operazione da eseguire e l’ID del mittente.  
+
+I pacchetti ASCII in arrivo dal Livello Bit vengono inseriti in una coda FIFO di Input e letti dal Livello Link. 
+Una volta estratti, vengono interpretati in base al canale di appartenenza e al comando ricevuto. 
+Analogamente, quando il Livello Link deve inviare dati, i pacchetti vengono preparati ed inseriti nella coda FIFO di Output, in attesa di essere trasformati in frequenze dal Livello Bit.
+
+\subsection{Procedura di registrazione}
+
+Quando un nodo si collega per la prima volta, o ha perso il proprio ID, deve eseguire la registrazione sul canale \emph{config}. 
+In questa fase, un nodo senza ID (e non in modalità \emph{hotspot}) invia una richiesta all’hotspot, generando un identificativo provvisorio di \textbf{3 cifre alfanumeriche}. 
+La richiesta assume la forma:
+
+\begin{verbatim}
+ID:0000{REQ}l{idGenerato}
+\end{verbatim}
+
+Il carattere \texttt{l} sostituisce la \texttt{k} perché il nodo non dispone ancora di un ID valido.  
+L’hotspot, ricevuta la richiesta, assegna un ID definitivo di \textbf{4 cifre numeriche univoche} e risponde con:
+
+\begin{verbatim}
+ID:idAssegnato{SET}k{0000}
+\end{verbatim}
+
+Il nodo registra l’ID in memoria non volatile e conferma con:
+
+\begin{verbatim}
+ID:0000{OK}k{idAssegnato}
+\end{verbatim}
+
+\subsection{Indirizzamento e instradamento}
+
+Ogni pacchetto ricevuto viene analizzato per verificare l’indirizzo di destinazione: 
+\begin{itemize}
+  \item Se l’ID non coincide con quello locale, il nodo entra in modalità \emph{parrot}: memorizza il pacchetto nella coda FIFO di Output e lo ritrasmette, in attesa di un acknowledgment. 
+  In assenza di ACK, il pacchetto viene ritrasmesso sullo stesso canale (ad esempio, un messaggio ricevuto in frequenze \emph{master} viene riemesso in frequenze \emph{master} anche se il nodo non è un hotspot).  
+  \item Se invece l’ID corrisponde a quello del nodo o all’indirizzo broadcast \texttt{1111}, il pacchetto viene elaborato in base al comando ricevuto. 
+  Se è richiesta una risposta, questa viene generata tramite gli \emph{handle} interni del Link e inserita nella coda di Output \emph{slave}, pronta per essere trasmessa in frequenze \emph{slave}.
+\end{itemize}
+
+Per garantire ordine e separazione dei flussi, il Livello Link mantiene tre code circolari dedicate ai canali \emph{master}, \emph{slave} e \emph{config}, ognuna delle quali gestisce il traffico relativo.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{fifo_input_output.png}
+    \caption{Schema del flusso dei pacchetti tra FIFO Input, Livello Link e FIFO Output}
+    \label{fig:fifo_input_output}
+\end{figure}
+
+\subsection{Gestione dei Token (TKN)}
+
+Un aspetto centrale riguarda la possibilità, per i nodi non-hotspot, di trasmettere i pacchetti contenuti nella propria coda di Output solo quando l’hotspot concede loro un \emph{token} (operazione \texttt{TKN}).  
+
+Quando un nodo riceve un pacchetto \texttt{TKN} in frequenze \emph{master}, acquisisce il diritto di trasmissione per un tempo massimo di \textbf{1 minuto}.  
+Durante questo intervallo, il nodo può: 
+\begin{itemize}
+  \item inviare un pacchetto con operazione \texttt{EXT} per richiedere l’estensione del token. In tal caso l’hotspot risponde con un acknowledgment (\texttt{OP:OK}) e il tempo si prolunga di un ulteriore minuto;
+  \item inviare un semplice \texttt{OP:OK} per confermare la gestione del token entro il minuto stabilito.
+\end{itemize}
+
+Se entro il tempo limite il nodo non invia alcun messaggio, il token decade automaticamente e l’hotspot lo assegna ad un altro dispositivo.  
+È dunque responsabilità del nodo non-hotspot calcolare i tempi necessari per le proprie trasmissioni future e decidere se richiedere estensioni o accordarsi con l’hotspot per la durata del token.  
+
+Questa rappresenta attualmente la parte più delicata del protocollo: al momento della stesura il funzionamento è ancora limitato, ma in prospettiva si prevede la possibilità che anche i nodi non-hotspot possano generare autonomamente token, così da estendere la rete su più livelli e aumentare la flessibilità del sistema.  
+Questa apertura costituisce un’opportunità interessante, benché richieda un’implementazione più solida per evitare l’accavallamento di comunicazioni su canali multipli quando più nodi tentano di gestire i token in parallelo.  
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{token_diagram.png}
+    \caption{Schema del flusso dei Token tra hotspot e nodi non-hotspot}
+    \label{fig:token_diagram}
+\end{figure}
+
+\subsection{Comandi di controllo e di rete}
+
+Il Livello Link gestisce alcune operazioni speciali:  
+\begin{itemize}
+  \item \textbf{ABORT}: comando broadcast (\texttt{ID:1111}) inviato dall’hotspot e ripetuto due volte in frequenze \emph{master} da tutti i nodi non-hotspot. Non richiede ACK e serve a interrompere le operazioni, svuotando i buffer di Input e Output. 
+  Viene tipicamente generato quando la piattaforma \emph{Blynk.io} invia il comando \texttt{abort} all’hotspot.
+  \item \textbf{OK}: rappresenta l’ACK e viene inviato dai nodi non-hotspot all’hotspot per confermare la ricezione di un pacchetto. 
+  Solo in questo momento l’hotspot può eliminare il pacchetto dalla sua coda di Output \emph{master}.
+\end{itemize}
+
+Infine, il Livello Link supporta un comando di rete dedicato, \texttt{conns}, che la piattaforma \emph{Blynk.io} invia all’hotspot per ottenere la lista dei nodi attualmente connessi.  
+
+\subsection{Indirizzi di rete}
+
+Gli indirizzi usati dal protocollo sono riassunti nella seguente tabella.  
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|l|}
+\hline
+\textbf{Indirizzo} & \textbf{Descrizione} \\
+\hline
+0000 & ID dell'hotspot \\
+1111 & Indirizzo broadcast (tutti i nodi) \\
+0001 -- 1110 & Range di indirizzi assegnabili ai nodi \\
+\hline
+\end{tabular}
+\caption{Indirizzi di rete del Livello Link}
+\label{tab:indirizzi}
+\end{table}
+
+\section{Livello Applicazione}
+Dato che si conoscono già gli usi futuri di questo protocollo e non è destinato al grande pubblico, 
+il dispositivo \textit{hotspot} che riceve in ingresso dal loop \textbf{Blynk} un comando nella forma
+
+\begin{quote}
+\texttt{Comando -> IdDestinatario}
+\end{quote}
+
+si occupa, con un codice "saldato" al livello Link, sia 
+dell'incapsulamento dell'identificativo del destinatario nel formato 
+\texttt{ID:IdDestinatario}, sia della traduzione semantica attraverso la seguente tabella. \\
+\begin{table}[H]
+    \centering
+    \label{tab:comandi_hotspot}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|l|>{\columncolor{lightgray}}l|l|>{\columncolor{lightgray}}l|}
+    \hline
+    \textbf{Comando} & \textbf{Operazione} & \textbf{Non-Hotspot} & \textbf{Hotspot} \\
+    \hline
+    \texttt{movement\_sensor\_on} & \texttt{MOVEMENT\_ON} & 
+    \begin{tabular}[c]{@{}l@{}}Esegue misurazione PIR per 5s;\\ restituisce \texttt{MOVEMENT\_YES} o \texttt{MOVEMENT\_NO}\end{tabular} & 
+    \texttt{ACK->OP:OK} \\
+    \hline
+    \texttt{movement\_sensor\_on\_[tempo\_in\_ms]} & \texttt{MOVEMENT\_ON\_[tempo\_in\_ms]} & 
+    \begin{tabular}[c]{@{}l@{}}Esegue misurazione PIR per l'intervallo specificato;\\ restituisce \texttt{MOVEMENT\_YES} o \texttt{MOVEMENT\_NO}\end{tabular} & 
+    \texttt{ACK->OP:OK} \\
+    \hline
+    \end{tabular}
+    }
+    \caption{Mappatura comandi Blynk, operazioni interne e azioni eseguite dai nodi}
+\end{table}
+Questa tabella mostra come l’hotspot agisca da traduttore e compressore semantico: 
+ogni comando testuale viene ridotto a un codice operativo interno e 
+ogni dispositivo non-hotspot può eseguire le relative funzioni senza dover 
+gestire sintassi testuali complesse. \\ 
+Il ritorno dell’esecuzione è anch’esso 
+standardizzato (nel caso illustrato, \texttt{MOVEMENT\_YES} / \texttt{MOVEMENT\_NO}), 
+mentre l’hotspot conferma localmente con un messaggio di tipo 
+\texttt{ACK->OP:OK}, garantendo così sia l’affidabilità della comunicazione 
+che la compatibilità futura con ulteriori estensioni già previste.
+
+
+Quindi l'utente finale che sia l'industria mineraria, soccoritori o tecnici possono 
+digitare un comando tramite l'interfaccia \textbf{Blynk.io}, 
+corrisponde ad un'\textbf{operazione più compatta} che viene effettivamente interpretata dai nodi della rete. \\
+La \textbf{compressione} avviene quindi su due livelli: non solo a livello di codifica dei bit, ma anche a \textbf{livello semantico}, 
+poiché i comandi accettati non appartengono a categorie generiche di protocolli di uso comune 
+(web come \texttt{HTML/PHP}, o trasferimento file come \texttt{PNG/JPG} nei protocolli \texttt{FTP/HTTP}), 
+bensì ad un insieme chiuso e proprietario di istruzioni standardizzate. \\
+In questo modo l’interpretazione da parte dei dispositivi risulta rapida e priva di ambiguità, 
+mentre l’interfaccia utente mantiene la leggibilità e la semplicità d’uso.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.80\textwidth]{blynk_interface.png}
+    \caption{Utilizzo del Livello Applicazione tramite l'interfaccia Blynk.io}
+    \label{fig:blynk_interface}
+\end{figure}
+
+
+

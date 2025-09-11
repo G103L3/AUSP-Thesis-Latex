@@ -12,3 +12,6 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Picco Locale nell'intorno dei sei Bins}}{14}{figure.3.5}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Interpolazione Parabolica \cite {QuadraticInterpolationSpectralPeaks}}}{15}{figure.3.6}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Finestra d'ascolto della FFT sul segnale emesso}}{16}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Schema del flusso dei pacchetti tra FIFO Input, Livello Link e FIFO Output}}{21}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Schema del flusso dei Token tra hotspot e nodi non-hotspot}}{22}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Utilizzo del Livello Applicazione tramite l'interfaccia Blynk.io}}{24}{figure.3.10}%
