@@ -74,4 +74,12 @@ Espressif Systems, {\em ESP32 Technical Reference Manual}, 2020.
 J.~Smith and X.~Serra, ``Quadratic interpolation of spectral peaks.'' Online, CCRMA, Stanford University, n.d.
 \newblock Available at \url{https://ccrma.stanford.edu/\~jos/sasp/Quadratic_Interpolation_Spectral_Peaks.html}.
 
+\bibitem{Espressif2024}
+E.~Systems, {\em ESP32 Series Datasheet}, 2024.
+\newblock Disponibile su: \url{https://www.espressif.com/en/products/socs/esp32}.
+
+\bibitem{Patti2024}
+D.~Patti, {\em Introduction to Microcontrollers - Communication Interfaces}.
+\newblock Catania, Italia: Self-published, 2024.
+
 \end{thebibliography}

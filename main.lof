@@ -1,17 +1,19 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Corner Loss \textasciitilde 30 dB in un condotto con angolo di 90° per radio frequenze HF/SHF \cite {jacksha2016}.}}{3}{figure.1.1}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Corner Loss \textasciitilde 30 dB in un condotto con angolo di 90° per radio frequenze HF/SHF \cite {jacksha2016}.}}{4}{figure.1.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Mappa Tunnel U.S. National Institure for Occupational Safety and Health's\cite {jacksha2016}.}}{6}{figure.2.1}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Mappa Tunnel U.S. National Institure for Occupational Safety and Health's\cite {jacksha2016}.}}{7}{figure.2.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Livelli del Protocollo}}{9}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Verifica della cattura del tono a 9kHz con campionamento a 48kHz nel periodo 0-0.010 secondi, utilizzando finestra di Hann su 512 elementi}}{10}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Grafico contentente lo spettro di frequenza calcolato tramite FFT}}{11}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Grafico contenente lo spettro di frequenza di tre frequenze (bassa, media, alta), utilizzato per identificare l'attenuazione in frequenza del microfono.}}{13}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Picco Locale nell'intorno dei sei Bins}}{14}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Interpolazione Parabolica \cite {QuadraticInterpolationSpectralPeaks}}}{15}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Finestra d'ascolto della FFT sul segnale emesso}}{16}{figure.3.7}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Schema del flusso dei pacchetti tra FIFO Input, Livello Link e FIFO Output}}{21}{figure.3.8}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Schema del flusso dei Token tra hotspot e nodi non-hotspot}}{22}{figure.3.9}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Utilizzo del Livello Applicazione tramite l'interfaccia Blynk.io}}{24}{figure.3.10}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Livelli del Protocollo}}{10}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Verifica della cattura del tono a 9kHz con campionamento a 48kHz nel periodo 0-0.010 secondi, utilizzando finestra di Hann su 512 elementi}}{11}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Grafico contentente lo spettro di frequenza calcolato tramite FFT}}{12}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Grafico contenente lo spettro di frequenza di tre frequenze (bassa, media, alta), utilizzato per identificare l'attenuazione in frequenza del microfono.}}{14}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Picco Locale nell'intorno dei sei Bins}}{15}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Interpolazione Parabolica \cite {QuadraticInterpolationSpectralPeaks}}}{16}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Finestra d'ascolto della FFT sul segnale emesso}}{17}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Schema del flusso dei pacchetti tra FIFO Input, Livello Link e FIFO Output}}{22}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Schema del flusso dei Token tra hotspot e nodi non-hotspot}}{23}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Utilizzo del Livello Applicazione tramite l'interfaccia Blynk.io}}{25}{figure.3.10}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Componenti hardware principali di un microcontrollore ESP32.}}{27}{figure.4.1}%
