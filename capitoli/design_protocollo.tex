@@ -96,6 +96,7 @@ Durante la creazione di questo protocollo sono emerse diverse difficoltà legate
 questa condizione ha reso necessario l'uso di tecniche di filtraggio.
 \subsubsection{Filtraggio e riconoscimento dei toni}
 \label{subsec:filtraggio}
+\label{sec:filtraggio}
 Una parte cruciale del processo di design del protocollo è stata la scelta delle frequenze da utilizzare per la trasmissione dei dati. 
 I picchi che vengono selezionati dalla fase di filtraggio devono appartenere a un insieme di frequenze predefinite, così da poter essere riconosciuti dal \textbf{Livello Bit}. \\ 
 La seguente tabella riporta l’insieme delle frequenze adottate, distinguendo quelle di tipo \emph{carrier} da quelle destinate al trasferimento dei dati:
@@ -390,6 +391,7 @@ Dove \texttt{base} è la frequenza minima (1000Hz), \texttt{step} è la differen
 Il buffer di frequenze viene successivamente inviato al Livello Fisico per la trasmissione.
 
 \section{Livello Link}
+\label{sec:livello_link}
 
 Il \textbf{Livello Link} riceve le sequenze ASCII dal Livello Bit e realizza l’incapsulamento logico dei messaggi. 
 Le comunicazioni vengono suddivise in tre canali distinti: \emph{config}, \emph{master} e \emph{slave}. 

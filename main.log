@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.3)  12 SEP 2025 01:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.3)  13 SEP 2025 02:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -657,13 +657,13 @@ File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 3.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-))
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}] [2]
+ [2{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
 \openout2 = `capitoli/introduzione.aux'.
 
  (./capitoli/introduzione.tex
@@ -680,7 +680,7 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 14.
-<immagini/corner_loss_em.jpg, id=167, 385.44pt x 410.9754pt>
+<immagini/corner_loss_em.jpg, id=209, 385.44pt x 410.9754pt>
 File: immagini/corner_loss_em.jpg Graphic file (type jpg)
 <use immagini/corner_loss_em.jpg>
 Package pdftex.def Info: immagini/corner_loss_em.jpg  used on input line 18.
@@ -688,7 +688,7 @@ Package pdftex.def Info: immagini/corner_loss_em.jpg  used on input line 18.
  [3
 
 
-{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [4{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} <./immagini/corner_loss_em.jpg>]) [5]
+{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [4 <./immagini/corner_loss_em.jpg>]) [5]
 \openout2 = `capitoli/stato_arte.aux'.
 
  (./capitoli/stato_arte.tex
@@ -708,7 +708,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 27.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 27.
-<immagini/corner_em.jpg, id=212, 289.08pt x 252.4632pt>
+<immagini/corner_em.jpg, id=252, 289.08pt x 252.4632pt>
 File: immagini/corner_em.jpg Graphic file (type jpg)
 <use immagini/corner_em.jpg>
 Package pdftex.def Info: immagini/corner_em.jpg  used on input line 40.
@@ -718,7 +718,7 @@ Package pdftex.def Info: immagini/corner_em.jpg  used on input line 40.
 
  (./capitoli/design_protocollo.tex
 Capitolo 3.
-<immagini/layers.png, id=269, 1027.84pt x 1027.84pt>
+<immagini/layers.png, id=310, 1027.84pt x 1027.84pt>
 File: immagini/layers.png Graphic file (type png)
 <use immagini/layers.png>
 Package pdftex.def Info: immagini/layers.png  used on input line 6.
@@ -742,123 +742,123 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-<immagini/audacity_spectrum.png, id=280, 3694.80376pt x 752.8125pt>
+<immagini/audacity_spectrum.png, id=321, 3694.80376pt x 752.8125pt>
 File: immagini/audacity_spectrum.png Graphic file (type png)
 <use immagini/audacity_spectrum.png>
 Package pdftex.def Info: immagini/audacity_spectrum.png  used on input line 44.
 (pdftex.def)             Requested size: 350.99762pt x 71.50644pt.
 [11 <./immagini/audacity_spectrum.png>]
-<immagini/fft_spectrum.png, id=291, 1248.665pt x 756.8275pt>
+<immagini/fft_spectrum.png, id=332, 1248.665pt x 756.8275pt>
 File: immagini/fft_spectrum.png Graphic file (type png)
 <use immagini/fft_spectrum.png>
 Package pdftex.def Info: immagini/fft_spectrum.png  used on input line 65.
 (pdftex.def)             Requested size: 253.49762pt x 153.63782pt.
  [12 <./immagini/fft_spectrum.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 170--175
+Underfull \hbox (badness 10000) in paragraph at lines 171--176
 
  []
 
 [13]
-<immagini/fft_regression_check.png, id=311, 1282.7925pt x 1011.78pt>
+<immagini/fft_regression_check.png, id=351, 1282.7925pt x 1011.78pt>
 File: immagini/fft_regression_check.png Graphic file (type png)
 <use immagini/fft_regression_check.png>
-Package pdftex.def Info: immagini/fft_regression_check.png  used on input line 184.
+Package pdftex.def Info: immagini/fft_regression_check.png  used on input line 185.
 (pdftex.def)             Requested size: 253.49762pt x 199.92856pt.
  [14 <./immagini/fft_regression_check.png>]
-<immagini/local_peak.png, id=318, 1027.84pt x 1027.84pt>
+<immagini/local_peak.png, id=358, 1027.84pt x 1027.84pt>
 File: immagini/local_peak.png Graphic file (type png)
 <use immagini/local_peak.png>
-Package pdftex.def Info: immagini/local_peak.png  used on input line 201.
+Package pdftex.def Info: immagini/local_peak.png  used on input line 202.
 (pdftex.def)             Requested size: 195.0pt x 194.99364pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--204
+Underfull \hbox (badness 10000) in paragraph at lines 194--205
 
  []
 
-<immagini/parabolic_interpolation.png, id=319, 1248.665pt x 894.34125pt>
+<immagini/parabolic_interpolation.png, id=359, 1248.665pt x 894.34125pt>
 File: immagini/parabolic_interpolation.png Graphic file (type png)
 <use immagini/parabolic_interpolation.png>
-Package pdftex.def Info: immagini/parabolic_interpolation.png  used on input line 215.
+Package pdftex.def Info: immagini/parabolic_interpolation.png  used on input line 216.
 (pdftex.def)             Requested size: 195.0pt x 139.65858pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--218
+Underfull \hbox (badness 10000) in paragraph at lines 211--219
 
  []
 
 [15 <./immagini/local_peak.png>]
-LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 221.
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 222.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
-LaTeX Font Info:    Trying to load font information for T1+txtt on input line 221.
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 222.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <12> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 221.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 222.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
-(Font)              scaled to size 12.0pt on input line 221.
+(Font)              scaled to size 12.0pt on input line 222.
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--236
+Underfull \hbox (badness 10000) in paragraph at lines 229--237
 
  []
 
 [16 <./immagini/parabolic_interpolation.png>]
-<immagini/window_listening.png, id=338, 1027.84pt x 1027.84pt>
+<immagini/window_listening.png, id=378, 1027.84pt x 1027.84pt>
 File: immagini/window_listening.png Graphic file (type png)
 <use immagini/window_listening.png>
-Package pdftex.def Info: immagini/window_listening.png  used on input line 248.
+Package pdftex.def Info: immagini/window_listening.png  used on input line 249.
 (pdftex.def)             Requested size: 195.0pt x 194.99364pt.
  [17 <./immagini/window_listening.png>] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 360--365
+Underfull \hbox (badness 10000) in paragraph at lines 361--366
 
  []
 
 [19]
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 372.
+(Font)              scaled to size 12.0pt on input line 373.
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--379
+Underfull \hbox (badness 10000) in paragraph at lines 375--380
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
 
 [20]
-<immagini/fifo_input_output.png, id=370, 482.80376pt x 282.05376pt>
+<immagini/fifo_input_output.png, id=410, 482.80376pt x 282.05376pt>
 File: immagini/fifo_input_output.png Graphic file (type png)
 <use immagini/fifo_input_output.png>
-Package pdftex.def Info: immagini/fifo_input_output.png  used on input line 445.
+Package pdftex.def Info: immagini/fifo_input_output.png  used on input line 447.
 (pdftex.def)             Requested size: 195.0pt x 113.91696pt.
  [21]
-<immagini/token_diagram.png, id=375, 594.22pt x 472.76625pt>
+<immagini/token_diagram.png, id=415, 594.22pt x 472.76625pt>
 File: immagini/token_diagram.png Graphic file (type png)
 <use immagini/token_diagram.png>
-Package pdftex.def Info: immagini/token_diagram.png  used on input line 468.
+Package pdftex.def Info: immagini/token_diagram.png  used on input line 470.
 (pdftex.def)             Requested size: 253.49762pt x 201.68405pt.
  [22 <./immagini/fifo_input_output.png>] [23 <./immagini/token_diagram.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 512--534
+Underfull \hbox (badness 10000) in paragraph at lines 514--536
 
  []
 
 
-Overfull \hbox (23.74724pt too wide) in paragraph at lines 535--544
+Overfull \hbox (23.74724pt too wide) in paragraph at lines 537--546
 \T1/ntxtlf/m/n/12 Il ri-tor-no del-l'e-se-cu-zio-ne è an-ch'es-so stan-dar-diz-za-to (nel ca-so il-lu-stra-to, \T1/ntxtt/m/n/12 MOVEMENT_YES
  []
 
 
-Overfull \hbox (8.80737pt too wide) in paragraph at lines 546--555
+Overfull \hbox (8.80737pt too wide) in paragraph at lines 548--557
 \T1/ntxtlf/m/n/12 no di-gi-ta-re un co-man-do tra-mi-te l'in-ter-fac-cia \T1/ntxtlf/b/n/12 Blynk.io\T1/ntxtlf/m/n/12 , cor-ri-spon-de ad un'\T1/ntxtlf/b/n/12 operazione
  []
 
 [24]
-<immagini/blynk_interface.png, id=394, 1953.2975pt x 1829.83624pt>
+<immagini/blynk_interface.png, id=434, 1953.2975pt x 1829.83624pt>
 File: immagini/blynk_interface.png Graphic file (type png)
 <use immagini/blynk_interface.png>
-Package pdftex.def Info: immagini/blynk_interface.png  used on input line 558.
+Package pdftex.def Info: immagini/blynk_interface.png  used on input line 560.
 (pdftex.def)             Requested size: 312.00119pt x 292.2772pt.
 ) [25 <./immagini/blynk_interface.png>]
 \openout2 = `capitoli/requisiti.aux'.
@@ -878,12 +878,139 @@ Capitolo 4.
 
 
 ]
-<immagini/esp32_block_diagram.png, id=411, 957.5775pt x 597.23125pt>
+<immagini/esp32_block_diagram.png, id=452, 957.5775pt x 597.23125pt>
 File: immagini/esp32_block_diagram.png Graphic file (type png)
 <use immagini/esp32_block_diagram.png>
 Package pdftex.def Info: immagini/esp32_block_diagram.png  used on input line 37.
 (pdftex.def)             Requested size: 272.99881pt x 170.26735pt.
- [27 <./immagini/esp32_block_diagram.png>]) [28]
+ [27 <./immagini/esp32_block_diagram.png>]
+<immagini/adafruit_mems.png, id=468, 1003.75pt x 501.875pt>
+File: immagini/adafruit_mems.png Graphic file (type png)
+<use immagini/adafruit_mems.png>
+Package pdftex.def Info: immagini/adafruit_mems.png  used on input line 71.
+(pdftex.def)             Requested size: 272.99881pt x 136.49593pt.
+ [28 <./immagini/adafruit_mems.png>]
+Package textcomp Info: Symbol \textmu not provided by
+(textcomp)             font family ntxtlf in TS1 encoding.
+(textcomp)             Default family used instead on input line 78.
+<immagini/adafruit_diaframma.png, id=487, 1027.84pt x 1027.84pt>
+File: immagini/adafruit_diaframma.png Graphic file (type png)
+<use immagini/adafruit_diaframma.png>
+Package pdftex.def Info: immagini/adafruit_diaframma.png  used on input line 112.
+(pdftex.def)             Requested size: 155.99762pt x 155.98863pt.
+ [29{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<immagini/adafruit_max.png, id=509, 1158.3275pt x 434.62375pt>
+File: immagini/adafruit_max.png Graphic file (type png)
+<use immagini/adafruit_max.png>
+Package pdftex.def Info: immagini/adafruit_max.png  used on input line 132.
+(pdftex.def)             Requested size: 272.99881pt x 102.42839pt.
+ [30 <./immagini/adafruit_diaframma.png> <./immagini/adafruit_max.png>]
+<immagini/max_diagram.png, id=525, 723.70375pt x 201.75375pt>
+File: immagini/max_diagram.png Graphic file (type png)
+<use immagini/max_diagram.png>
+Package pdftex.def Info: immagini/max_diagram.png  used on input line 155.
+(pdftex.def)             Requested size: 272.99881pt x 76.10692pt.
+
+
+LaTeX Warning: Reference `chap:implementazione_software' on page 31 undefined on input line 167.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--170
+
+ []
+
+[31 <./immagini/max_diagram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 171--176
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 179.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 179.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 179.
+
+<immagini/board_microfono.png, id=543, 2353.79375pt x 751.80875pt>
+File: immagini/board_microfono.png Graphic file (type png)
+<use immagini/board_microfono.png>
+Package pdftex.def Info: immagini/board_microfono.png  used on input line 187.
+(pdftex.def)             Requested size: 390.0pt x 124.55931pt.
+
+Underfull \hbox (badness 1466) in paragraph at lines 188--188
+[]\T1/ntxtlf/m/n/12 Figura 4.6: []Collegamento fi-si-co tra ESP32 e mi-cro-fo-no I$[]$S (Ada-fruit
+ []
+
+[32]
+Underfull \hbox (badness 1365) in paragraph at lines 233--233
+[]\T1/ntxtlf/m/n/12 Tabella 4.1: []Mappatura hard-ware dei pin I$[]$S tra ESP32 e mi-cro-fo-no
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--242
+
+ []
+
+[33 <./immagini/board_microfono.png>]
+Overfull \hbox (12.1914pt too wide) in paragraph at lines 244--245
+ []\T1/ntxtlf/b/n/12 Dettagli elet-tri-ci e mo-ti-va-zio-ni del-le scel-te.[] \T1/ntxtlf/m/n/12 Il mi-cro-fo-no Ada-fruit SPH0645LM4H
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 251.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 251.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 251.
+
+<immagini/board_amp.png, id=562, 1927.2pt x 520.94624pt>
+File: immagini/board_amp.png Graphic file (type png)
+<use immagini/board_amp.png>
+Package pdftex.def Info: immagini/board_amp.png  used on input line 262.
+(pdftex.def)             Requested size: 390.0pt x 105.4195pt.
+[34 <./immagini/board_amp.png>]
+<immagini/board_led.png, id=576, 2358.8125pt x 896.34875pt>
+File: immagini/board_led.png Graphic file (type png)
+<use immagini/board_led.png>
+Package pdftex.def Info: immagini/board_led.png  used on input line 333.
+(pdftex.def)             Requested size: 390.0pt x 148.19206pt.
+ [35] [36 <./immagini/board_led.png>]
+<immagini/board_bottone.png, id=597, 750.805pt x 729.72626pt>
+File: immagini/board_bottone.png Graphic file (type png)
+<use immagini/board_bottone.png>
+Package pdftex.def Info: immagini/board_bottone.png  used on input line 389.
+(pdftex.def)             Requested size: 136.50238pt x 132.67009pt.
+Package textcomp Info: Symbol \texttwosuperior not provided by
+(textcomp)             font family ntxtlf in TS1 encoding.
+(textcomp)             Default family used instead on input line 404.
+<immagini/board_completa.png, id=599, 2248.4pt x 1386.17876pt>
+File: immagini/board_completa.png Graphic file (type png)
+<use immagini/board_completa.png>
+Package pdftex.def Info: immagini/board_completa.png  used on input line 415.
+(pdftex.def)             Requested size: 390.0pt x 240.42747pt.
+Package textcomp Info: Symbol \texttwosuperior not provided by
+(textcomp)             font family ntxtlf in TS1 encoding.
+(textcomp)             Default family used instead on input line 416.
+Package textcomp Info: Symbol \texttwosuperior not provided by
+(textcomp)             font family ntxtlf in TS1 encoding.
+(textcomp)             Default family used instead on input line 416.
+ [37 <./immagini/board_bottone.png>]
+<immagini/pcb_completo.png, id=610, 1591.9475pt x 977.6525pt>
+File: immagini/pcb_completo.png Graphic file (type png)
+<use immagini/pcb_completo.png>
+Package pdftex.def Info: immagini/pcb_completo.png  used on input line 433.
+(pdftex.def)             Requested size: 390.0pt x 239.50458pt.
+) [38 <./immagini/board_completa.png>] [39 <./immagini/pcb_completo.png>]
 \openout2 = `capitoli/implementazione_software.aux'.
 
 
@@ -900,33 +1027,57 @@ No file capitoli/discussione.tex.
 \openout2 = `capitoli/conclusioni.aux'.
 
 No file capitoli/conclusioni.tex.
-(./main.lof)
+(./main.lof
+Overfull \hbox (35.67738pt too wide) in paragraph at lines 24--24
+ [][] [][][]\T1/ntxtlf/m/n/12 Collegamento fi-si-co tra ESP32 e mi-cro-fo-no I$[]$S (Ada-fruit SPH0645LM4H) 
+ []
+
+
+Overfull \hbox (37.4774pt too wide) in paragraph at lines 25--25
+ [][] [][][]\T1/ntxtlf/m/n/12 Collegamento fi-si-co tra ESP32 e am-pli-fi-ca-to-re I$[]$S (Ada-fruit MAX98357A) 
+ []
+
+[40
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+Package textcomp Info: Symbol \texttwosuperior not provided by
+(textcomp)             font family ntxtlf in TS1 encoding.
+(textcomp)             Default family used instead on input line 28.
+)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- (./main.lot [29
+ (./main.lot
+Overfull \hbox (13.17732pt too wide) in paragraph at lines 12--12
+ [][] [][][]\T1/ntxtlf/m/n/12 Mappatura hard-ware dei pin I$[]$S tra ESP32 e mi-cro-fo-no SPH0645LM4H.[][] []  
+ []
 
 
+Overfull \hbox (14.97734pt too wide) in paragraph at lines 13--13
+ [][] [][][]\T1/ntxtlf/m/n/12 Mappatura hard-ware dei pin I$[]$S tra ESP32 e am-pli-fi-ca-to-re MAX98357A.[][] []  
+ []
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-])
+)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [30]
+ [41]
 \openout2 = `appendici/appendiceA.aux'.
 
 
@@ -934,7 +1085,7 @@ No file appendici/appendiceA.tex.
 \openout2 = `appendici/appendiceB.aux'.
 
 No file appendici/appendiceB.tex.
-(./main.bbl [31
+(./main.bbl [42
 
 
 
@@ -957,31 +1108,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--76
 \T1/ntxtlf/m/n/12 ble at [][]$\T1/ntxtt/m/n/12 https : / / ccrma . stanford . edu / ~jos / sasp / Quadratic _
  []
 
-[32]) [33] (./main.aux (./capitoli/introduzione.aux) (./capitoli/stato_arte.aux) (./capitoli/design_protocollo.aux) (./capitoli/requisiti.aux) (./capitoli/implementazione_hardware.aux) (./capitoli/implementazione_software.aux) (./capitoli/protocollo.aux) (./capitoli/sperimentazione.aux) (./capitoli/discussione.aux) (./capitoli/conclusioni.aux) (./appendici/appendiceA.aux) (./appendici/appendiceB.aux))
+[43]
+Underfull \hbox (badness 1953) in paragraph at lines 101--103
+[]\T1/ntxtlf/m/n/12 D. Liu \T1/ntxtlf/m/it/12 et al.\T1/ntxtlf/m/n/12 , \T1/ntxtlf/m/it/12 Acou-stic MEMS: Mi-cro-pho-nes and Mi-cro-ma-chi-ned
+ []
+
+) [44] (./main.aux (./capitoli/introduzione.aux) (./capitoli/stato_arte.aux) (./capitoli/design_protocollo.aux) (./capitoli/requisiti.aux) (./capitoli/implementazione_hardware.aux) (./capitoli/implementazione_software.aux) (./capitoli/protocollo.aux) (./capitoli/sperimentazione.aux) (./capitoli/discussione.aux) (./capitoli/conclusioni.aux) (./appendici/appendiceA.aux) (./appendici/appendiceB.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 671F0C775EB8567CC48267E115EC4310;5203.
+(rerunfilecheck)             Checksum: 2A99724BACEFE1146D38B4F349204F4F;6824.
  ) 
 Here is how much of TeX's memory you used:
- 19602 strings out of 474222
- 353664 string characters out of 5748733
+ 19853 strings out of 474222
+ 358659 string characters out of 5748733
  1941975 words of memory out of 5000000
- 41376 multiletter control sequences out of 15000+600000
- 612347 words of font info for 92 fonts, out of 8000000 for 9000
+ 41546 multiletter control sequences out of 15000+600000
+ 629067 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,18n,96p,660b,1111s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (33 pages, 4940189 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrb1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (44 pages, 9514321 bytes).
 PDF statistics:
- 566 PDF objects out of 1000 (max. 8388607)
- 477 compressed objects within 5 object streams
- 129 named destinations out of 1000 (max. 500000)
- 306 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 805 PDF objects out of 1000 (max. 8388607)
+ 679 compressed objects within 7 object streams
+ 200 named destinations out of 1000 (max. 500000)
+ 420 words of extra memory for PDF output out of 10000 (max. 10000000)
 

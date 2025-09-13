@@ -82,4 +82,34 @@ E.~Systems, {\em ESP32 Series Datasheet}, 2024.
 D.~Patti, {\em Introduction to Microcontrollers - Communication Interfaces}.
 \newblock Catania, Italia: Self-published, 2024.
 
+\bibitem{adafruit-guide}
+Adafruit Industries, {\em Adafruit Learning System: I2S MEMS Microphone Breakout SPH0645}, 2020.
+
+\bibitem{adafruit-product}
+``Adafruit i2s mems microphone breakout - sph0645lm4h,'' 2020.
+
+\bibitem{nordic-devzone}
+``Q\&a: Using sph0645lm4h with nordic socs (i2s timing and osr),'' 2019.
+
+\bibitem{knowles-datasheet}
+Knowles, {\em Knowles SPH0645LM4H-B MEMS Microphone Datasheet}, 2016.
+
+\bibitem{digikey-sheet}
+``Sph0645lm4h-b knowles datasheet and distributor page,'' 2020.
+
+\bibitem{mems-acoustics}
+D.~Liu {\em et~al.}, {\em Acoustic MEMS: Microphones and Micromachined Loudspeakers}.
+\newblock Springer, 2014.
+
+\bibitem{maxim-datasheet}
+M.~Integrated, {\em MAX98357A: DirectDrive, Mono, Class D Amplifier with I2S Interface}, 2015.
+\newblock Datasheet ufficiale.
+
+\bibitem{adafruit-guide-max98357}
+Adafruit, ``Adafruit max98357 i2s class-d mono amp - guide,'' 2023.
+
+\bibitem{texas-classd}
+T.~Instruments, {\em Class-D Audio Amplifier Basics}, 2016.
+\newblock Application Report.
+
 \end{thebibliography}
