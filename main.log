@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.3)  13 SEP 2025 02:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.3)  13 SEP 2025 02:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1005,10 +1005,14 @@ Package textcomp Info: Symbol \texttwosuperior not provided by
 (textcomp)             font family ntxtlf in TS1 encoding.
 (textcomp)             Default family used instead on input line 416.
  [37 <./immagini/board_bottone.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 423--431
+
+ []
+
 <immagini/pcb_completo.png, id=610, 1591.9475pt x 977.6525pt>
 File: immagini/pcb_completo.png Graphic file (type png)
 <use immagini/pcb_completo.png>
-Package pdftex.def Info: immagini/pcb_completo.png  used on input line 433.
+Package pdftex.def Info: immagini/pcb_completo.png  used on input line 434.
 (pdftex.def)             Requested size: 390.0pt x 239.50458pt.
 ) [38 <./immagini/board_completa.png>] [39 <./immagini/pcb_completo.png>]
 \openout2 = `capitoli/implementazione_software.aux'.
@@ -1137,7 +1141,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  85i,18n,96p,660b,1111s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrb1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (44 pages, 9514321 bytes).
+Output written on main.pdf (44 pages, 9517409 bytes).
 PDF statistics:
  805 PDF objects out of 1000 (max. 8388607)
  679 compressed objects within 7 object streams
