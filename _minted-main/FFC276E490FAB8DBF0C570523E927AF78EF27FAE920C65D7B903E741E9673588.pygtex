@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{static}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{reader\PYGZus{}task}\PYG{p}{(}\PYG{k+kt}{void}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{param}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k+kt}{size\PYGZus{}t}\PYG{+w}{ }\PYG{n}{bytes\PYGZus{}read}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kt}{int32\PYGZus{}t}\PYG{+w}{ }\PYG{n}{dma\PYGZus{}buffer}\PYG{p}{[}\PYG{n}{DMA\PYGZus{}BUFFER\PYGZus{}SIZE}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{p}{];}
+\PYG{+w}{    }\PYG{k}{static}\PYG{+w}{ }\PYG{k+kt}{float}\PYG{+w}{ }\PYG{n}{dc\PYGZus{}mean}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.0f}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{const}\PYG{+w}{ }\PYG{k+kt}{float}\PYG{+w}{ }\PYG{n}{alpha}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{1.0f}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{l+m+mf}{1024.0f}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{while}\PYG{+w}{ }\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{i2s\PYGZus{}read}\PYG{p}{(}\PYG{n}{I2S\PYGZus{}PORT}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{void}\PYG{o}{*}\PYG{p}{)}\PYG{n}{dma\PYGZus{}buffer}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{DMA\PYGZus{}BUFFER\PYGZus{}SIZE}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{n}{bytes\PYGZus{}read}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{portMAX\PYGZus{}DELAY}\PYG{p}{);}
+\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{samples}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{bytes\PYGZus{}read}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{samples}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k+kt}{int32\PYGZus{}t}\PYG{+w}{ }\PYG{n}{s32}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{dma\PYGZus{}buffer}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{8}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k+kt}{float}\PYG{+w}{ }\PYG{n}{x}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{float}\PYG{p}{)(}\PYG{n}{s32}\PYG{+w}{ }\PYG{o}{\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{12}\PYG{p}{);}
+\PYG{+w}{            }\PYG{n}{dc\PYGZus{}mean}\PYG{+w}{ }\PYG{o}{+=}\PYG{+w}{ }\PYG{n}{alpha}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{x}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{dc\PYGZus{}mean}\PYG{p}{);}
+\PYG{+w}{            }\PYG{k+kt}{float}\PYG{+w}{ }\PYG{n}{val}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{x}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{dc\PYGZus{}mean}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{current\PYGZus{}data}\PYG{p}{[}\PYG{n}{counter}\PYG{p}{].}\PYG{n}{re}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{double}\PYG{p}{)}\PYG{n}{val}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{current\PYGZus{}data}\PYG{p}{[}\PYG{n}{counter}\PYG{p}{].}\PYG{n}{im}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.0}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{counter}\PYG{o}{++}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{counter}\PYG{+w}{ }\PYG{o}{\PYGZgt{}=}\PYG{+w}{ }\PYG{n}{ARRAY\PYGZus{}ELEMENTS}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n}{data\PYGZus{}ready}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                }\PYG{n}{swap\PYGZus{}array}\PYG{p}{();}
+\PYG{+w}{                }\PYG{n}{counter}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

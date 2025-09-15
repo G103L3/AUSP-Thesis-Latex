@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{play\PYGZus{}two\PYGZus{}tones}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{freq1}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{freq2}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{if}\PYG{p}{(}\PYG{n}{freq1}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{freq2}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{        }\PYG{n}{delay}\PYG{p}{(}\PYG{l+m+mi}{80}\PYG{p}{);}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{const}\PYG{+w}{ }\PYG{k+kt}{float}\PYG{+w}{ }\PYG{n}{tone\PYGZus{}duration}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.024f}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{const}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{tone\PYGZus{}samples}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)(}\PYG{n}{G\PYGZus{}SAMPLE\PYGZus{}RATE}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{tone\PYGZus{}duration}\PYG{p}{);}
+\PYG{+w}{        }\PYG{k}{const}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{tone\PYGZus{}buffer\PYGZus{}size}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{tone\PYGZus{}samples}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k+kt}{int16\PYGZus{}t}\PYG{+w}{ }\PYG{n}{tone\PYGZus{}buffer}\PYG{p}{[}\PYG{n}{tone\PYGZus{}buffer\PYGZus{}size}\PYG{p}{];}
+\end{Verbatim}

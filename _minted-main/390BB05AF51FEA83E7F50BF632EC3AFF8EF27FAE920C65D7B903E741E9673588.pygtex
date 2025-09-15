@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{static}\PYG{+w}{ }\PYG{k+kt}{unsigned}\PYG{+w}{ }\PYG{k+kt}{long}\PYG{+w}{ }\PYG{n+nf}{send\PYGZus{}master}\PYG{p}{(}\PYG{k}{const}\PYG{+w}{ }\PYG{k+kt}{char}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{msg}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{log\PYGZus{}send}\PYG{p}{(}\PYG{n}{msg}\PYG{p}{);}
+\PYG{+w}{    }\PYG{n}{BitOutputPacker}\PYG{+w}{ }\PYG{n}{packer}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{bit\PYGZus{}output\PYGZus{}packer\PYGZus{}init}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{packer}\PYG{p}{);}
+\PYG{+w}{    }\PYG{k+kt}{unsigned}\PYG{+w}{ }\PYG{k+kt}{long}\PYG{+w}{ }\PYG{n}{duration}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{if}\PYG{p}{(}\PYG{n}{bit\PYGZus{}output\PYGZus{}packer\PYGZus{}compress}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{packer}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{msg}\PYG{p}{))\PYGZob{}}
+\PYG{+w}{        }\PYG{k}{if}\PYG{p}{(}\PYG{n}{bit\PYGZus{}output\PYGZus{}packer\PYGZus{}convert}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{packer}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{))\PYGZob{}}
+\PYG{+w}{            }\PYG{n}{duration}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{estimate\PYGZus{}send\PYGZus{}duration}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{packer}\PYG{p}{);}
+\PYG{+w}{            }\PYG{n}{emit\PYGZus{}tones}\PYG{p}{(}\PYG{n}{packer}\PYG{p}{.}\PYG{n}{pairs}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{packer}\PYG{p}{.}\PYG{n}{pair\PYGZus{}count}\PYG{p}{);}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{n}{bit\PYGZus{}output\PYGZus{}packer\PYGZus{}free}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{packer}\PYG{p}{);}
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{duration}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

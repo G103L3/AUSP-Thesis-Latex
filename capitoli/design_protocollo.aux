@@ -8,20 +8,23 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Livelli del Protocollo}}{10}{figure.3.1}\protected@file@percent }
 \newlabel{fig:layers}{{3.1}{10}{Livelli del Protocollo}{figure.3.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Livello Fisico}{10}{section.3.2}\protected@file@percent }
+\newlabel{sec:livello_fisico}{{3.2}{10}{Livello Fisico}{section.3.2}{}}
 \citation{shannon1949}
 \citation{zwicker1999psychoacoustics}
 \citation{cooley1965fft}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Ingresso}{11}{subsection.3.2.1}\protected@file@percent }
+\newlabel{sec:ingresso_livello_fisico}{{3.2.1}{11}{Ingresso}{subsection.3.2.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Verifica della cattura del tono a 9kHz con campionamento a 48kHz nel periodo 0-0.010 secondi, utilizzando finestra di Hann su 512 elementi}}{11}{figure.3.2}\protected@file@percent }
 \newlabel{fig:spettro_audacity}{{3.2}{11}{Verifica della cattura del tono a 9kHz con campionamento a 48kHz nel periodo 0-0.010 secondi, utilizzando finestra di Hann su 512 elementi}{figure.3.2}{}}
 \citation{esp32techref}
+\newlabel{par: fft_calcolo}{{3.2.1}{12}{}{section*.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{}{12}{section*.5}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Grafico contentente lo spettro di frequenza calcolato tramite FFT}}{12}{figure.3.3}\protected@file@percent }
 \newlabel{fig:spettro}{{3.3}{12}{Grafico contentente lo spettro di frequenza calcolato tramite FFT}{figure.3.3}{}}
-\@writefile{toc}{\contentsline {paragraph}{FFT, bin e asse delle frequenze}{12}{section*.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Simmetria dello spettro}{13}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{FFT, bin e asse delle frequenze}{12}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Simmetria dello spettro}{13}{section*.7}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1.1}Filtraggio e riconoscimento dei toni}{13}{subsubsection.3.2.1.1}\protected@file@percent }
 \newlabel{subsec:filtraggio}{{3.2.1.1}{13}{Filtraggio e riconoscimento dei toni}{subsubsection.3.2.1.1}{}}
-\newlabel{sec:filtraggio}{{3.2.1.1}{13}{Filtraggio e riconoscimento dei toni}{subsubsection.3.2.1.1}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Frequenze e tipi di segnale}}{13}{table.3.1}\protected@file@percent }
 \newlabel{tab:frequenze}{{3.1}{13}{Frequenze e tipi di segnale}{table.3.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Grafico contenente lo spettro di frequenza di tre frequenze (bassa, media, alta), utilizzato per identificare l'attenuazione in frequenza del microfono.}}{14}{figure.3.4}\protected@file@percent }
@@ -29,13 +32,17 @@
 \citation{QuadraticInterpolationSpectralPeaks}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Picco Locale nell'intorno dei sei Bins}}{15}{figure.3.5}\protected@file@percent }
 \newlabel{fig:bins_local_peak}{{3.5}{15}{Picco Locale nell'intorno dei sei Bins}{figure.3.5}{}}
+\newlabel{par: interpolazione_parabolica}{{3.2.1.1}{15}{Interpolazione parabolica}{section*.8}{}}
+\@writefile{toc}{\contentsline {paragraph}{Interpolazione parabolica}{15}{section*.8}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Interpolazione Parabolica \cite  {QuadraticInterpolationSpectralPeaks}}}{16}{figure.3.6}\protected@file@percent }
 \newlabel{fig:interpolazione_parabolica}{{3.6}{16}{Interpolazione Parabolica \cite {QuadraticInterpolationSpectralPeaks}}{figure.3.6}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Uscita}{16}{subsection.3.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Sintesi dei toni}{16}{section*.7}\protected@file@percent }
+\newlabel{sec:uscita_livello_fisico}{{3.2.2}{16}{Uscita}{subsection.3.2.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Sintesi dei toni}{16}{section*.9}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Finestra d'ascolto della FFT sul segnale emesso}}{17}{figure.3.7}\protected@file@percent }
 \newlabel{fig:finestra_ascolto}{{3.7}{17}{Finestra d'ascolto della FFT sul segnale emesso}{figure.3.7}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Livello Bit}{18}{section.3.3}\protected@file@percent }
+\newlabel{sec:livello_bit}{{3.3}{18}{Livello Bit}{section.3.3}{}}
 \newlabel{tab:master_slave_config}{{3.3}{18}{Livello Bit}{section.3.3}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Struttura di comunicazione tra Livello Bit e Livello Fisico}}{18}{table.3.2}\protected@file@percent }
 \newlabel{tab:freq_codici}{{3.3}{19}{Livello Bit}{table.3.2}{}}
@@ -45,6 +52,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3.4}Livello Link}{20}{section.3.4}\protected@file@percent }
 \newlabel{sec:livello_link}{{3.4}{20}{Livello Link}{section.3.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Procedura di registrazione}{21}{subsection.3.4.1}\protected@file@percent }
+\newlabel{subsec:registrazione}{{3.4.1}{21}{Procedura di registrazione}{subsection.3.4.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Indirizzamento e instradamento}{21}{subsection.3.4.2}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Schema del flusso dei pacchetti tra FIFO Input, Livello Link e FIFO Output}}{22}{figure.3.8}\protected@file@percent }
 \newlabel{fig:fifo_input_output}{{3.8}{22}{Schema del flusso dei pacchetti tra FIFO Input, Livello Link e FIFO Output}{figure.3.8}{}}
@@ -56,6 +64,7 @@
 \@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Indirizzi di rete del Livello Link}}{24}{table.3.4}\protected@file@percent }
 \newlabel{tab:indirizzi}{{3.4}{24}{Indirizzi di rete del Livello Link}{table.3.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.5}Livello Applicazione}{24}{section.3.5}\protected@file@percent }
+\newlabel{sec:livello_applicazione}{{3.5}{24}{Livello Applicazione}{section.3.5}{}}
 \newlabel{tab:comandi_hotspot}{{3.5}{24}{Livello Applicazione}{section.3.5}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Mappatura comandi Blynk, operazioni interne e azioni eseguite dai nodi}}{24}{table.3.5}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Utilizzo del Livello Applicazione tramite l'interfaccia Blynk.io}}{25}{figure.3.10}\protected@file@percent }
@@ -78,11 +87,28 @@
 \setcounter{subparagraph}{0}
 \setcounter{figure}{10}
 \setcounter{table}{5}
-\setcounter{float@type}{4}
+\setcounter{float@type}{8}
 \setcounter{section@level}{1}
 \setcounter{Item}{4}
 \setcounter{Hfootnote}{0}
 \setcounter{bookmark@seq@number}{27}
+\setcounter{FancyVerbLine}{0}
+\setcounter{linenumber}{1}
+\setcounter{LN@truepage}{25}
+\setcounter{FancyVerbWriteLine}{0}
+\setcounter{FancyVerbBufferIndex}{0}
+\setcounter{FancyVerbBufferLength}{0}
+\setcounter{FancyVerbBufferLine}{0}
+\setcounter{FV@oldbufferlength}{0}
+\setcounter{FV@TrueTabGroupLevel}{0}
+\setcounter{FV@TrueTabCounter}{0}
+\setcounter{FV@HighlightLinesStart}{0}
+\setcounter{FV@HighlightLinesStop}{0}
+\setcounter{FancyVerbLineBreakLast}{0}
+\setcounter{FV@BreakBufferDepth}{0}
+\setcounter{minted@FancyVerbLineTemp}{0}
+\setcounter{minted@pygmentizecounter}{0}
+\setcounter{listing}{0}
 \setcounter{lofdepth}{1}
 \setcounter{lotdepth}{1}
 \setcounter{parentequation}{0}

@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{ }\PYG{n}{struct\PYGZus{}interpolated\PYGZus{}frequency}\PYG{+w}{ }\PYG{n+nf}{check\PYGZus{}active\PYGZus{}frequencies}\PYG{p}{(}
+\PYG{+w}{         }\PYG{n}{complex\PYGZus{}g3\PYGZus{}t}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{data}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{bin\PYGZus{}1}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{bin\PYGZus{}2}\PYG{p}{,}
+\PYG{+w}{         }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{id}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{noise\PYGZus{}floor}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{     }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{j}\PYG{p}{;}
+\PYG{+w}{     }\PYG{n}{struct\PYGZus{}interpolated\PYGZus{}frequency}\PYG{+w}{ }\PYG{n}{detected\PYGZus{}freq}\PYG{p}{;}
+\PYG{+w}{     }\PYG{n}{detected\PYGZus{}freq}\PYG{p}{.}\PYG{n}{work}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{+w}{     }\PYG{n}{detected\PYGZus{}freq}\PYG{p}{.}\PYG{n}{frequency}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{\PYGZhy{}1.0}\PYG{p}{;}
+\PYG{+w}{     }\PYG{n}{detected\PYGZus{}freq}\PYG{p}{.}\PYG{n}{estimated\PYGZus{}amplitude}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{\PYGZhy{}1.0}\PYG{p}{;}
+\PYG{+w}{     }\PYG{n}{detected\PYGZus{}freq}\PYG{p}{.}\PYG{n}{dynamic\PYGZus{}amplitude\PYGZus{}threshold}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{\PYGZhy{}1.0}\PYG{p}{;}
+\end{Verbatim}

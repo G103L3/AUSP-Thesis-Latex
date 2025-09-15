@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{     }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{count}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{         }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{active}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{active}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{o}{!}\PYG{n}{active}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{])\PYGZob{}}
+\PYG{+w}{             }\PYG{k}{if}\PYG{p}{(}\PYG{n}{freqs}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{MASTER\PYGZus{}BASE}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{TONE\PYGZus{}STEP}\PYG{o}{*}\PYG{l+m+mi}{19}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{freqs}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{MASTER\PYGZus{}BASE}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{                 }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{freqs}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{\PYGZhy{}}\PYG{n}{MASTER\PYGZus{}BASE}\PYG{p}{)}\PYG{o}{/}\PYG{p}{(}\PYG{n}{TONE\PYGZus{}STEP}\PYG{p}{);}
+\PYG{+w}{             }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{             }\PYG{k}{if}\PYG{p}{(}\PYG{n}{freqs}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{SLAVE\PYGZus{}BASE}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{TONE\PYGZus{}STEP}\PYG{o}{*}\PYG{l+m+mi}{19}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{freqs}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{SLAVE\PYGZus{}CARRIER}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{                 }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{freqs}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{\PYGZhy{}}\PYG{n}{SLAVE\PYGZus{}BASE}\PYG{p}{)}\PYG{o}{/}\PYG{p}{(}\PYG{n}{TONE\PYGZus{}STEP}\PYG{p}{);}
+\PYG{+w}{             }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{             }\PYG{k}{if}\PYG{p}{(}\PYG{n}{freqs}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{CONFIG\PYGZus{}BASE}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{TONE\PYGZus{}STEP}\PYG{o}{*}\PYG{l+m+mi}{19}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{freqs}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{CONFIG\PYGZus{}CARRIER}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{                 }\PYG{k}{return}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{freqs}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{\PYGZhy{}}\PYG{n}{CONFIG\PYGZus{}BASE}\PYG{p}{)}\PYG{o}{/}\PYG{p}{(}\PYG{n}{TONE\PYGZus{}STEP}\PYG{p}{);}
+\PYG{+w}{             }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{         }\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

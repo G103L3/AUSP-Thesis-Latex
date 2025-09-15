@@ -20,11 +20,13 @@
 \contentsline {section}{\numberline {3.1}Architettura generale del sistema}{10}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Livello Fisico}{10}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Ingresso}{11}{subsection.3.2.1}%
-\contentsline {paragraph}{FFT, bin e asse delle frequenze}{12}{section*.5}%
-\contentsline {paragraph}{Simmetria dello spettro}{13}{section*.6}%
+\contentsline {paragraph}{}{12}{section*.5}%
+\contentsline {paragraph}{FFT, bin e asse delle frequenze}{12}{section*.6}%
+\contentsline {paragraph}{Simmetria dello spettro}{13}{section*.7}%
 \contentsline {subsubsection}{\numberline {3.2.1.1}Filtraggio e riconoscimento dei toni}{13}{subsubsection.3.2.1.1}%
+\contentsline {paragraph}{Interpolazione parabolica}{15}{section*.8}%
 \contentsline {subsection}{\numberline {3.2.2}Uscita}{16}{subsection.3.2.2}%
-\contentsline {paragraph}{Sintesi dei toni}{16}{section*.7}%
+\contentsline {paragraph}{Sintesi dei toni}{16}{section*.9}%
 \contentsline {section}{\numberline {3.3}Livello Bit}{18}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Decodifica}{19}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Codifica}{20}{subsection.3.3.2}%
@@ -44,30 +46,42 @@
 \contentsline {subsubsection}{\numberline {4.1.1.4}Memorie}{27}{subsubsection.4.1.1.4}%
 \contentsline {subsection}{\numberline {4.1.2}Periferiche di Input/Output}{28}{subsection.4.1.2}%
 \contentsline {subsubsection}{\numberline {4.1.2.1}Microfono MEMS I2S digitale Adafruit -- SPH0645LM4H}{28}{subsubsection.4.1.2.1}%
-\contentsline {paragraph}{Caratteristiche principali.}{29}{section*.8}%
-\contentsline {paragraph}{Pinout e collegamenti.}{29}{section*.9}%
-\contentsline {paragraph}{Interfaccia I$^2$S.}{29}{section*.10}%
-\contentsline {paragraph}{Catena del segnale interna.}{29}{section*.11}%
-\contentsline {paragraph}{Fondamenti fisici.}{29}{section*.12}%
-\contentsline {paragraph}{Limiti.}{30}{section*.13}%
-\contentsline {paragraph}{Relazione dBFS--SPL.}{30}{section*.14}%
+\contentsline {paragraph}{Caratteristiche principali.}{29}{section*.10}%
+\contentsline {paragraph}{Pinout e collegamenti.}{29}{section*.11}%
+\contentsline {paragraph}{Interfaccia I$^2$S.}{29}{section*.12}%
+\contentsline {paragraph}{Catena del segnale interna.}{29}{section*.13}%
+\contentsline {paragraph}{Fondamenti fisici.}{29}{section*.14}%
+\contentsline {paragraph}{Limiti.}{30}{section*.15}%
+\contentsline {paragraph}{Relazione dBFS--SPL.}{30}{section*.16}%
 \contentsline {subsubsection}{\numberline {4.1.2.2}Adafruit MAX98357A I$^2$S Amplificatore Classe-D}{30}{subsubsection.4.1.2.2}%
-\contentsline {paragraph}{Caratteristiche essenziali.}{30}{section*.15}%
-\contentsline {paragraph}{Funzionamento.}{31}{section*.16}%
-\contentsline {paragraph}{Motivazioni fisiche del funzionamento.}{31}{section*.17}%
+\contentsline {paragraph}{Caratteristiche essenziali.}{30}{section*.17}%
+\contentsline {paragraph}{Funzionamento.}{31}{section*.18}%
+\contentsline {paragraph}{Motivazioni fisiche del funzionamento.}{31}{section*.19}%
 \contentsline {section}{\numberline {4.2}Progettazione digitale}{32}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Collegamento del microfono digitale I$^2$S}{32}{subsection.4.2.1}%
-\contentsline {paragraph}{Pinout del modulo microfonico.}{33}{section*.18}%
-\contentsline {paragraph}{Mappatura dei segnali sull'ESP32.}{33}{section*.19}%
-\contentsline {paragraph}{Dettagli elettrici e motivazioni delle scelte.}{34}{section*.20}%
+\contentsline {paragraph}{Pinout del modulo microfonico.}{33}{section*.20}%
+\contentsline {paragraph}{Mappatura dei segnali sull'ESP32.}{33}{section*.21}%
+\contentsline {paragraph}{Dettagli elettrici e motivazioni delle scelte.}{34}{section*.22}%
 \contentsline {subsection}{\numberline {4.2.2}Collegamento dell’amplificatore digitale I$^2$S}{34}{subsection.4.2.2}%
-\contentsline {paragraph}{Pinout del modulo amplificatore.}{34}{section*.21}%
-\contentsline {paragraph}{Mappatura dei segnali sull'ESP32.}{35}{section*.22}%
-\contentsline {paragraph}{Dettagli elettrici e motivazioni delle scelte.}{35}{section*.23}%
+\contentsline {paragraph}{Pinout del modulo amplificatore.}{34}{section*.23}%
+\contentsline {paragraph}{Mappatura dei segnali sull'ESP32.}{35}{section*.24}%
+\contentsline {paragraph}{Dettagli elettrici e motivazioni delle scelte.}{35}{section*.25}%
 \contentsline {subsection}{\numberline {4.2.3}Sistema di segnalazione LED}{35}{subsection.4.2.3}%
-\contentsline {paragraph}{Funzionamento del sistema.}{36}{section*.24}%
-\contentsline {paragraph}{Mappatura dei segnali sull'ESP32.}{36}{section*.25}%
-\contentsline {paragraph}{Dettagli elettrici e motivazioni delle scelte.}{36}{section*.26}%
+\contentsline {paragraph}{Funzionamento del sistema.}{36}{section*.26}%
+\contentsline {paragraph}{Mappatura dei segnali sull'ESP32.}{36}{section*.27}%
+\contentsline {paragraph}{Dettagli elettrici e motivazioni delle scelte.}{36}{section*.28}%
 \contentsline {subsection}{\numberline {4.2.4}Bottone di Hotspot}{37}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5}Circuito completo}{37}{subsection.4.2.5}%
 \contentsline {subsection}{\numberline {4.2.6}Realizzazione del PCB}{38}{subsection.4.2.6}%
+\contentsline {chapter}{\numberline {5}Implementazione Software: Design del Protocollo}{40}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Architettura generale del sistema}{40}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Emissione dei toni}{40}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Campionamento e bufferizzazione}{41}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Trasformata veloce di Fourier}{43}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Decodifica spettrale}{45}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Traduzione frequenza-bit}{46}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Ricevimento e trasmissione dei bit (Packers)}{49}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Ricezione dei bit}{49}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Trasmissione dei bit}{50}{subsection.5.7.2}%
+\contentsline {section}{\numberline {5.8}Instradamento e protocollo}{50}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Sensore di movimento}{51}{section.5.9}%

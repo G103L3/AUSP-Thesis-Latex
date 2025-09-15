@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{        }\PYG{k}{static}\PYG{+w}{ }\PYG{k+kt}{float}\PYG{+w}{ }\PYG{n}{phase1}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.0f}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{static}\PYG{+w}{ }\PYG{k+kt}{float}\PYG{+w}{ }\PYG{n}{phase2}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.0f}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{const}\PYG{+w}{ }\PYG{k+kt}{float}\PYG{+w}{ }\PYG{n}{inc1}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{2.0f}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{PI}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{freq1}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{G\PYGZus{}SAMPLE\PYGZus{}RATE}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{const}\PYG{+w}{ }\PYG{k+kt}{float}\PYG{+w}{ }\PYG{n}{inc2}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{2.0f}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{PI}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{freq2}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{G\PYGZus{}SAMPLE\PYGZus{}RATE}\PYG{p}{;}
+\end{Verbatim}

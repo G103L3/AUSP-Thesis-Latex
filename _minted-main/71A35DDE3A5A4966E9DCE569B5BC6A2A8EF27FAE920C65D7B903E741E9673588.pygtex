@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{extern}\PYG{+w}{ }\PYG{k}{volatile}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{data\PYGZus{}ready}\PYG{p}{;}
+\PYG{k}{extern}\PYG{+w}{ }\PYG{k}{volatile}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{status\PYGZus{}flag}\PYG{p}{;}
+\PYG{k}{extern}\PYG{+w}{ }\PYG{n}{complex\PYGZus{}g3\PYGZus{}t}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{array\PYGZus{}ready}\PYG{p}{;}
+\end{Verbatim}

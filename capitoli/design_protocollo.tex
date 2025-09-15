@@ -9,10 +9,12 @@
 \end{figure}
 Il protocollo è strutturaro in quattro livelli principali, ognuno con una funzione specifica.
 \section{Livello Fisico}
+\label{sec:livello_fisico}
 Il livello fisico è responsabile della tramissione dei bit precedentemente composti dal livello Bit.
 Questo sfrutta uno speaker per la trasmissione e un microfono per la ricezione dei bit che vengono trasmessi mediante coppie superimposte di frequenze.
 \subsection{Ingresso}
-Il microfono I2S (descritto nel capitolo~\ref{chap:implementazione_hardware}) è collegato al microcontrollore ESP32 tramite il bus I2S, sfruttando uno dei due canali disponibili.  
+\label{sec:ingresso_livello_fisico}
+Il microfono I2S (descritto nel \autoref{chap:implementazione_hardware}) è collegato al microcontrollore ESP32 tramite il bus I2S, sfruttando uno dei due canali disponibili.  
 Il segnale audio viene campionato a $48\,\text{kHz}$ con una risoluzione di 16 bit, per poi essere gestito mediante due array in swapping, concetto che verrà approfondito successivamente. \\
 
 \noindent
@@ -47,7 +49,8 @@ Questa durata, successivamente a una attenta analisi effettuata sul software Aud
 \end{figure}
 
 
-
+\paragraph{}
+\label{par: fft_calcolo}
 \noindent
 Una volta acquisito il blocco, viene calcolata la \textbf{trasformata veloce di Fourier (FFT)} \cite{cooley1965fft} per analizzare lo spettro in frequenza. La complessità della FFT cresce come $N \log_2 N$, e per $N=512$ si hanno circa:
 \[
@@ -94,9 +97,10 @@ f_{256} = 256 \cdot \frac{48\,000}{512} = 24~\mathrm{kHz}.
 
 Durante la creazione di questo protocollo sono emerse diverse difficoltà legate alla presenza di rumore ambientale,
 questa condizione ha reso necessario l'uso di tecniche di filtraggio.
+
 \subsubsection{Filtraggio e riconoscimento dei toni}
 \label{subsec:filtraggio}
-\label{sec:filtraggio}
+
 Una parte cruciale del processo di design del protocollo è stata la scelta delle frequenze da utilizzare per la trasmissione dei dati. 
 I picchi che vengono selezionati dalla fase di filtraggio devono appartenere a un insieme di frequenze predefinite, così da poter essere riconosciuti dal \textbf{Livello Bit}. \\ 
 La seguente tabella riporta l’insieme delle frequenze adottate, distinguendo quelle di tipo \emph{carrier} da quelle destinate al trasferimento dei dati:
@@ -179,7 +183,7 @@ In un’evoluzione successiva si è quindi ipotizzato l’impiego di soglie fiss
 \[
 y = \beta_{} + \beta_{}x + \varepsilon \rightarrow y = -301.751324 \times x + 48531.689491
 \]
-dove $x$ rappresenta il numero del bin. La Figura~\ref{fig:spettro2} mostra lo spettro in frequenza di tre toni (basso, medio e alto) e mette in evidenza l’attenuazione introdotta dalla risposta del microfono.
+dove $x$ rappresenta il numero del bin. La \autoref{fig:spettro2} mostra lo spettro in frequenza di tre toni (basso, medio e alto) e mette in evidenza l’attenuazione introdotta dalla risposta del microfono.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.65\textwidth]{immagini/fft_regression_check.png}
@@ -203,6 +207,8 @@ i falsi positivi, ogni frequenza candidata deve corrispondere a un \textbf{massi
     \caption{Picco Locale nell'intorno dei sei Bins}
     \label{fig:bins_local_peak}
 \end{figure}
+\paragraph{Interpolazione parabolica}
+\label{par: interpolazione_parabolica}
  A questo punto, per migliorare 
  la risoluzione in frequenza oltre i limiti del singolo bin FFT, viene applicata un’\textbf{interpolazione parabolica} basata
   sui valori $X[k-1]$, $X[k]$ e $X[k+1]$, secondo la formula
@@ -221,9 +227,10 @@ ottenendo una risoluzione sub-bin.\\
 pendenze dello spettro in condizioni particolarmente critiche. Infine, i \textbf{picchi confermati vengono incapsulati in una struttura dati (\texttt{struct\_tone\_frequencies})
  e inoltrati al \emph{Livello Bit}}, che li utilizza per ricostruire i bit associati ai canali \emph{master}, \emph{slave} e \emph{config}.
 \subsection{Uscita}
+\label{sec:uscita_livello_fisico}
 Il livello fisico si occupa anche della trasmissione dei dati, convertendo coppie di frequenze ricevute dal Livello Bit in segnali audio.
 Questa operazione viene eseguita mediante la sintesi digitale di due toni sinusoidali, che vengono sommati, sistemati in fase, sistemati in ampiezza
-ed infine inviati attraverso il bus I2S ad un amplificatore di potenza (descritto nel capitolo~\ref{chap:implementazione_hardware}).
+ed infine inviati attraverso il bus I2S ad un amplificatore di potenza (descritto nel \autoref{chap:implementazione_hardware}).
 
 \paragraph{Sintesi dei toni}
 L'emissione di una coppia di frequenze superimposte è un operazione che coinvole l'utilizzo di diverse tecniche di sintesi digitale.\\
@@ -266,6 +273,7 @@ formula semplificata dove $A$ è l'ampiezza del segnale, $\phi_1$ e $\phi_2$ son
 \end{equation}
 
 \section{Livello Bit}
+\label{sec:livello_bit}
 Il Livello Bit si occupa di convertire le frequenze ricevute dal Livello Fisico in bit, e viceversa.
 Il pacchetto con cui il livello Bit comunica con il Livello Fisico è la seguente struttura dati 
 
@@ -358,7 +366,7 @@ L'utilizzo di questo schema di codifica, viene dopo l'esecuzione di diversi test
 \item La seconda frequenza era la portante
 \item La terza frequenza rappresentava se era un 1
 \end{itemize}
-L'utilizzo del \ref{tab:freq_codici} ha permesso di comprimere i pacchetti di dati a livello di bit, in quanto ora è possibile trasmettere più bit con una sola frequenza.\\
+L'utilizzo della \autoref{tab:freq_codici} ha permesso di comprimere i pacchetti di dati a livello di bit, in quanto ora è possibile trasmettere più bit con una sola frequenza.\\
 Questo ha permesso di aumentale la velocità di trasmissione fino a 5(codes per second), nel caso più favorevole \textbf{30bps}, 
 che seppur bassa è comunque un miglioraremento rispetto alla versione precedente che raggiungeva al massimo 5bps.\\
 Inoltre, grazie a questa codifica, è possibile trasmettere il codice 8 (21 volte 0) 
@@ -373,14 +381,14 @@ s[n] = \frac{f-base}{step} = \frac{f-1000}{400}
 Dove \texttt{base} è la frequenza minima (1000Hz), \texttt{step} è la differenza tra una frequenza e l'altra (400Hz) e \texttt{f} è la frequenza ricevuta.
 
 Questo permette di ottenere il \textbf{Signal Code} che può essere compreso tra 0 e 17, che viene successivamente convertito in bit attraverso
-la tabella \ref{tab:freq_codici}.\\
+la \autoref{tab:freq_codici}.\\
 Durante la fase di conversione tra Signal Code e bit, nel momento in cui viene identificato il Codice 8 (21 volte 0) viene interpretato come End of Packet (EOP),
 avviene quindi la \textbf{memorizzazione del pacchetto in bits nell'apposito buffer}, differenziato per tipo di pacchetto (master, slave, config), 
 in attesa che il Livello Link li svuoti.\\
 
 \subsection{Codifica}
 La codifica avviene in maniera opposta alla decodifica, il Livello Bit riceve dal Livello Link un buffer di caratteri ASCII da trasmettere.
-Ogni carattere ASCII (7 bits) viene convertito in bit, successivamente i bit vengono convertiti in \textbf{Signal Code} attraverso la tabella \ref{tab:freq_codici}.
+Ogni carattere ASCII (7 bits) viene convertito in bit, successivamente i bit vengono convertiti in \textbf{Signal Code} attraverso la \autoref{tab:freq_codici}.
 Infine i \textbf{Signal Code} vengono convertiti in frequenze attraverso la formula inversa
 \begin{equation}
 f = base + (code*step) = 1000 * (code*400)
@@ -408,6 +416,7 @@ Una volta estratti, vengono interpretati in base al canale di appartenenza e al 
 Analogamente, quando il Livello Link deve inviare dati, i pacchetti vengono preparati ed inseriti nella coda FIFO di Output, in attesa di essere trasformati in frequenze dal Livello Bit.
 
 \subsection{Procedura di registrazione}
+\label{subsec:registrazione}
 
 Quando un nodo si collega per la prima volta, o ha perso il proprio ID, deve eseguire la registrazione sul canale \emph{config}. 
 In questa fase, un nodo senza ID (e non in modalità \emph{hotspot}) invia una richiesta all’hotspot, generando un identificativo provvisorio di \textbf{3 cifre alfanumeriche}. 
@@ -504,6 +513,7 @@ Gli indirizzi usati dal protocollo sono riassunti nella seguente tabella.
 \end{table}
 
 \section{Livello Applicazione}
+\label{sec:livello_applicazione}
 Dato che si conoscono già gli usi futuri di questo protocollo e non è destinato al grande pubblico, 
 il dispositivo \textit{hotspot} che riceve in ingresso dal loop \textbf{Blynk} un comando nella forma
 

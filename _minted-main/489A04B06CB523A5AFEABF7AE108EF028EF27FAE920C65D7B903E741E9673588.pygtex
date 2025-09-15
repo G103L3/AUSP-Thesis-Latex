@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{     }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{j}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{bin\PYGZus{}1}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{n}{bin\PYGZus{}2}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{o}{++}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{         }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{freq}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{k+kt}{double}\PYG{p}{)(}\PYG{n}{FS}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{j}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{n}{NN}\PYG{p}{;}
+\PYG{+w}{         }\PYG{k+kt}{double}\PYG{+w}{ }\PYG{n}{amp}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{complex\PYGZus{}magnitude}\PYG{p}{(}\PYG{n}{data}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]);}
+\end{Verbatim}

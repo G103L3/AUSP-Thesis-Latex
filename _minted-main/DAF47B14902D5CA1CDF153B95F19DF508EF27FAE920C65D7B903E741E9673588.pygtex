@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{static}\PYG{+w}{ }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n+nf}{timeout\PYGZus{}flush\PYGZus{}if\PYGZus{}needed}\PYG{p}{(}\PYG{n}{BitPacker}\PYG{o}{*}\PYG{+w}{ }\PYG{n}{packer}\PYG{p}{,}
+\PYG{+w}{                                     }\PYG{k}{const}\PYG{+w}{ }\PYG{k+kt}{char}\PYG{o}{*}\PYG{+w}{ }\PYG{n}{label}\PYG{p}{,}
+\PYG{+w}{                                     }\PYG{k+kt}{bool}\PYG{o}{*}\PYG{+w}{ }\PYG{n}{timeout\PYGZus{}armed}\PYG{p}{,}
+\PYG{+w}{                                     }\PYG{k+kt}{uint64\PYGZus{}t}\PYG{+w}{ }\PYG{n}{last\PYGZus{}bit\PYGZus{}ms}\PYG{p}{,}
+\PYG{+w}{                                     }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{no\PYGZus{}new\PYGZus{}bit\PYGZus{}this\PYGZus{}tick}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{!*}\PYG{n}{timeout\PYGZus{}armed}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{o}{!}\PYG{n}{no\PYGZus{}new\PYGZus{}bit\PYGZus{}this\PYGZus{}tick}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kt}{uint64\PYGZus{}t}\PYG{+w}{ }\PYG{n}{tnow}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{now\PYGZus{}ms}\PYG{p}{();}
+\PYG{+w}{    }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{((}\PYG{n}{tnow}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{last\PYGZus{}bit\PYGZus{}ms}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{TIMEOUT\PYGZus{}MS}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{return}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{ok}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{flush\PYGZus{}and\PYGZus{}convert\PYGZus{}to\PYGZus{}ascii}\PYG{p}{(}\PYG{n}{packer}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{label}\PYG{p}{);}
+\PYG{+w}{    }\PYG{o}{*}\PYG{n}{timeout\PYGZus{}armed}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{ok}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

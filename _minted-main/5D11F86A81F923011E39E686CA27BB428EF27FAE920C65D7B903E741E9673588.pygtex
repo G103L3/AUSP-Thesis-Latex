@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{ }\PYG{k}{static}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{swap\PYGZus{}array}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{     }\PYG{n}{array\PYGZus{}ready}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{current\PYGZus{}data}\PYG{p}{;}
+\PYG{+w}{     }\PYG{n}{current\PYGZus{}data}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{current\PYGZus{}data}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{main\PYGZus{}array}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{?}\PYG{+w}{ }\PYG{n}{secondary\PYGZus{}array}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{ }\PYG{n}{main\PYGZus{}array}\PYG{p}{;}
+\PYG{+w}{ }\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

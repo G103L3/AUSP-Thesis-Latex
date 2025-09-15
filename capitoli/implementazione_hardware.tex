@@ -162,9 +162,9 @@ L’amplificatore in classe D si basa su modulazione a \emph{duty cycle} dei MOS
 \section{Progettazione digitale}
 Per la progettazione digitale del sistema è stato utilizzato il software \textbf{Fritzing}, un tool open-source
 per la progettazione di circuiti elettronici, con la possibilità di creare moduli personaizzati.\\
-Nel capito \ref{chap:design_protocollo} è stato descritto il protocollo di comunicazione, facendo riferimento al \textbf{Livello Fisico},
+Nel \autoref{chap:design_protocollo} è stato descritto il protocollo di comunicazione, facendo riferimento al \textbf{Livello Fisico},
 come il livello più basso del modello. L'interazione I/O con il mondo circostante che avviene nel Livello Fisico, è realizzata con due componenti: una software, 
-che tratteremo a breve nel capitolo \ref{chap:implementazione_software}, e una hardware, che vedremo in questo capitolo.\\
+che tratteremo a breve nel \autoref{chap:implementazione_software}, e una hardware, che vedremo in questo capitolo.\\
 Il Livello Fisico è realizzato con due periferiche di Input/Output, il microfono MEMS digitale e l'amplificatore Classe-D, che comunicano con il microcontrollore ESP32
  tramite il protocollo I$^2$S.\\
 
@@ -194,7 +194,7 @@ Per la realizzazione del circuito elettronico sono stati utilizzati due breakout
   DOUT è un’uscita a logica \SI{3.3}{\volt}; LRCLK e BCLK sono ingressi di clock; SEL è un ingresso statico per selezionare su quale slot (sinistro o destro) il microfono presenta i campioni sul bus I$^2$S.
   
   \paragraph{Mappatura dei segnali sull'ESP32.}
-  La Tab.~\ref{tab:i2s_pins} riassume la corrispondenza dei pin usati, come nella figura. Le scelte rispettano i vincoli dell'ESP32 (evitando pin con funzioni di strapping all'avvio come GPIO15-12 o limitazioni di sola-lettura).
+  La \autoref{tab:i2s_pins} riassume la corrispondenza dei pin usati, come nella figura. Le scelte rispettano i vincoli dell'ESP32 (evitando pin con funzioni di strapping all'avvio come GPIO15-12 o limitazioni di sola-lettura).
   
   \definecolor{lightgray}{RGB}{235,235,235}
   \definecolor{white}{RGB}{255,255,255}
@@ -245,7 +245,7 @@ Per la realizzazione del circuito elettronico sono stati utilizzati due breakout
     
   Per l’ESP32 si è scelto \textbf{GPIO14 come BCLK, GPIO25 come LRCLK e GPIO32} per il dato in ingresso.
     
-  Infine, il microfono trasmette campioni a 24 bit allineati su frame da 32 come discusso precedentemente nella sezione \ref{subsec:mic}.
+  Infine, il microfono trasmette campioni a 24 bit allineati su frame da 32 come discusso precedentemente nella \autoref{subsec:mic}.
   
  
 \subsection{Collegamento dell’amplificatore digitale I$^2$S}
@@ -270,7 +270,7 @@ Il pin \textbf{DIN} è l’ingresso dati audio seriali (logica \SI{3.3}{\volt});
 I pin GAIN e SD sono opzionali: GAIN permette di configurare il guadagno interno tramite resistenze, mentre SD forza il chip in modalità risparmio energetico.
 
 \paragraph{Mappatura dei segnali sull'ESP32.}
-La Tab.~\ref{tab:i2s_pins_amp} riassume la corrispondenza dei pin usati, come nello schema. Anche in questo caso la scelta dei GPIO tiene conto delle raccomandazioni di Espressif, evitando pin con funzioni critiche all’avvio.
+La \autoref{tab:i2s_pins_amp} riassume la corrispondenza dei pin usati, come nello schema. Anche in questo caso la scelta dei GPIO tiene conto delle raccomandazioni di Espressif, evitando pin con funzioni critiche all’avvio.
 
 
 \begin{table}[H]
@@ -326,7 +326,7 @@ Il consumo è nell’ordine di poche decine di mA a volume medio, quindi l’usc
 \label{subsec:led_system}
 
 La \autoref{fig:board_led} mostra lo schema di cablaggio realizzato in \textbf{Fritzing} tra la scheda \textbf{ESP32} e tre LED collegati su breadboard.  
-Il sistema fornisce un feedback visivo sullo stato di decodifica del segnale audio, a supporto del protocollo discusso nella sezione \ref{sec:filtraggio}.  
+Il sistema fornisce un feedback visivo sullo stato di decodifica del segnale audio, a supporto del protocollo discusso nella \autoref{sec:filtraggio}.  
 
 \begin{figure}[H]
   \centering
@@ -344,7 +344,7 @@ Sono stati utilizzati tre LED di colore diverso (verde, blu e rosso) per rappres
 \end{itemize}
 
 \paragraph{Mappatura dei segnali sull'ESP32.}
-La Tab.~\ref{tab:led_pins} riassume la corrispondenza dei pin usati per il pilotaggio dei tre LED, come nello schema in figura.  
+La \autoref{tab:led_pins} riassume la corrispondenza dei pin usati per il pilotaggio dei tre LED, come nello schema in figura.  
 Ogni LED è collegato in serie a una resistenza di limitazione, necessaria a ridurre la corrente entro i limiti di sicurezza per i GPIO dell’ESP32 (massimo \SI{12}{mA} consigliati).
 
 \definecolor{lightgray}{RGB}{235,235,235}
@@ -382,7 +382,7 @@ I pin \textbf{GPIO14, GPIO27 e GPIO26} sono stati scelti in quanto liberi da vin
 \label{subsec:button_hotspot}
 
 La \autoref{fig:board_bottone} mostra il collegamento su breadboard di un pulsante e due LED all’ESP32.  
-Il pulsante è collegato al pin \textbf{GPIO34 (D34)} e consente di abilitare la modalità \textit{hotspot} prevista dal protocollo (\ref{sec:livello_link}).  
+Il pulsante è collegato al pin \textbf{GPIO34 (D34)} e consente di abilitare la modalità \textit{hotspot} prevista dal protocollo (\autoref{sec:livello_link}).  
 
 \begin{figure}[H]
   \centering
@@ -421,7 +421,7 @@ che a sua volta lo riproduce attraverso l’amplificatore digitale \textbf{MAX98
 \label{subsec:pcb_completo}
 
 Dopo aver completato lo schema su breadboard, il progetto è stato trasferito in \textbf{vista PCB} 
-all’interno di Fritzing, con le dovute modifiche, ottenendo così una scheda stampata ordinata e compatta, come mostrato in \autoref{fig:pcb_completo}.\\ 
+all’interno di Fritzing, con le dovute modifiche, ottenendo così una scheda stampata ordinata e compatta, come mostrato nella \autoref{fig:pcb_completo}.\\ 
 In questa configurazione l’\textbf{ESP32} rimane al centro della scheda, con le piste di segnale distribuite verso i moduli periferici: 
 i LED di stato con le relative resistenze sono disposti lungo il bordo destro per facilitare la visibilità [LED-1-2-3], mentre il pulsante di hotspot 
 è collocato nella parte inferiore [S2] insieme al LED [LED4] che ne segnala l’attivazione. \\
@@ -431,7 +431,7 @@ ma ha diversi vantaggi come la riduzione dei costi di produzione e la semplifica
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{pcb_completo.png}
+  \includegraphics[width=0.7\textwidth]{pcb_completo.png}
   \caption{Layout del circuito stampato (PCB), con ESP32, LED di stato, pulsante di hotspot e connettori di alimentazione.}
   \label{fig:pcb_completo}
 \end{figure}

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{b}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{6}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{b}\PYG{+w}{ }\PYG{o}{\PYGZgt{}=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{n}{b}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{printf}\PYG{p}{(}\PYG{l+s}{\PYGZdq{} 8 \PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{    }\PYG{n}{packer}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{pairs}\PYG{p}{[}\PYG{n}{packer}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{pair\PYGZus{}count}\PYG{o}{++}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{frequency\PYGZus{}coder}\PYG{p}{(}\PYG{l+m+mi}{8}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{role}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\PYG{n}{packer}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{pairs}\PYG{p}{[}\PYG{n}{packer}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{pair\PYGZus{}count}\PYG{o}{++}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{silent}\PYG{p}{;}
+\end{Verbatim}
