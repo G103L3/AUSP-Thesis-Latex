@@ -28,5 +28,5 @@
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Schema del circuito completo con ESP32, microfono I²S, amplificatore MAX98357A, LED di stato e pulsante di hotspot.}}{38}{figure.4.10}%
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Layout del circuito stampato (PCB), con ESP32, LED di stato, pulsante di hotspot e connettori di alimentazione.}}{39}{figure.4.11}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Swapping degli array di campioni}}{43}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Compressione ed impacchettamento mediante Algoritmo Run-Length S= Silenzio}}{50}{figure.5.2}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Swapping degli array di campioni}}{44}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Compressione ed impacchettamento mediante Algoritmo Run-Length S= Silenzio}}{51}{figure.5.2}%
