@@ -18,7 +18,7 @@ Il microfono I2S (descritto nel \autoref{chap:implementazione_hardware}) è coll
 Il segnale audio viene campionato a $48\,\text{kHz}$ con una risoluzione di 16 bit, per poi essere gestito mediante due array in swapping, concetto che verrà approfondito successivamente. \\
 
 \noindent
-La scelta della frequenza di campionamento deriva dal \textbf{teorema di Nyquist-Shannon} \cite{shannon1949}, secondo il quale un segnale può essere ricostruito senza ambiguità se la frequenza di campionamento $f_s$ è almeno doppia rispetto alla massima frequenza del segnale $f_{\max}$:
+La scelta della frequenza di campionamento deriva dal \textbf{teorema di Nyquist-Shannon} \citep{shannon1949}, secondo il quale un segnale può essere ricostruito senza ambiguità se la frequenza di campionamento $f_s$ è almeno doppia rispetto alla massima frequenza del segnale $f_{\max}$:
 \[
 f_s \geq 2 f_{\max}.
 \]
@@ -32,7 +32,7 @@ Nel nostro caso:
 f_s = 48\,\text{kHz} \quad \Rightarrow \quad f_{\text{Nyquist}} = 24\,\text{kHz}.
 \]
 
-Poiché l’orecchio umano percepisce frequenze fino a circa $20\,\text{kHz}$ \cite{zwicker1999psychoacoustics}, la scelta di $48\,\text{kHz}$ garantisce la copertura dell’intero spettro udibile, con un margine di sicurezza di $4\,\text{kHz}$. Frequenze prossime al limite teorico di Nyquist risulterebbero invece difficili da catturare senza aliasing, a causa dei limiti pratici dei filtri anti-alias. \\
+Poiché l’orecchio umano percepisce frequenze fino a circa $20\,\text{kHz}$ \citep{zwicker1999psychoacoustics}, la scelta di $48\,\text{kHz}$ garantisce la copertura dell’intero spettro udibile, con un margine di sicurezza di $4\,\text{kHz}$. Frequenze prossime al limite teorico di Nyquist risulterebbero invece difficili da catturare senza aliasing, a causa dei limiti pratici dei filtri anti-alias. \\
 
 \noindent
 Per l’elaborazione, i campioni vengono raccolti in blocchi di lunghezza $N = 512$. Con la frequenza di campionamento fissata:
@@ -52,13 +52,13 @@ Questa durata, successivamente a una attenta analisi effettuata sul software Aud
 \paragraph{}
 \label{par: fft_calcolo}
 \noindent
-Una volta acquisito il blocco, viene calcolata la \textbf{trasformata veloce di Fourier (FFT)} \cite{cooley1965fft} per analizzare lo spettro in frequenza. La complessità della FFT cresce come $N \log_2 N$, e per $N=512$ si hanno circa:
+Una volta acquisito il blocco, viene calcolata la \textbf{trasformata veloce di Fourier (FFT)} \citep{cooley1965fft} per analizzare lo spettro in frequenza. La complessità della FFT cresce come $N \log_2 N$, e per $N=512$ si hanno circa:
 \[
 512 \cdot \log_2(512) = 512 \cdot 9 = 4608
 \]
 operazioni complesse.  
 
-Sul microcontrollore ESP32 \cite{esp32techref}, operante a $120\,\text{MHz}$, questo si traduce in un tempo di elaborazione di circa $0.42\,\text{ms}$ per blocco, ovvero $\sim 0.83\,\mu\text{s}$ per campione. In termini di carico computazionale: $\sim 20$ moltiplicazioni, $\sim 29$ addizioni/sottrazioni e un’operazione di radice quadrata per campione, pari a $\sim 99$ cicli di clock.  
+Sul microcontrollore ESP32 \citep{esp32techref}, operante a $120\,\text{MHz}$, questo si traduce in un tempo di elaborazione di circa $0.42\,\text{ms}$ per blocco, ovvero $\sim 0.83\,\mu\text{s}$ per campione. In termini di carico computazionale: $\sim 20$ moltiplicazioni, $\sim 29$ addizioni/sottrazioni e un’operazione di radice quadrata per campione, pari a $\sim 99$ cicli di clock.  
 
 \noindent
 Questo significa che, a fronte di una finestra temporale di $10.7\,\text{ms}$, l’FFT viene calcolata in meno del $5\%$ del tempo disponibile, consentendo un’elaborazione in tempo reale anche senza multi-threading.
@@ -220,7 +220,7 @@ ottenendo una risoluzione sub-bin.\\
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.5\textwidth]{immagini/parabolic_interpolation.png}
-    \caption{Interpolazione Parabolica \cite{QuadraticInterpolationSpectralPeaks}}
+    \caption{Interpolazione Parabolica \citep{QuadraticInterpolationSpectralPeaks}}
     \label{fig:interpolazione_parabolica}
 \end{figure}
 È inoltre disponibile, sebbene disattivato di default, un modulo di regressione lineare che consente di compensare eventuali 

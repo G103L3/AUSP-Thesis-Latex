@@ -1,115 +1,217 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{33}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{akyildiz2006}
-I.~F. Akyildiz and E.~P. Stuntebeck, ``Wireless underground sensor networks: Research challenges,'' {\em Ad Hoc Networks}, vol.~4, no.~6, pp.~669--686, 2006.
+\bibitem[kno(2016)]{knowles-datasheet}
+Knowles sph0645lm4h-b mems microphone datasheet, 2016.
+\newblock URL \url{https://www.knowles.com}.
 
-\bibitem{jacksha2016}
-R.~Jacksha and C.~Zhou, ``Measurement of rf propagation around corners in underground mines and tunnels,'' {\em Transactions of the Society for Mining, Metallurgy, and Exploration}, vol.~340, no.~1, pp.~30--37, 2016.
+\bibitem[nor(2019)]{nordic-devzone}
+Q\&a: Using sph0645lm4h with nordic socs (i2s timing and osr), 2019.
+\newblock URL \url{https://devzone.nordicsemi.com}.
 
-\bibitem{Kinsler}
-L.~E. Kinsler, A.~R. Frey, A.~B. Coppens, and J.~V. Sanders, {\em Fundamentals of Acoustics}.
-\newblock Wiley, 4th~ed., 2000.
+\bibitem[ada(2020{\natexlab{a}})]{adafruit-guide}
+Adafruit learning system: I2s mems microphone breakout sph0645,
+  2020{\natexlab{a}}.
+\newblock URL
+  \url{https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout}.
 
-\bibitem{MorseIngard}
-P.~M. Morse and K.~U. Ingard, {\em Theoretical Acoustics}.
-\newblock Princeton University Press, 1986.
+\bibitem[ada(2020{\natexlab{b}})]{adafruit-product}
+Adafruit i2s mems microphone breakout - sph0645lm4h, 2020{\natexlab{b}}.
+\newblock URL \url{https://www.adafruit.com/product/3421}.
 
-\bibitem{Pierce}
-A.~D. Pierce, {\em Acoustics: An Introduction to Its Physical Principles and Applications}.
-\newblock Acoustical Society of America, 1989.
+\bibitem[dig(2020)]{digikey-sheet}
+Sph0645lm4h-b knowles datasheet and distributor page, 2020.
+\newblock URL
+  \url{https://www.digikey.com/en/products/detail/knowles/SPH0645LM4H-B/}.
 
-\bibitem{Heifetz2017ANL}
-A.~Heifetz, S.~Bakhtiari, X.~Huang, R.~Ponciroli, and R.~B. Vilim, ``First annual progress report on transmission of information by acoustic communication along metal pathways in nuclear facilities,'' anl/ne-17/30 technical report, Argonne National Laboratory, Nuclear Engineering Division, Argonne, Illinois, Sept.~30 2017.
-\newblock Prepared under contract DE-AC02-06CH11357, UChicago Argonne, LLC.
+\bibitem[esp(2020)]{esp32techref}
+Esp32 technical reference misc, 2020.
+\newblock URL
+  \url{https://www.espressif.com/sites/default/files/documentation/esp32_technical_reference_misc_en.pdf}.
 
-\bibitem{acoustic2024}
-M.~A. Al~Moshi {\em et~al.}, ``Wireless underground sensor communication using acoustic technology: A review,'' {\em Sensors}, 2024.
+\bibitem[Adafruit(2023)]{adafruit-guide-max98357}
+Adafruit.
+\newblock Adafruit max98357 i2s class-d mono amp - guide, 2023.
+\newblock URL
+  \url{https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp}.
+
+\bibitem[Akyildiz and Stuntebeck(2006)]{akyildiz2006}
+Ian~F. Akyildiz and Erich~P. Stuntebeck.
+\newblock Wireless underground sensor networks: Research challenges.
+\newblock \emph{Ad Hoc Networks}, 4\penalty0 (6):\penalty0 669--686, 2006.
+\newblock \doi{10.1016/j.adhoc.2006.03.004}.
+
+\bibitem[Al~Moshi et~al.(2024)]{acoustic2024}
+Md~Abir Al~Moshi et~al.
+\newblock Wireless underground sensor communication using acoustic technology:
+  A review.
+\newblock \emph{Sensors}, 2024.
+\newblock URL \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC11125261/}.
 \newblock Open access review on acoustic WUSNs.
 
-\bibitem{salam2023survey}
-A.~Salam {\em et~al.}, ``Taking wireless underground: A comprehensive summary,'' {\em ACM Computing Surveys}, 2023.
+\bibitem[Cooley and Tukey(1965)]{cooley1965fft}
+James~W. Cooley and John~W. Tukey.
+\newblock An algorithm for the machine calculation of complex fourier series.
+\newblock \emph{Mathematics of Computation}, 19\penalty0 (90):\penalty0
+  297--301, 1965.
+\newblock \doi{10.1090/S0025-5718-1965-0178586-1}.
 
-\bibitem{fishta2023inpipe}
-M.~Fishta, G.~Franceschinis, A.~Braglia, Alj, S.~Bagheri, and C.~Seceleanu, ``From radio to in-pipe acoustic communication for smart water networks,'' {\em Information}, vol.~14, no.~8, p.~435, 2023.
-
-\bibitem{heifetz2017pipes}
-A.~Heifetz and et~al., ``Transmission of information by acoustic communication along metal pathways,'' Tech. Rep. ANL-17/13, Argonne National Laboratory, 2017.
-
-\bibitem{farai2023mdpe}
-O.~O. Farai, J.~M. Muggleton, E.~Rustighi, and M.~J. Brennan, ``Analysis of acoustic signal propagation for reliable digital communication along mdpe pipes,'' {\em Applied Sciences}, vol.~13, no.~15, p.~8886, 2023.
-
-\bibitem{heifetz2020shear}
-A.~Heifetz and et~al., ``Transmission of images with ultrasonic elastic shear waves on pipes,'' Tech. Rep. ANL-20/35, Argonne National Laboratory, 2020.
-
-\bibitem{yang2020soil}
-S.~Yang, A.~Kalantari, S.~Markham, J.~Saniie, and F.~Kong, ``Development of an underground through-soil wireless acoustic communication system.'' Technical Report, University of Illinois Chicago, 2020.
-
-\bibitem{raza2020wuc}
-U.~Raza, A.~Salam, T.~Y. Al-Naffouri, and M.-S. Alouini, ``A survey on wireless underground communication with acoustic waves,'' {\em Signals}, vol.~1, no.~1, pp.~21--52, 2020.
-
-\bibitem{acm2023wusn}
-A.~Salam, U.~Raza, T.~Y. Al-Naffouri, and M.-S. Alouini, ``Wireless underground sensor networks: A comprehensive survey and tutorial,'' {\em ACM Computing Surveys}, vol.~55, no.~12, pp.~1--38, 2023.
-
-\bibitem{farai2021phd}
-O.~O. Farai, {\em Acoustic Communication in Polymeric Pipes}.
+\bibitem[Farai(2021)]{farai2021phd}
+O.~O. Farai.
+\newblock \emph{Acoustic Communication in Polymeric Pipes}.
 \newblock PhD thesis, University of Birmingham, 2021.
+\newblock URL \url{https://etheses.bham.ac.uk/id/eprint/11851/}.
 
-\bibitem{zheng2023mud}
-Z.~Zheng, J.~He, Y.~Li, X.~Liu, and B.~Han, ``Acoustic wave data transmission while drilling using drilling fluid channel,'' {\em IET Communications}, vol.~17, no.~5, pp.~593--602, 2023.
+\bibitem[Farai et~al.(2023)Farai, Muggleton, Rustighi, and
+  Brennan]{farai2023mdpe}
+O.~O. Farai, J.~M. Muggleton, E.~Rustighi, and M.~J. Brennan.
+\newblock Analysis of acoustic signal propagation for reliable digital
+  communication along mdpe pipes.
+\newblock \emph{Applied Sciences}, 13\penalty0 (15):\penalty0 8886, 2023.
+\newblock \doi{10.3390/app13158886}.
 
-\bibitem{shannon1949}
-C.~E. Shannon, ``Communication in the presence of noise,'' {\em Proceedings of the IRE}, vol.~37, no.~1, pp.~10--21, 1949.
+\bibitem[Fishta et~al.(2023)Fishta, Franceschinis, Braglia, Alj, Bagheri, and
+  Seceleanu]{fishta2023inpipe}
+Marenglen Fishta, Giorgia Franceschinis, Andrea Braglia, Alj, S.~Bagheri, and
+  Cristina Seceleanu.
+\newblock From radio to in-pipe acoustic communication for smart water
+  networks.
+\newblock \emph{Information}, 14\penalty0 (8):\penalty0 435, 2023.
+\newblock \doi{10.3390/info14080435}.
 
-\bibitem{zwicker1999psychoacoustics}
-E.~Zwicker and H.~Fastl, {\em Psychoacoustics: Facts and Models}.
-\newblock Springer, 2nd~ed., 1999.
+\bibitem[Heifetz et~al.(2017)Heifetz, Bakhtiari, Huang, Ponciroli, and
+  Vilim]{Heifetz2017ANL}
+A.~Heifetz, S.~Bakhtiari, X.~Huang, R.~Ponciroli, and R.~B. Vilim.
+\newblock First annual progress report on transmission of information by
+  acoustic communication along metal pathways in nuclear facilities.
+\newblock Anl/ne-17/30 technical report, Argonne National Laboratory, Nuclear
+  Engineering Division, Argonne, Illinois, September~30 2017.
+\newblock URL \url{https://publications.anl.gov/anlpubs/2018/01/138766.pdf}.
+\newblock Prepared under contract DE-AC02-06CH11357, UChicago Argonne, LLC.
 
-\bibitem{cooley1965fft}
-J.~W. Cooley and J.~W. Tukey, ``An algorithm for the machine calculation of complex fourier series,'' {\em Mathematics of Computation}, vol.~19, no.~90, pp.~297--301, 1965.
+\bibitem[Heifetz and et~al.(2017)]{heifetz2017pipes}
+Alexander Heifetz and et~al.
+\newblock Transmission of information by acoustic communication along metal
+  pathways.
+\newblock Technical Report ANL-17/13, Argonne National Laboratory, 2017.
 
-\bibitem{esp32techref}
-Espressif Systems, {\em ESP32 Technical Reference Manual}, 2020.
+\bibitem[Heifetz and et~al.(2020)]{heifetz2020shear}
+Alexander Heifetz and et~al.
+\newblock Transmission of images with ultrasonic elastic shear waves on pipes.
+\newblock Technical Report ANL-20/35, Argonne National Laboratory, 2020.
 
-\bibitem{QuadraticInterpolationSpectralPeaks}
-J.~Smith and X.~Serra, ``Quadratic interpolation of spectral peaks.'' Online, CCRMA, Stanford University, n.d.
-\newblock Available at \url{https://ccrma.stanford.edu/\~jos/sasp/Quadratic_Interpolation_Spectral_Peaks.html}.
+\bibitem[Instruments(2016)]{texas-classd}
+Texas Instruments.
+\newblock Class-d audio amplifier basics, 2016.
+\newblock URL \url{https://www.ti.com/lit/an/sloa201/sloa201.pdf}.
+\newblock Application Report.
 
-\bibitem{Espressif2024}
-E.~Systems, {\em ESP32 Series Datasheet}, 2024.
-\newblock Disponibile su: \url{https://www.espressif.com/en/products/socs/esp32}.
-
-\bibitem{Patti2024}
-D.~Patti, {\em Introduction to Microcontrollers - Communication Interfaces}.
-\newblock Catania, Italia: Self-published, 2024.
-
-\bibitem{adafruit-guide}
-Adafruit Industries, {\em Adafruit Learning System: I2S MEMS Microphone Breakout SPH0645}, 2020.
-
-\bibitem{adafruit-product}
-``Adafruit i2s mems microphone breakout - sph0645lm4h,'' 2020.
-
-\bibitem{nordic-devzone}
-``Q\&a: Using sph0645lm4h with nordic socs (i2s timing and osr),'' 2019.
-
-\bibitem{knowles-datasheet}
-Knowles, {\em Knowles SPH0645LM4H-B MEMS Microphone Datasheet}, 2016.
-
-\bibitem{digikey-sheet}
-``Sph0645lm4h-b knowles datasheet and distributor page,'' 2020.
-
-\bibitem{mems-acoustics}
-D.~Liu {\em et~al.}, {\em Acoustic MEMS: Microphones and Micromachined Loudspeakers}.
-\newblock Springer, 2014.
-
-\bibitem{maxim-datasheet}
-M.~Integrated, {\em MAX98357A: DirectDrive, Mono, Class D Amplifier with I2S Interface}, 2015.
+\bibitem[Integrated(2015)]{maxim-datasheet}
+Maxim Integrated.
+\newblock Max98357a: Directdrive, mono, class d amplifier with i2s interface,
+  2015.
+\newblock URL \url{https://datasheets.maximintegrated.com/en/ds/MAX98357A.pdf}.
 \newblock Datasheet ufficiale.
 
-\bibitem{adafruit-guide-max98357}
-Adafruit, ``Adafruit max98357 i2s class-d mono amp - guide,'' 2023.
+\bibitem[Jacksha and Zhou(2016)]{jacksha2016}
+R.~Jacksha and C.~Zhou.
+\newblock Measurement of rf propagation around corners in underground mines and
+  tunnels.
+\newblock \emph{Transactions of the Society for Mining, Metallurgy, and
+  Exploration}, 340\penalty0 (1):\penalty0 30--37, 2016.
+\newblock \doi{10.19150/trans.7324}.
+\newblock URL \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC5472338/}.
 
-\bibitem{texas-classd}
-T.~Instruments, {\em Class-D Audio Amplifier Basics}, 2016.
-\newblock Application Report.
+\bibitem[Kinsler et~al.(2000)Kinsler, Frey, Coppens, and Sanders]{Kinsler}
+L.~E. Kinsler, A.~R. Frey, A.~B. Coppens, and J.~V. Sanders.
+\newblock \emph{Fundamentals of Acoustics}.
+\newblock Wiley, 4th edition, 2000.
+
+\bibitem[Liu et~al.(2014)]{mems-acoustics}
+Dejan Liu et~al.
+\newblock \emph{Acoustic MEMS: Microphones and Micromachined Loudspeakers}.
+\newblock Springer, 2014.
+
+\bibitem[Morse and Ingard(1986)]{MorseIngard}
+P.~M. Morse and K.~U. Ingard.
+\newblock \emph{Theoretical Acoustics}.
+\newblock Princeton University Press, 1986.
+
+\bibitem[Patti(2024)]{Patti2024}
+D.~Patti.
+\newblock \emph{Introduction to Microcontrollers - Communication Interfaces}.
+\newblock Self-published, Catania, Italia, 2024.
+
+\bibitem[Pierce(1989)]{Pierce}
+A.~D. Pierce.
+\newblock \emph{Acoustics: An Introduction to Its Physical Principles and
+  Applications}.
+\newblock Acoustical Society of America, 1989.
+
+\bibitem[Raza et~al.(2020)Raza, Salam, Al-Naffouri, and Alouini]{raza2020wuc}
+Usman Raza, Abdullah Salam, Tareq~Y. Al-Naffouri, and Mohamed-Slim Alouini.
+\newblock A survey on wireless underground communication with acoustic waves.
+\newblock \emph{Signals}, 1\penalty0 (1):\penalty0 21--52, 2020.
+\newblock \doi{10.3390/signals1010003}.
+
+\bibitem[Salam et~al.(2023{\natexlab{a}})]{salam2023survey}
+A.~Salam et~al.
+\newblock Taking wireless underground: A comprehensive summary.
+\newblock \emph{ACM Computing Surveys}, 2023{\natexlab{a}}.
+\newblock \doi{10.1145/3587934}.
+
+\bibitem[Salam et~al.(2023{\natexlab{b}})Salam, Raza, Al-Naffouri, and
+  Alouini]{acm2023wusn}
+Abdullah Salam, Usman Raza, Tareq~Y. Al-Naffouri, and Mohamed-Slim Alouini.
+\newblock Wireless underground sensor networks: A comprehensive survey and
+  tutorial.
+\newblock \emph{ACM Computing Surveys}, 55\penalty0 (12):\penalty0 1--38,
+  2023{\natexlab{b}}.
+\newblock \doi{10.1145/3577191}.
+
+\bibitem[Shannon(1949)]{shannon1949}
+Claude~E. Shannon.
+\newblock Communication in the presence of noise.
+\newblock \emph{Proceedings of the IRE}, 37\penalty0 (1):\penalty0 10--21,
+  1949.
+\newblock \doi{10.1109/JRPROC.1949.232969}.
+
+\bibitem[Smith and Serra(n.d.)]{QuadraticInterpolationSpectralPeaks}
+J.O. Smith and X.~Serra.
+\newblock Quadratic interpolation of spectral peaks.
+\newblock misc, CCRMA, Stanford University, n.d.
+\newblock Available at
+  \url{https://ccrma.stanford.edu/\~jos/sasp/Quadratic_Interpolation_Spectral_Peaks.html}.
+
+\bibitem[Systems(2024)]{Espressif2024}
+Espressif Systems.
+\newblock Esp32 series datasheet, 2024.
+\newblock Disponibile su:
+  \url{https://www.espressif.com/en/products/socs/esp32}.
+
+\bibitem[Yang et~al.(2020)Yang, Kalantari, Markham, Saniie, and
+  Kong]{yang2020soil}
+S.~Yang, A.~Kalantari, S.~Markham, J.~Saniie, and F.~Kong.
+\newblock Development of an underground through-soil wireless acoustic
+  communication system.
+\newblock Technical Report, University of Illinois Chicago, 2020.
+\newblock URL \url{https://indico.cern.ch/event/923808/contributions/3896723/}.
+
+\bibitem[Zheng et~al.(2023)Zheng, He, Li, Liu, and Han]{zheng2023mud}
+Z.~Zheng, J.~He, Y.~Li, X.~Liu, and B.~Han.
+\newblock Acoustic wave data transmission while drilling using drilling fluid
+  channel.
+\newblock \emph{IET Communications}, 17\penalty0 (5):\penalty0 593--602, 2023.
+\newblock \doi{10.1049/cmu2.12551}.
+
+\bibitem[Zwicker and Fastl(1999)]{zwicker1999psychoacoustics}
+Eberhard Zwicker and Hugo Fastl.
+\newblock \emph{Psychoacoustics: Facts and Models}.
+\newblock Springer, 2nd edition, 1999.
+\newblock \doi{10.1007/978-3-662-09562-1}.
 
 \end{thebibliography}

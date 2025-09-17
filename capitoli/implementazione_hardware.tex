@@ -16,7 +16,7 @@ il più possibile con l’ambiente esterno, gestendo numerosi scambi fra le peri
 
 L’ESP32, sviluppato da Espressif Systems, rappresenta un microcontrollore avanzato con architettura dual-core Tensilica LX6 a 32 bit
  (alcune varianti hanno anche core single-core o LX7), integrando al suo interno Wi-Fi e Bluetooth a basso consumo. Questa caratteristica
-  lo rende particolarmente adatto per applicazioni IoT (Internet of Things), domotica e sistemi embedded complessi (Espressif, 2024 \cite{Espressif2024}).
+  lo rende particolarmente adatto per applicazioni IoT (Internet of Things), domotica e sistemi embedded complessi (Espressif, 2024 \citep{Espressif2024}).
 
 \subsubsection{Famiglie di ESP32}
 I microcontrollori sono suddivisi in famiglie a seconda del processore e delle periferiche integrate. Nel caso dell’ESP32,
@@ -25,7 +25,7 @@ Queste versioni condividono la stessa architettura di base ma differiscono per r
  supporto a periferiche aggiuntive o funzionalità avanzate come acceleratori AI.  
 
 La scelta del modulo da utilizzare deve essere fatta non sulla base delle prestazioni massime, ma dell’ottimalità rispetto al
- progetto in questione (Patti, 2024 \cite{Patti2024}).
+ progetto in questione (Patti, 2024 \citep{Patti2024}).
 
 \subsubsection{Componenti hardware}
 Ogni ESP32 integra al suo interno non solo la CPU, ma anche le memorie e una grande quantità di periferiche digitali e analogiche, 
@@ -50,7 +50,7 @@ L’ESP32 tipicamente dispone di:
     \item opzionalmente, PSRAM esterna fino a 8 MB, utile per applicazioni che richiedono elaborazioni multimediali o server web embedded.
 \end{itemize}
 
-Rispetto ad altre schede, l’ESP32 si distingue per la disponibilità di memoria e per la presenza di connettività wireless integrata, rendendolo una soluzione più completa per progetti IoT e sistemi embedded avanzati (Patti, 2024 \cite{Patti2024}; Espressif, 2024 \cite{Espressif2024}).
+Rispetto ad altre schede, l’ESP32 si distingue per la disponibilità di memoria e per la presenza di connettività wireless integrata, rendendolo una soluzione più completa per progetti IoT e sistemi embedded avanzati (Patti, 2024 \citep{Patti2024}; Espressif, 2024 \citep{Espressif2024}).
 
 \subsection{Periferiche di Input/Output}
 Le periferiche di Input/Output (I/O) sono componenti essenziali che permettono al microcontrollore di interagire con il mondo esterno.
@@ -63,9 +63,9 @@ L'utilizzo di componenti a marchio Adafruit riduce i rischi di incompatibilità 
 
 \subsubsection{Microfono MEMS I2S digitale Adafruit -- SPH0645LM4H}
 \label{subsec:mic}
-Il breakout Adafruit (cod. 3421) monta il microfono MEMS digitale \textbf{Knowles SPH0645LM4H-B}, bottom–port, con uscita \textbf{I$^2$S} \cite{adafruit-guide,adafruit-product}. 
-È un dispositivo \emph{slave} che richiede dal master le linee di clock (\texttt{BCLK}, \texttt{LRCLK}) \cite{nordic-devzone}. 
-Fornisce direttamente campioni PCM a 24 bit (con 18 bit effettivi), evitando stadi analogici esterni \cite{knowles-datasheet}.
+Il breakout Adafruit (cod. 3421) monta il microfono MEMS digitale \textbf{Knowles SPH0645LM4H-B}, bottom–port, con uscita \textbf{I$^2$S} \citep{adafruit-guide,adafruit-product}. 
+È un dispositivo \emph{slave} che richiede dal master le linee di clock (\texttt{BCLK}, \texttt{LRCLK}) \citep{nordic-devzone}. 
+Fornisce direttamente campioni PCM a 24 bit (con 18 bit effettivi), evitando stadi analogici esterni \citep{knowles-datasheet}.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{adafruit_mems.png}
@@ -75,19 +75,19 @@ Fornisce direttamente campioni PCM a 24 bit (con 18 bit effettivi), evitando sta
 
 \paragraph{Caratteristiche principali.}
 \begin{itemize}
-  \item Alimentazione: \SIrange{1.62}{3.6}{V}, logica \SI{3.3}{V}, tipico consumo \SI{600}{\micro A} \cite{digikey-sheet}.
+  \item Alimentazione: \SIrange{1.62}{3.6}{V}, logica \SI{3.3}{V}, tipico consumo \SI{600}{\micro A} \citep{digikey-sheet}.
   \item Interfaccia: I$^2$S, pin \texttt{BCLK}, \texttt{LRCLK}, \texttt{DOUT}, \texttt{SEL}, più \texttt{3V} e \texttt{GND}.
-  \item Formato dati: parole a 24 bit (MSB first, complemento a due), 18 bit utili, oversampling ratio (OSR) = 64 \cite{knowles-datasheet}.
-  \item Prestazioni: SNR tip. \SI{65}{dB(A)}, AOP \SI{120}{dB\,SPL}, sensibilità $\sim -26$ dBFS @ \SI{94}{dB\,SPL} \cite{knowles-datasheet}.
+  \item Formato dati: parole a 24 bit (MSB first, complemento a due), 18 bit utili, oversampling ratio (OSR) = 64 \citep{knowles-datasheet}.
+  \item Prestazioni: SNR tip. \SI{65}{dB(A)}, AOP \SI{120}{dB\,SPL}, sensibilità $\sim -26$ dBFS @ \SI{94}{dB\,SPL} \citep{knowles-datasheet}.
 \end{itemize}
 
 \paragraph{Pinout e collegamenti.} 
 Due moduli possono essere usati in stereo condividendo \texttt{BCLK}, \texttt{LRCLK}, \texttt{DOUT}; \texttt{SEL} basso/alto definisce L/R. 
-In modalità mono basta un solo modulo con \texttt{SEL} a GND (Left di default) \cite{adafruit-guide}.
+In modalità mono basta un solo modulo con \texttt{SEL} a GND (Left di default) \citep{adafruit-guide}.
 
 \paragraph{Interfaccia I$^2$S.} 
 Il microfono trasmette in formato \emph{Philips}: ogni semiperiodo di \texttt{LRCLK} contiene una parola da 24 bit. 
-La relazione fondamentale è $\mathrm{BCLK}=64f_s$ \cite{nordic-devzone}. 
+La relazione fondamentale è $\mathrm{BCLK}=64f_s$ \citep{nordic-devzone}. 
 Tipici: \SI{3.072}{MHz} per \SI{48}{kHz}, \SI{2.8224}{MHz} per \SI{44.1}{kHz}.
 
 \paragraph{Catena del segnale interna.}
@@ -100,13 +100,13 @@ Tipici: \SI{3.072}{MHz} per \SI{48}{kHz}, \SI{2.8224}{MHz} per \SI{44.1}{kHz}.
 \end{enumerate}
 
 \paragraph{Fondamenti fisici.}
-La pressione $p(t)$ agisce sul diaframma (massa $m$, molla $k$, smorzamento $b$) \cite{mems-acoustics}:
+La pressione $p(t)$ agisce sul diaframma (massa $m$, molla $k$, smorzamento $b$) \citep{mems-acoustics}:
 \[
 m\ddot{x}+b\dot{x}+kx=S\,p(t)
 \]
 La variazione di capacità è $\Delta C/C_0 \approx x/d_0$, con risonanza a $\omega_0=\sqrt{k/m}$. 
 Il rumore complessivo deriva da contributi termico–meccanici, elettronici e quantizzazione. 
-Il back–volume e la porta acustica modellano la risposta in frequenza (roll–off alle basse, ondulazioni agli alti) \cite{mems-acoustics}.
+Il back–volume e la porta acustica modellano la risposta in frequenza (roll–off alle basse, ondulazioni agli alti) \citep{mems-acoustics}.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.4\textwidth]{adafruit_diaframma.png}
@@ -114,19 +114,20 @@ Il back–volume e la porta acustica modellano la risposta in frequenza (roll–
   \label{fig:adafruit_diaframma}
   \end{figure}
 
-\paragraph{Limiti.} Non tollera \SI{5}{V}, banda garantita $\sim$\SI{20}{Hz}--\SI{10}{kHz} (utilizzabile fino a $\sim$\SI{15}{kHz} secondo Adafruit) \cite{adafruit-product}, OSR fisso (meno flessibile di PDM).
+\paragraph{Limiti.} Non tollera \SI{5}{V}, banda garantita $\sim$\SI{20}{Hz}--\SI{10}{kHz} (utilizzabile fino a $\sim$\SI{15}{kHz} secondo Adafruit) \citep{adafruit-product}, OSR fisso (meno flessibile di PDM).
 
 \paragraph{Relazione dBFS--SPL.}
-\SI{94}{dB\,SPL} = \SI{1}{Pa} $\Rightarrow$ $\approx -26$ dBFS RMS \cite{knowles-datasheet}. 
+\SI{94}{dB\,SPL} = \SI{1}{Pa} $\Rightarrow$ $\approx -26$ dBFS RMS \citep{knowles-datasheet}. 
 L’AOP a \SI{120}{dB\,SPL} ($\sim$\SI{20}{Pa}) indica il massimo senza distorsione significativa.
 
 
 \subsubsection{Adafruit MAX98357A I$^2$S Amplificatore Classe-D}
+\label{subsec:amplificatore}
 
 Il breakout Adafruit basato sul chip \textbf{MAX98357A} è un amplificatore audio digitale in classe D, in grado di convertire direttamente un flusso
  I$^2$S in segnale audio analogico amplificato per pilotare altoparlanti a bassa impedenza. 
 La caratteristica principale è l’eliminazione della necessità di un DAC esterno: il MAX98357A integra al suo interno la conversione digitale-analogica, 
-il filtraggio, e la sezione di potenza \cite{maxim-datasheet,adafruit-guide-max98357}.
+il filtraggio, e la sezione di potenza \citep{maxim-datasheet,adafruit-guide-max98357}.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{adafruit_max.png}
@@ -139,7 +140,7 @@ il filtraggio, e la sezione di potenza \cite{maxim-datasheet,adafruit-guide-max9
   \item \textbf{Potenza d’uscita}: fino a \SI{3.2}{W} su \SI{4}{\ohm} a \SI{5}{V}, THD+N $\approx$ \SI{1}{\%}.
   \item \textbf{Interfaccia}: I$^2$S standard (\texttt{BCLK}, \texttt{LRCLK}, \texttt{DIN}); pin aggiuntivi per modalità (\texttt{GAIN}, \texttt{SD}, \texttt{DMP}).
   \item \textbf{Efficienza}: superiore all’$\SI{85}{\%}$ grazie all’architettura in classe D.
-  \item \textbf{Gamma dinamica}: $\approx \SI{98}{dB}$, con rumore di fondo contenuto \cite{maxim-datasheet}.
+  \item \textbf{Gamma dinamica}: $\approx \SI{98}{dB}$, con rumore di fondo contenuto \citep{maxim-datasheet}.
 \end{itemize}
 
 \paragraph{Funzionamento.}
@@ -157,7 +158,7 @@ Il MAX98357A riceve un flusso I$^2$S in formato PCM (\SI{16}{}, \SI{24}{} o \SI{
   \label{fig:max_diagram}
   \end{figure}
 \paragraph{Motivazioni fisiche del funzionamento.}
-L’amplificatore in classe D si basa su modulazione a \emph{duty cycle} dei MOSFET: il segnale analogico ricostruito corrisponde al valore medio del PWM. L’elevata efficienza deriva dal fatto che i transistor lavorano quasi sempre in saturazione o interdizione, riducendo le perdite per dissipazione. L’integrazione del DAC sigma–delta consente un noise-shaping che sposta il rumore di quantizzazione fuori banda audio, garantendo un’ottima qualità percepita \cite{texas-classd}.
+L’amplificatore in classe D si basa su modulazione a \emph{duty cycle} dei MOSFET: il segnale analogico ricostruito corrisponde al valore medio del PWM. L’elevata efficienza deriva dal fatto che i transistor lavorano quasi sempre in saturazione o interdizione, riducendo le perdite per dissipazione. L’integrazione del DAC sigma–delta consente un noise-shaping che sposta il rumore di quantizzazione fuori banda audio, garantendo un’ottima qualità percepita \citep{texas-classd}.
 
 \section{Progettazione digitale}
 Per la progettazione digitale del sistema è stato utilizzato il software \textbf{Fritzing}, un tool open-source
@@ -241,7 +242,7 @@ Per la realizzazione del circuito elettronico sono stati utilizzati due breakout
   Questo a seguito di alcuni test dove si è verificato che per qualche difformita nel IC il canale destro garantiva maggiore precisione.\\
   
   \paragraph{Dettagli elettrici e motivazioni delle scelte.}
-  Il microfono Adafruit SPH0645LM4H funziona solo a 3.3 V: non sono previsti level shifter e un’alimentazione a 5 V lo danneggerebbe \cite{digikey-sheet}. L’assorbimento è dell’ordine dei mA, quindi l’uscita 3V3 dell’ESP32 è più che sufficiente \cite{digikey-sheet}.
+  Il microfono Adafruit SPH0645LM4H funziona solo a 3.3 V: non sono previsti level shifter e un’alimentazione a 5 V lo danneggerebbe \citep{digikey-sheet}. L’assorbimento è dell’ordine dei mA, quindi l’uscita 3V3 dell’ESP32 è più che sufficiente \citep{digikey-sheet}.
     
   Per l’ESP32 si è scelto \textbf{GPIO14 come BCLK, GPIO25 come LRCLK e GPIO32} per il dato in ingresso.
     
@@ -315,7 +316,7 @@ Essendo un amplificatore in classe D capace di pilotare piccoli altoparlanti (4�
  non è necessaria ulteriore elettronica per il collegamento all'altoparlante.
 
 \paragraph{Dettagli elettrici e motivazioni delle scelte.}
-Il MAX98357A accetta alimentazione sia a 3.3 V che a 5 V \cite{maxim-datasheet}: in questo schema si è scelto di usare il \textbf{3V3 dell’ESP32} per semplicità,
+Il MAX98357A accetta alimentazione sia a 3.3 V che a 5 V \citep{maxim-datasheet}: in questo schema si è scelto di usare il \textbf{3V3 dell’ESP32} per semplicità,
  tenendo conto che ciò limita la potenza massima erogabile all’altoparlante e considerando che in
   una reale applicazione a scopo industriale si utilizzerebbero amplificatori da \~ 230 V.  
 Il consumo è nell’ordine di poche decine di mA a volume medio, quindi l’uscita 3V3 dell’ESP32 è sufficiente in prototipazione.  
