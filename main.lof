@@ -30,3 +30,9 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Swapping degli array di campioni}}{44}{figure.5.1}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Compressione ed impacchettamento mediante Algoritmo Run-Length S= Silenzio}}{51}{figure.5.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Trend del bitrate utile e della percentuale di ritrasmissioni misurati nelle tre casistiche di prova}}{56}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Sequenza temporale semplificata con l'unica ritrasmissione registrata durante la fase di configurazione}}{56}{figure.6.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Planimetria schematica del corridoio sotterraneo con indicazione dei punti di misura. La porta sul lato sinistro è stata mantenuta aperta durante la prova e consente l'accesso alla camera laterale.}}{59}{figure.7.1}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Andamento medio dei livelli sonori misurati lungo il corridoio e corrispondente packet loss. La linea blu mostra la perdita quasi lineare nel tratto rettilineo, la linea rossa il crollo dopo la curva a novanta gradi, la linea tratteggiata il rumore di fondo e le curve verdi e arancioni riportano il tasso di pacchetti persi rilevato con il fonometro accanto alla scheda ricevente.}}{60}{figure.7.2}%
