@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: plainnat.bst
+A level-1 auxiliary file: capitoli/introduzione.aux
+A level-1 auxiliary file: capitoli/stato_arte.aux
+A level-1 auxiliary file: capitoli/design_protocollo.aux
+A level-1 auxiliary file: capitoli/requisiti.aux
+A level-1 auxiliary file: capitoli/implementazione_hardware.aux
+A level-1 auxiliary file: capitoli/implementazione_software.aux
+A level-1 auxiliary file: capitoli/sperimentazione_protocollo.aux
+A level-1 auxiliary file: capitoli/sperimentazione_propagazione_suono.aux
+A level-1 auxiliary file: capitoli/sviluppi_futuri.aux
+A level-1 auxiliary file: capitoli/conclusioni.aux
+A level-1 auxiliary file: appendici/appendiceA.aux
+Database file #1: bibliografia.bib
+Warning--to sort, need author or key in esp32techref
+Warning--to sort, need author or key in adafruit-guide
+Warning--to sort, need author or key in adafruit-product
+Warning--to sort, need author or key in nordic-devzone
+Warning--to sort, need author or key in knowles-datasheet
+Warning--to sort, need author or key in digikey-sheet
+You've used 35 entries,
+            2773 wiz_defined-function locations,
+            822 strings with 11273 characters,
+and the built_in function-call counts, 13807 in all, are:
+= -- 1244
+> -- 761
+< -- 22
++ -- 268
+- -- 231
+* -- 1076
+:= -- 2113
+add.period$ -- 123
+call.type$ -- 35
+change.case$ -- 175
+chr.to.int$ -- 33
+cite$ -- 82
+duplicate$ -- 630
+empty$ -- 1173
+format.name$ -- 281
+if$ -- 2903
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 25
+newline$ -- 201
+num.names$ -- 116
+pop$ -- 389
+preamble$ -- 1
+purify$ -- 144
+quote$ -- 0
+skip$ -- 511
+stack$ -- 0
+substring$ -- 276
+swap$ -- 39
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 355
+warning$ -- 6
+while$ -- 106
+width$ -- 0
+write$ -- 482
+(There were 6 warnings)

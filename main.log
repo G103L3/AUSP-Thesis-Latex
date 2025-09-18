@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.3)  18 SEP 2025 02:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.3)  18 SEP 2025 19:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -937,7 +937,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 
 LaTeX Warning: Label `fig:esempio' multiply defined.
 
-) (./capitoli/design_protocollo.aux) (./capitoli/requisiti.aux) (./capitoli/implementazione_hardware.aux) (./capitoli/implementazione_software.aux) (./capitoli/sperimentazione_protocollo.aux) (./capitoli/sperimentazione_propagazione_suono.aux) (./capitoli/sviluppi_futuri.aux) (./capitoli/conclusioni.aux) (./appendici/appendiceA.aux) (./appendici/appendiceB.aux))
+) (./capitoli/design_protocollo.aux) (./capitoli/requisiti.aux) (./capitoli/implementazione_hardware.aux) (./capitoli/implementazione_software.aux) (./capitoli/sperimentazione_protocollo.aux) (./capitoli/sperimentazione_propagazione_suono.aux) (./capitoli/sviluppi_futuri.aux) (./capitoli/conclusioni.aux) (./appendici/appendiceA.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 6.
@@ -1056,7 +1056,7 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 14.
-<immagini/corner_loss_em.jpg, id=309, 385.44pt x 410.9754pt>
+<immagini/corner_loss_em.jpg, id=319, 385.44pt x 410.9754pt>
 File: immagini/corner_loss_em.jpg Graphic file (type jpg)
 <use immagini/corner_loss_em.jpg>
 Package pdftex.def Info: immagini/corner_loss_em.jpg  used on input line 18.
@@ -1084,7 +1084,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 27.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 27.
-<immagini/corner_em.jpg, id=367, 289.08pt x 252.4632pt>
+<immagini/corner_em.jpg, id=377, 289.08pt x 252.4632pt>
 File: immagini/corner_em.jpg Graphic file (type jpg)
 <use immagini/corner_em.jpg>
 Package pdftex.def Info: immagini/corner_em.jpg  used on input line 40.
@@ -1094,7 +1094,7 @@ Package pdftex.def Info: immagini/corner_em.jpg  used on input line 40.
 
  (./capitoli/design_protocollo.tex
 Capitolo 3.
-<immagini/layers.png, id=459, 1027.84pt x 1027.84pt>
+<immagini/layers.png, id=469, 1027.84pt x 1027.84pt>
 File: immagini/layers.png Graphic file (type png)
 <use immagini/layers.png>
 Package pdftex.def Info: immagini/layers.png  used on input line 6.
@@ -1118,13 +1118,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-<immagini/audacity_spectrum.png, id=472, 3694.80376pt x 752.8125pt>
+<immagini/audacity_spectrum.png, id=482, 3694.80376pt x 752.8125pt>
 File: immagini/audacity_spectrum.png Graphic file (type png)
 <use immagini/audacity_spectrum.png>
 Package pdftex.def Info: immagini/audacity_spectrum.png  used on input line 46.
 (pdftex.def)             Requested size: 350.99762pt x 71.50644pt.
 [12]
-<immagini/fft_spectrum.png, id=484, 1248.665pt x 756.8275pt>
+<immagini/fft_spectrum.png, id=494, 1248.665pt x 756.8275pt>
 File: immagini/fft_spectrum.png Graphic file (type png)
 <use immagini/fft_spectrum.png>
 Package pdftex.def Info: immagini/fft_spectrum.png  used on input line 68.
@@ -1134,13 +1134,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--180
 
  []
 
-<immagini/fft_regression_check.png, id=505, 1282.7925pt x 1011.78pt>
+<immagini/fft_regression_check.png, id=515, 1282.7925pt x 1011.78pt>
 File: immagini/fft_regression_check.png Graphic file (type png)
 <use immagini/fft_regression_check.png>
 Package pdftex.def Info: immagini/fft_regression_check.png  used on input line 189.
 (pdftex.def)             Requested size: 253.49762pt x 199.92856pt.
 [15]
-<immagini/local_peak.png, id=512, 1027.84pt x 1027.84pt>
+<immagini/local_peak.png, id=522, 1027.84pt x 1027.84pt>
 File: immagini/local_peak.png Graphic file (type png)
 <use immagini/local_peak.png>
 Package pdftex.def Info: immagini/local_peak.png  used on input line 206.
@@ -1151,7 +1151,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--209
  []
 
 [16 <./immagini/fft_regression_check.png>]
-<immagini/parabolic_interpolation.png, id=518, 1248.665pt x 894.34125pt>
+<immagini/parabolic_interpolation.png, id=528, 1248.665pt x 894.34125pt>
 File: immagini/parabolic_interpolation.png Graphic file (type png)
 <use immagini/parabolic_interpolation.png>
 Package pdftex.def Info: immagini/parabolic_interpolation.png  used on input line 222.
@@ -1178,7 +1178,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 236--244
 
  []
 
-<immagini/window_listening.png, id=532, 1027.84pt x 1027.84pt>
+<immagini/window_listening.png, id=542, 1027.84pt x 1027.84pt>
 File: immagini/window_listening.png Graphic file (type png)
 <use immagini/window_listening.png>
 Package pdftex.def Info: immagini/window_listening.png  used on input line 256.
@@ -1201,13 +1201,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 398--399
  []
 
 [21] [22]
-<immagini/fifo_input_output.png, id=571, 482.80376pt x 282.05376pt>
+<immagini/fifo_input_output.png, id=581, 482.80376pt x 282.05376pt>
 File: immagini/fifo_input_output.png Graphic file (type png)
 <use immagini/fifo_input_output.png>
 Package pdftex.def Info: immagini/fifo_input_output.png  used on input line 457.
 (pdftex.def)             Requested size: 195.0pt x 113.91696pt.
  [23 <./immagini/fifo_input_output.png>]
-<immagini/token_diagram.png, id=578, 594.22pt x 472.76625pt>
+<immagini/token_diagram.png, id=589, 594.22pt x 472.76625pt>
 File: immagini/token_diagram.png Graphic file (type png)
 <use immagini/token_diagram.png>
 Package pdftex.def Info: immagini/token_diagram.png  used on input line 480.
@@ -1227,7 +1227,7 @@ Overfull \hbox (8.80737pt too wide) in paragraph at lines 559--568
 \T1/ntxtlf/m/n/12 no di-gi-ta-re un co-man-do tra-mi-te l'in-ter-fac-cia \T1/ntxtlf/b/n/12 Blynk.io\T1/ntxtlf/m/n/12 , cor-ri-spon-de ad un'\T1/ntxtlf/b/n/12 operazione
  []
 
-<immagini/blynk_interface.png, id=593, 1953.2975pt x 1829.83624pt>
+<immagini/blynk_interface.png, id=603, 1953.2975pt x 1829.83624pt>
 File: immagini/blynk_interface.png Graphic file (type png)
 <use immagini/blynk_interface.png>
 Package pdftex.def Info: immagini/blynk_interface.png  used on input line 571.
@@ -1250,13 +1250,13 @@ Capitolo 4.
 
 
 ]
-<immagini/esp32_block_diagram.png, id=611, 957.5775pt x 597.23125pt>
+<immagini/esp32_block_diagram.png, id=621, 957.5775pt x 597.23125pt>
 File: immagini/esp32_block_diagram.png Graphic file (type png)
 <use immagini/esp32_block_diagram.png>
 Package pdftex.def Info: immagini/esp32_block_diagram.png  used on input line 37.
 (pdftex.def)             Requested size: 272.99881pt x 170.26735pt.
  [28 <./immagini/esp32_block_diagram.png>]
-<immagini/adafruit_mems.png, id=632, 1003.75pt x 501.875pt>
+<immagini/adafruit_mems.png, id=642, 1003.75pt x 501.875pt>
 File: immagini/adafruit_mems.png Graphic file (type png)
 <use immagini/adafruit_mems.png>
 Package pdftex.def Info: immagini/adafruit_mems.png  used on input line 71.
@@ -1265,19 +1265,19 @@ Package pdftex.def Info: immagini/adafruit_mems.png  used on input line 71.
 Package textcomp Info: Symbol \textmu not provided by
 (textcomp)             font family ntxtlf in TS1 encoding.
 (textcomp)             Default family used instead on input line 78.
-<immagini/adafruit_diaframma.png, id=658, 1027.84pt x 1027.84pt>
+<immagini/adafruit_diaframma.png, id=668, 1027.84pt x 1027.84pt>
 File: immagini/adafruit_diaframma.png Graphic file (type png)
 <use immagini/adafruit_diaframma.png>
 Package pdftex.def Info: immagini/adafruit_diaframma.png  used on input line 112.
 (pdftex.def)             Requested size: 155.99762pt x 155.98863pt.
  [30{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<immagini/adafruit_max.png, id=684, 1158.3275pt x 434.62375pt>
+<immagini/adafruit_max.png, id=694, 1158.3275pt x 434.62375pt>
 File: immagini/adafruit_max.png Graphic file (type png)
 <use immagini/adafruit_max.png>
 Package pdftex.def Info: immagini/adafruit_max.png  used on input line 133.
 (pdftex.def)             Requested size: 272.99881pt x 102.42839pt.
  [31 <./immagini/adafruit_diaframma.png> <./immagini/adafruit_max.png>]
-<immagini/max_diagram.png, id=702, 723.70375pt x 201.75375pt>
+<immagini/max_diagram.png, id=712, 723.70375pt x 201.75375pt>
 File: immagini/max_diagram.png Graphic file (type png)
 <use immagini/max_diagram.png>
 Package pdftex.def Info: immagini/max_diagram.png  used on input line 156.
@@ -1304,7 +1304,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 180.
 
-<immagini/board_microfono.png, id=722, 2353.79375pt x 751.80875pt>
+<immagini/board_microfono.png, id=732, 2353.79375pt x 751.80875pt>
 File: immagini/board_microfono.png Graphic file (type png)
 <use immagini/board_microfono.png>
 Package pdftex.def Info: immagini/board_microfono.png  used on input line 188.
@@ -1341,22 +1341,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 252.
 
-<immagini/board_amp.png, id=743, 1927.2pt x 520.94624pt>
+<immagini/board_amp.png, id=753, 1927.2pt x 520.94624pt>
 File: immagini/board_amp.png Graphic file (type png)
 <use immagini/board_amp.png>
 Package pdftex.def Info: immagini/board_amp.png  used on input line 263.
 (pdftex.def)             Requested size: 390.0pt x 105.4195pt.
 [35 <./immagini/board_amp.png>]
-
-LaTeX Warning: Reference `sec:filtraggio' on page 36 undefined on input line 330.
-
-<immagini/board_led.png, id=756, 2358.8125pt x 896.34875pt>
+<immagini/board_led.png, id=767, 2358.8125pt x 896.34875pt>
 File: immagini/board_led.png Graphic file (type png)
 <use immagini/board_led.png>
 Package pdftex.def Info: immagini/board_led.png  used on input line 334.
 (pdftex.def)             Requested size: 390.0pt x 148.19206pt.
-[36] [37 <./immagini/board_led.png>]
-<immagini/board_bottone.png, id=778, 750.805pt x 729.72626pt>
+ [36] [37 <./immagini/board_led.png>]
+<immagini/board_bottone.png, id=789, 750.805pt x 729.72626pt>
 File: immagini/board_bottone.png Graphic file (type png)
 <use immagini/board_bottone.png>
 Package pdftex.def Info: immagini/board_bottone.png  used on input line 390.
@@ -1364,7 +1361,7 @@ Package pdftex.def Info: immagini/board_bottone.png  used on input line 390.
 Package textcomp Info: Symbol \texttwosuperior not provided by
 (textcomp)             font family ntxtlf in TS1 encoding.
 (textcomp)             Default family used instead on input line 405.
-<immagini/board_completa.png, id=780, 2248.4pt x 1386.17876pt>
+<immagini/board_completa.png, id=791, 2248.4pt x 1386.17876pt>
 File: immagini/board_completa.png Graphic file (type png)
 <use immagini/board_completa.png>
 Package pdftex.def Info: immagini/board_completa.png  used on input line 416.
@@ -1380,7 +1377,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 424--432
 
  []
 
-<immagini/pcb_completo.png, id=790, 2339.74126pt x 1680.2775pt>
+<immagini/pcb_completo.png, id=801, 2339.74126pt x 1680.2775pt>
 File: immagini/pcb_completo.png Graphic file (type png)
 <use immagini/pcb_completo.png>
 Package pdftex.def Info: immagini/pcb_completo.png  used on input line 435.
@@ -1391,12 +1388,17 @@ Package pdftex.def Info: immagini/pcb_completo.png  used on input line 435.
  (./capitoli/implementazione_software.tex
 Capitolo 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--16
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--20
+Underfull \hbox (badness 10000) in paragraph at lines 16--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
  []
 
@@ -1441,7 +1443,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--122
 \openout3 = `main.pyg'.
 
 (./_minted-main/5D11F86A81F923011E39E686CA27BB428EF27FAE920C65D7B903E741E9673588.pygtex)
-<immagini/swapping_array.png, id=820, 563.10374pt x 332.24126pt>
+<immagini/swapping_array.png, id=832, 563.10374pt x 332.24126pt>
 File: immagini/swapping_array.png Graphic file (type png)
 <use immagini/swapping_array.png>
 Package pdftex.def Info: immagini/swapping_array.png  used on input line 132.
@@ -1504,7 +1506,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 389--395
  []
 
 [51]
-<immagini/run_length.png, id=866, 824.07875pt x 402.50375pt>
+<immagini/run_length.png, id=878, 824.07875pt x 402.50375pt>
 File: immagini/run_length.png Graphic file (type png)
 <use immagini/run_length.png>
 Package pdftex.def Info: immagini/run_length.png  used on input line 398.
@@ -1572,9 +1574,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--20
  []
 
 
-Package natbib Warning: Citation `Dziak2017' on page 61 undefined on input line 24.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 21--25
 
  []
@@ -1585,10 +1584,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--25
 
 
 ]
-
-Package natbib Warning: Citation `ferguson1986elf' on page 62 undefined on input line 27.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
@@ -1621,9 +1616,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--121
 ) [64]
 \openout2 = `capitoli/conclusioni.aux'.
 
+ (./capitoli/conclusioni.tex
+Capitolo 9.
 
-No file capitoli/conclusioni.tex.
-(./main.lof
+Underfull \hbox (badness 10000) in paragraph at lines 2--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--22
+
+ []
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 39.
+[65
+
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 61--70
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 78--23
+
+ []
+
+[66] [67] (./main.lof
 Overfull \hbox (35.67738pt too wide) in paragraph at lines 24--24
  [][] [][][]\T1/ntxtlf/m/n/12 Collegamento fi-si-co tra ESP32 e mi-cro-fo-no I$[]$S (Ada-fruit SPH0645LM4H) 
  []
@@ -1633,10 +1655,7 @@ Overfull \hbox (37.4774pt too wide) in paragraph at lines 25--25
  [][] [][][]\T1/ntxtlf/m/n/12 Collegamento fi-si-co tra ESP32 e am-pli-fi-ca-to-re I$[]$S (Ada-fruit MAX98357A) 
  []
 
-[65
-
-
-
+[68
 
 
 ]
@@ -1647,12 +1666,12 @@ Package textcomp Info: Symbol \texttwosuperior not provided by
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- (./main.lot
+ (./main.lot [69]
 Overfull \hbox (13.17732pt too wide) in paragraph at lines 12--12
  [][] [][][]\T1/ntxtlf/m/n/12 Mappatura hard-ware dei pin I$[]$S tra ESP32 e mi-cro-fo-no SPH0645LM4H.[][] []  
  []
 
-[66]
+
 Overfull \hbox (14.97734pt too wide) in paragraph at lines 13--13
  [][] [][][]\T1/ntxtlf/m/n/12 Mappatura hard-ware dei pin I$[]$S tra ESP32 e am-pli-fi-ca-to-re MAX98357A.[][] []  
  []
@@ -1661,15 +1680,20 @@ Overfull \hbox (14.97734pt too wide) in paragraph at lines 13--13
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [67]
+ [70]
 \openout2 = `appendici/appendiceA.aux'.
 
+ (./appendici/appendiceA.tex
+Appendice A.
 
-No file appendici/appendiceA.tex.
-\openout2 = `appendici/appendiceB.aux'.
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
-No file appendici/appendiceB.tex.
-(./main.bbl
+ []
+
+) [71
+
+
+] (./main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 17--21
 []\T1/ntxtlf/m/n/12 Adafruit lear-ning sy-stem: I2s mems mi-cro-pho-ne brea-kout
  []
@@ -1684,48 +1708,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--35
 \T1/ntxtt/m/n/12 sites / default / files / documentation / esp32 _ technical _ reference _
  []
 
-[68
+[72
 
 
 
-
-
-
-
-] [69])
-
-Package natbib Warning: There were undefined citations.
-
-[70] (./main.aux (./capitoli/introduzione.aux) (./capitoli/stato_arte.aux) (./capitoli/design_protocollo.aux) (./capitoli/requisiti.aux) (./capitoli/implementazione_hardware.aux) (./capitoli/implementazione_software.aux) (./capitoli/sperimentazione_protocollo.aux) (./capitoli/sperimentazione_propagazione_suono.aux) (./capitoli/sviluppi_futuri.aux) (./capitoli/conclusioni.aux) (./appendici/appendiceA.aux) (./appendici/appendiceB.aux))
+] [73] [74]) [75] (./main.aux (./capitoli/introduzione.aux) (./capitoli/stato_arte.aux) (./capitoli/design_protocollo.aux) (./capitoli/requisiti.aux) (./capitoli/implementazione_hardware.aux) (./capitoli/implementazione_software.aux) (./capitoli/sperimentazione_protocollo.aux) (./capitoli/sperimentazione_propagazione_suono.aux) (./capitoli/sviluppi_futuri.aux) (./capitoli/conclusioni.aux) (./appendici/appendiceA.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DD14C9B82A773A268BF35E9355E4DB95;10709.
+(rerunfilecheck)             Checksum: 0C2745D7A936E50E8D2FFB314EF3305E;11092.
 runsystem(rm main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 45181 strings out of 474222
- 1044851 string characters out of 5748733
+ 45250 strings out of 474222
+ 1045733 string characters out of 5748733
  1947975 words of memory out of 5000000
- 66320 multiletter control sequences out of 15000+600000
- 641313 words of font info for 147 fonts, out of 8000000 for 9000
+ 66379 multiletter control sequences out of 15000+600000
+ 644187 words of font info for 148 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,19n,96p,823b,2402s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrb1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (70 pages, 9881700 bytes).
+Output written on main.pdf (75 pages, 9891667 bytes).
 PDF statistics:
- 1218 PDF objects out of 1440 (max. 8388607)
- 1054 compressed objects within 11 object streams
- 258 named destinations out of 1000 (max. 500000)
- 594 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1279 PDF objects out of 1440 (max. 8388607)
+ 1109 compressed objects within 12 object streams
+ 269 named destinations out of 1000 (max. 500000)
+ 610 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,24 +3,24 @@
 
 \section{Architettura generale del sistema}
 
-Il software è stato sviluppato in linguaggio \textbf{C}. 
-Questa scelta permette di avere un controllo diretto sull’hardware dell’ESP32,
- ottenendo esecuzioni prevedibili ed un uso minuzioso delle risorse. \\
- L’utilizzo del C ha inoltre garantito maggiore leggerezza rispetto al C++ e una buona portabilità, grazie alla disponibilità di librerie 
- già consolidate in ambito firmware.  
+Il software è stato sviluppato in linguaggio \textbf{C}, scelta che ha permesso di avere un controllo diretto sull’hardware dell’ESP32,
+ottenendo esecuzioni prevedibili ed un uso minuzioso delle risorse. \\
+L’utilizzo del C ha inoltre garantito maggiore leggerezza rispetto al C++ e una buona portabilità, grazie alla disponibilità di librerie 
+già consolidate in ambito firmware.  
 
-Alcune librerie Arduino originariamente scritte in C++ sono state adattate in C questo per permettere la compilazione del codice.\\
- Allo stesso tempo, l’uso del framework Arduino su 
-  ESP32 ha offerto vantaggi importanti tra cui: documentazione estesa, supporto diretto alle periferiche del microcontrollore e una 
-  community ampia, che ha velocizzato la fase di sviluppo. \\
+Alcune librerie Arduino originariamente scritte in C++ sono state adattate in C, questo per permettere la compilazione del codice.\\
+Allo stesso tempo, l’uso del framework Arduino su 
+ESP32 ha offerto vantaggi importanti tra cui: documentazione estesa, supporto diretto alle periferiche del microcontrollore e una 
+community ampia, che ha velocizzato la fase di sviluppo. \\
 
 Per lo sviluppo è stato utilizzato \textit{Visual Studio Code}, scelto per l’ampia disponibilità di estensioni.
- In particolare, l’integrazione con \textbf{PlatformIO} ha reso più semplice la gestione del progetto: compilazione, caricamento e debugging sono stati 
- unificati in un unico ambiente, con gestione automatica delle librerie e delle dipendenze, ha permesso uno sviluppo più rapido ed organizzato.\\ 
+In particolare, l’integrazione con \textbf{PlatformIO} ha reso più semplice la gestione del progetto: compilazione, caricamento e debugging sono stati 
+unificati in un unico ambiente; la gestione automatica delle librerie e delle dipendenze ha permesso uno sviluppo più rapido ed organizzato.\\ 
 
 L’architettura complessiva si basa su moduli separati e specializzati, ognuno responsabile di una parte precisa del protocollo. 
 Questo approccio modulare ha garantito una migliore manutenibilità del codice e ha semplificato l’integrazione tra i diversi livelli funzionali 
-descritti in \autoref{chap:design_protocollo}.
+descritti in \autoref{chap:design_protocollo}, il cui codice sorgente completo è riportato in \autoref{appendice:repository}.\\
+
 
 \section{Emissione dei toni}
 

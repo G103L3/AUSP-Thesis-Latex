@@ -92,3 +92,6 @@
 \contentsline {section}{\numberline {8.2}Revisione del formato di pacchetto}{62}{section.8.2}%
 \contentsline {section}{\numberline {8.3}Sensoristica avanzata}{63}{section.8.3}%
 \contentsline {section}{\numberline {8.4}Riduzione dei tempi di segnalazione}{63}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Conclusioni}{65}{chapter.9}%
+\contentsline {paragraph}{In conclusione}{66}{section*.29}%
+\contentsline {chapter}{\numberline {A}Repository del codice e risorse multimediali}{71}{appendix.Alph1}%

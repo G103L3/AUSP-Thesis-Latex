@@ -1,4 +1,4 @@
-\begin{thebibliography}{33}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -60,6 +60,15 @@ James~W. Cooley and John~W. Tukey.
   297--301, 1965.
 \newblock \doi{10.1090/S0025-5718-1965-0178586-1}.
 
+\bibitem[Dziak et~al.(2017)Dziak, Haxel, Lau, Heimlich, Caplan-Auerbach,
+  Mellinger, Matsumoto, and Mate]{Dziak2017}
+Robert~P. Dziak, Joseph~H. Haxel, Tzu-Kang Lau, Sara Heimlich, Jacqueline
+  Caplan-Auerbach, David~K. Mellinger, Haru Matsumoto, and Bruce Mate.
+\newblock A pulsed-air model of blue whale b call vocalizations.
+\newblock \emph{Scientific Reports}, 7:\penalty0 9122, 2017.
+\newblock \doi{10.1038/s41598-017-09423-7}.
+\newblock URL \url{https://www.nature.com/articles/s41598-017-09423-7}.
+
 \bibitem[Farai(2021)]{farai2021phd}
 O.~O. Farai.
 \newblock \emph{Acoustic Communication in Polymeric Pipes}.
@@ -73,6 +82,13 @@ O.~O. Farai, J.~M. Muggleton, E.~Rustighi, and M.~J. Brennan.
   communication along mdpe pipes.
 \newblock \emph{Applied Sciences}, 13\penalty0 (15):\penalty0 8886, 2023.
 \newblock \doi{10.3390/app13158886}.
+
+\bibitem[Ferguson and Pappert(1986)]{ferguson1986elf}
+James~A. Ferguson and Richard~A. Pappert.
+\newblock Propagation considerations for elf communications with submarines.
+\newblock \emph{IEEE Journal of Oceanic Engineering}, 11\penalty0 (1):\penalty0
+  33--42, 1986.
+\newblock \doi{10.1109/JOE.1986.1145155}.
 
 \bibitem[Fishta et~al.(2023)Fishta, Franceschinis, Braglia, Alj, Bagheri, and
   Seceleanu]{fishta2023inpipe}

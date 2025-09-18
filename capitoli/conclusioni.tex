@@ -1,0 +1,81 @@
+\chapter{Conclusioni}
+Il percorso intrapreso ha permesso di verificare che la scelta di un canale acustico per collegare nodi master--slave in ambienti sotterranei 
+è realistica quando le onde elettromagnetiche risultano inaffidabili.\\
+La progettazione è partita dall'analisi delle condizioni di propagazione 
+e dei vincoli strutturali descritti nei capitoli iniziali \autoref{chap:introduzione} , \autoref{chap:stato_arte}, 
+traducendosi in un protocollo capace di sfruttare coppie di frequenze dedicate e schemi
+ di conferma rapidi gestiti da handles ad ACK come descritto nella \autoref{sec:livello_link}.\\
+Le scelte progettuali sono state costantemente verificate con prove sperimentali diverse, sono state effettuate prove di emissione e verifica della 
+stabilità del suono al fine di evitare fruscii come evidenziato nella \autoref{sec:uscita_livello_fisico}, 
+poi si è passati alla verifica del riconoscimento delle frequenze, che ha richiesto 4 mesi di lavoro, con l'ausilio di un trasduttore 
+piezoelettrico collegato ad un amplificatore Classe-D da \SI{230}{\volt} a sua volta collegato all'uscita AUX di un computer;
+ si è poi proceduto alla verifica del protocollo completo in ambienti controllati e infine in un corridoio sotterraneo di 
+15 metri con curve a 90 gradi con l'ausilio di un fonometro.\\
+
+La parte hardware e software si è evoluta insieme, con il microcontrollore ESP32 che ha offerto abbastanza margine per campionare a 
+\SI{48}{\kilo\hertz}, eseguire l'FFT a 512 campioni e mantenere in tempo reale il riconoscimento delle frequenze utili, più la derivante elaborazione 
+del pacchetto dai.\\
+L'implementaziomne hardware discussa nel \autoref{chap:implementazione_hardware} ha permesso di realizzare un nodo economico, con un costo
+ totale inferiore a 20 euro per unità, che integra un microfono MEMS e un DAC I2S con amplificatore di potenza in Classe-D,
+ il tutto alimentato a \SI{3.3}{\volt} con un consumo di picco inferiore a \SI{200}{\milli\ampere} durante la trasmissione, risultando 
+ perfettamente in linea con quanto previsto nei requisiti iniziali (\autoref{sec:contributi_attesi}).\\
+
+
+ \begin{figure}[H]
+    \centering
+    \begin{adjustbox}{width=0.9\linewidth}
+    \begin{tikzpicture}[
+        node distance=3cm,
+        every node/.style={
+            rounded corners,
+            draw=black,
+            align=center,
+            minimum width=3.2cm,
+            minimum height=1cm,
+            font=\small
+        }
+    ]
+        % Nodi
+        \node[fill=blue!15] (analisi) {Analisi del canale\\e requisiti acustici};
+        \node[fill=green!15, right=of analisi] (protocollo) {Design protocollo\\frequenze e ACK};
+        \node[fill=orange!20, below=of protocollo] (hw) {Implementazione\\hardware ESP32 + MEMS};
+        \node[fill=yellow!25, right=of hw] (sw) {Firmware FFT\\e compressione run-length};
+        \node[fill=red!15, below=of hw] (test) {Sperimentazione\\bitrate e attenuazioni};
+        \node[fill=gray!20, left=of hw] (applicazioni) {Applicazioni\\monitoraggio post-disastro};
+
+        % Frecce
+        \draw[->, thick] (analisi) -- (protocollo);
+        \draw[->, thick] (protocollo) -- (hw);
+        \draw[->, thick] (hw) -- (test);
+        \draw[->, thick] (test) -- (applicazioni);
+        \draw[->, thick, dashed] (applicazioni) -- (analisi);
+        \draw[->, thick] (protocollo) -- (sw);
+        \draw[->, thick] (sw) -- (test);
+    \end{tikzpicture}
+\end{adjustbox}
+    \caption{Flusso progettuale e sperimentale della tesi.}
+    \label{fig:conclusioni_flusso}
+\end{figure}
+
+
+Le prove in ambiente controllato e nel corridoio sotterraneo hanno confermato che, con un'emissione iniziale di circa \SI{70}{\decibel_{SPL}}, 
+la perdita lungo quindici metri resta nell'ordine di \SI{15}{\decibel} e la differenza tra percorso rettilineo e curva a novanta gradi si traduce in 
+un aumento della packet loss dall'1\% al 18\% dopo i \SI{3}{\meter} dall'imbocco laterale come è mostrato nella \autoref{fig:profilo_db}.\\
+ Il protocollo ha mantenuto un bitrate utile medio di \SI{14.4}{\bit\per\second} con una percentuale di ritrasmissioni sotto l'1\%,
+  valori che per un sistema ancora in stato embionale, creato con pochissimi fondi e materiale di recupero, alimentato a \SI{3.3}{\volt} risultano incoraggianti.\\
+   Le registrazioni di sequenze REQ/SET/OK e le trasmissioni telemetriche hanno mostrato come l'auto-taratura 
+   della soglia spettrale riesca a seguire i cambiamenti del rumore, evitando falsi positivi anche quando l'ambiente risultava particolarmente rumoroso,
+   con voci di sottofondo o rumore di dispositivi elettronici accesi.\\
+   Una dimostrazione pratica del funzionamento del protocollo è disponibile nel video presente nell' \autoref{appendice:repository}.\\
+
+
+   Il sistema ha ancora alcuni limiti, soprattutto legati alla velocità di trasmissione
+    e al fatto che il segnale si indebolisce dopo curve strette, dove l’attenuazione diventa più marcata come osservato nel \autoref{chap:sperimentazione_propagazione}.\\
+     Nonostante questo, il progetto non è affatto chiuso: anzi, ci sono margini di miglioramento ben definiti citati nel \autoref{chap:sviluppi_futuri},
+     che potrebbero portare ad incrementi significativi delle prestazioni, in entrambi gli aspetti sopra.
+
+   \paragraph{In conclusione} 
+   Il lavoro ha dimostrato che un protocollo \textbf{acustico low cost} può funzionare in contesti critici, raggiungendo
+    l’obiettivo principale, superando in alcuni contesti pure certi standard di industria osservati nel \autoref{chap:stato_arte}.\\
+     Nonostante i limiti attuali, i risultati ottenuti rappresentano una base per sviluppare versioni più robuste, rapide ed adatte ad ambienti
+     diversi da quelli trattati in questa tesi, questa era volta più ad aprire una strada verso queste applicazioni che a fornire una soluzione definitiva.\\
