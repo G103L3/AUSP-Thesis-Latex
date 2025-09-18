@@ -87,3 +87,8 @@
 \contentsline {section}{\numberline {5.9}Sensore di movimento}{53}{section.5.9}%
 \contentsline {chapter}{\numberline {6}Sperimentazione del Protocollo}{55}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Sperimentazione della propagazione del suono}{58}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Sviluppi futuri}{61}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Evoluzione degli scenari applicativi}{61}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Revisione del formato di pacchetto}{62}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Sensoristica avanzata}{63}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Riduzione dei tempi di segnalazione}{63}{section.8.4}%

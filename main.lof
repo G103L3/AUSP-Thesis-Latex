@@ -36,3 +36,5 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Planimetria del corridoio sotterraneo. La porta sul lato destro è stata mantenuta aperta durante la prova.}}{59}{figure.7.1}%
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Andamento medio dei livelli sonori misurati lungo il corridoio e corrispondente packet loss. La linea blu mostra la perdita quasi lineare nel tratto rettilineo, la linea rossa il crollo dopo la curva a novanta gradi, la linea tratteggiata il rumore di fondo e le curve verdi e arancioni riportano il tasso di pacchetti persi rilevato con il fonometro accanto alla scheda ricevente.}}{60}{figure.7.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Roadmap di evoluzione del frame, dal formato attuale verso blocchi compatti e pronti alla compressione run-length attuale}}{63}{figure.8.1}%
