@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.3)  18 SEP 2025 19:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.3)  19 SEP 2025 03:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -242,19 +242,6 @@ Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 \TX@delta=\dimen158
 \TX@cols=\count295
 \TX@ftn=\toks25
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 107.
-)
-\Gin@req@height=\dimen159
-\Gin@req@width=\dimen160
 ) (/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2023/12/18 v2.9 Yet another Pygments shim for LaTeX
  (/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
@@ -276,16 +263,16 @@ Package: lineno 2023/05/20 line numbers on paragraphs v5.3
 \linenopenalty=\count299
 \output=\toks26
 \linenoprevgraf=\count300
-\linenumbersep=\dimen161
-\linenumberwidth=\dimen162
+\linenumbersep=\dimen159
+\linenumberwidth=\dimen160
 \c@linenumber=\count301
 \c@pagewiselinenumber=\count302
 \c@LN@truepage=\count303
 \c@internallinenumber=\count304
 \c@internallinenumbers=\count305
-\quotelinenumbersep=\dimen163
-\bframerule=\dimen164
-\bframesep=\dimen165
+\quotelinenumbersep=\dimen161
+\bframerule=\dimen162
+\bframesep=\dimen163
 \bframebox=\box64
 LaTeX Info: Redefining \\ on input line 3180.
 )
@@ -302,21 +289,21 @@ LaTeX Info: Redefining \\ on input line 3180.
 \c@FV@HighlightLinesStop=\count314
 \FV@LoopCount=\count315
 \FV@NCharsBox=\box66
-\FV@BreakIndent=\dimen166
+\FV@BreakIndent=\dimen164
 \FV@BreakIndentNChars=\count316
-\FV@BreakSymbolSepLeft=\dimen167
+\FV@BreakSymbolSepLeft=\dimen165
 \FV@BreakSymbolSepLeftNChars=\count317
-\FV@BreakSymbolSepRight=\dimen168
+\FV@BreakSymbolSepRight=\dimen166
 \FV@BreakSymbolSepRightNChars=\count318
-\FV@BreakSymbolIndentLeft=\dimen169
+\FV@BreakSymbolIndentLeft=\dimen167
 \FV@BreakSymbolIndentLeftNChars=\count319
-\FV@BreakSymbolIndentRight=\dimen170
+\FV@BreakSymbolIndentRight=\dimen168
 \FV@BreakSymbolIndentRightNChars=\count320
 \c@FancyVerbLineBreakLast=\count321
 \FV@LineBox=\box67
 \FV@LineIndentBox=\box68
 \c@FV@BreakBufferDepth=\count322
-\FV@LineWidth=\dimen171
+\FV@LineWidth=\dimen169
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
@@ -344,10 +331,10 @@ Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip55
-\fb@frw=\dimen172
-\fb@frh=\dimen173
-\FrameRule=\dimen174
-\FrameSep=\dimen175
+\fb@frw=\dimen170
+\fb@frh=\dimen171
+\FrameRule=\dimen172
+\FrameSep=\dimen173
 )
 \minted@appexistsfile=\read4
 \minted@bgbox=\box69
@@ -361,15 +348,28 @@ runsystem(mkdir -p _minted-main)...executed.
 
  (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks28
-\pgfutil@tempdima=\dimen176
-\pgfutil@tempdimb=\dimen177
+\pgfutil@tempdima=\dimen174
+\pgfutil@tempdimb=\dimen175
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box70
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
- (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen176
+\Gin@req@width=\dimen177
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks29
@@ -639,7 +639,101 @@ File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-) (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
+\csq@reset=\count359
+\csq@gtype=\count360
+\csq@glevel=\count361
+\csq@qlevel=\count362
+\csq@maxlvl=\count363
+\csq@tshold=\count364
+\csq@ltx@everypar=\toks49
+ (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+ (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)) (/usr/share/texmf/tex/latex/CJK/CJKutf8.sty
+Package: CJKutf8 2021/10/16 4.8.5
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+) (/usr/share/texmf/tex/latex/CJK/CJK.sty
+Package: CJK 2021/10/16 4.8.5
+ (/usr/share/texmf/tex/latex/CJK/mule/MULEenc.sty
+Package: MULEenc 2021/10/16 4.8.5
+) (/usr/share/texmf/tex/latex/CJK/CJK.enc
+File: CJK.enc 2021/10/16 4.8.5
+Now handling font encoding C00 ...
+... no UTF-8 mapping file for font encoding C00
+Now handling font encoding C05 ...
+... no UTF-8 mapping file for font encoding C05
+Now handling font encoding C09 ...
+... no UTF-8 mapping file for font encoding C09
+Now handling font encoding C10 ...
+... no UTF-8 mapping file for font encoding C10
+Now handling font encoding C20 ...
+... no UTF-8 mapping file for font encoding C20
+Now handling font encoding C19 ...
+... no UTF-8 mapping file for font encoding C19
+Now handling font encoding C40 ...
+... no UTF-8 mapping file for font encoding C40
+Now handling font encoding C42 ...
+... no UTF-8 mapping file for font encoding C42
+Now handling font encoding C43 ...
+... no UTF-8 mapping file for font encoding C43
+Now handling font encoding C50 ...
+... no UTF-8 mapping file for font encoding C50
+Now handling font encoding C52 ...
+... no UTF-8 mapping file for font encoding C52
+Now handling font encoding C49 ...
+... no UTF-8 mapping file for font encoding C49
+Now handling font encoding C60 ...
+... no UTF-8 mapping file for font encoding C60
+Now handling font encoding C61 ...
+... no UTF-8 mapping file for font encoding C61
+Now handling font encoding C63 ...
+... no UTF-8 mapping file for font encoding C63
+Now handling font encoding C64 ...
+... no UTF-8 mapping file for font encoding C64
+Now handling font encoding C65 ...
+... no UTF-8 mapping file for font encoding C65
+Now handling font encoding C70 ...
+... no UTF-8 mapping file for font encoding C70
+Now handling font encoding C31 ...
+... no UTF-8 mapping file for font encoding C31
+Now handling font encoding C32 ...
+... no UTF-8 mapping file for font encoding C32
+Now handling font encoding C33 ...
+... no UTF-8 mapping file for font encoding C33
+Now handling font encoding C34 ...
+... no UTF-8 mapping file for font encoding C34
+Now handling font encoding C35 ...
+... no UTF-8 mapping file for font encoding C35
+Now handling font encoding C36 ...
+... no UTF-8 mapping file for font encoding C36
+Now handling font encoding C37 ...
+... no UTF-8 mapping file for font encoding C37
+Now handling font encoding C80 ...
+... no UTF-8 mapping file for font encoding C80
+Now handling font encoding C81 ...
+... no UTF-8 mapping file for font encoding C81
+Now handling font encoding C01 ...
+... no UTF-8 mapping file for font encoding C01
+Now handling font encoding C11 ...
+... no UTF-8 mapping file for font encoding C11
+Now handling font encoding C21 ...
+... no UTF-8 mapping file for font encoding C21
+Now handling font encoding C41 ...
+... no UTF-8 mapping file for font encoding C41
+Now handling font encoding C62 ...
+... no UTF-8 mapping file for font encoding C62
+)
+\CJK@indent=\box84
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)) (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
 \cftparskip=\skip56
@@ -671,8 +765,8 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip82
 \cftfigindent=\skip83
 \cftfignumwidth=\skip84
-\c@lofdepth=\count359
-\c@lotdepth=\count360
+\c@lofdepth=\count365
+\c@lotdepth=\count366
 \cftbeforelottitleskip=\skip85
 \cftafterlottitleskip=\skip86
 \cftbeforetabskip=\skip87
@@ -684,8 +778,8 @@ Package: newtxtext 2024/01/11 v1.737(Michael Sharpe) latex and unicode latex sup
 Package: expl3 2024-01-22 L3 programming layer (loader) 
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count361
-\l__pdf_internal_box=\box84
+\l__color_backend_stack_int=\count367
+\l__pdf_internal_box=\box85
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
  (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -696,8 +790,8 @@ LaTeX Font Info:    Setting ntxTLF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting ntxOsF sub-encoding to TS1/0 on input line 24.
 LaTeX Font Info:    Setting ntxTOsF sub-encoding to TS1/0 on input line 24.
  (/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
-\ntx@tmpcnta=\count362
-\ntx@cnt=\count363
+\ntx@tmpcnta=\count368
+\ntx@cnt=\count369
  (/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2020/07/21 v1.0e Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
@@ -739,19 +833,19 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count364
+\inf@bad=\count370
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count365
-\leftroot@=\count366
+\uproot@=\count371
+\leftroot@=\count372
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count367
-\DOTSCASE@=\count368
+\classnum@=\count373
+\DOTSCASE@=\count374
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box85
-\strutbox@=\box86
+\Mathstrutbox@=\box86
+\strutbox@=\box87
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
@@ -759,44 +853,44 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen329
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count369
+\macc@depth=\count375
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count370
+\c@MaxMatrixCols=\count376
 \dotsspace@=\muskip17
-\c@parentequation=\count371
-\dspbrk@lvl=\count372
-\tag@help=\toks49
-\row@=\count373
-\column@=\count374
-\maxfields@=\count375
-\andhelp@=\toks50
+\c@parentequation=\count377
+\dspbrk@lvl=\count378
+\tag@help=\toks50
+\row@=\count379
+\column@=\count380
+\maxfields@=\count381
+\andhelp@=\toks51
 \eqnshift@=\dimen330
 \alignsep@=\dimen331
 \tagshift@=\dimen332
 \tagwidth@=\dimen333
 \totwidth@=\dimen334
 \lineht@=\dimen335
-\@envbody=\toks51
+\@envbody=\toks52
 \multlinegap=\skip91
 \multlinetaggap=\skip92
-\mathdisplay@stack=\toks52
+\mathdisplay@stack=\toks53
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-\linenoamsmath@ams@eqpen=\count376
+\linenoamsmath@ams@eqpen=\count382
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
-\tx@cntz=\count377
+\tx@cntz=\count383
  (/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
-\tx@Isdigit=\count378
-\tx@IsAlNum=\count379
-\tx@tA=\toks53
-\tx@tB=\toks54
+\tx@Isdigit=\count384
+\tx@IsAlNum=\count385
+\tx@tA=\toks54
+\tx@tB=\toks55
 \tx@su=\read6
 
 amsthm NOT loaded
@@ -878,7 +972,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \symlargesymbolsTXA=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
 (Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 658.
-\tx@sbptoks=\toks55
+\tx@sbptoks=\toks56
 LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 881.
 LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 882.
 LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 883.
@@ -907,26 +1001,147 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen343
 \cmidrulekern=\dimen344
 \defaultaddspace=\dimen345
-\@cmidla=\count380
-\@cmidlb=\count381
+\@cmidla=\count386
+\@cmidlb=\count387
 \@aboverulesep=\dimen346
 \@belowrulesep=\dimen347
-\@thisruleclass=\count382
-\@lastruleclass=\count383
+\@thisruleclass=\count388
+\@lastruleclass=\count389
 \@thisrulewidth=\dimen348
 ) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip93
 \bibsep=\skip94
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count384
+\c@NAT@ctr=\count390
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 49.
+Package hyperref Info: Option `colorlinks' set `true' on input line 52.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/minntx/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/minntx/b/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/ntxmi/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ntxmi/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Encoding `LMS' has changed to `OMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  LMS/ntxsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Encoding `LMS' has changed to `OMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  LMS/ntxsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Encoding `LMX' has changed to `OMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  LMX/ntxexx/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Encoding `LMX' has changed to `OMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  LMX/ntxexx/b/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup8
+\symitalic=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/minntx/b/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/minntx/b/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/minntx/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/minntx/b/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+LaTeX Font Info:    Redeclaring math symbol \upGamma on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \upDelta on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \upTheta on input line 95.
+LaTeX Font Info:    Redeclaring math symbol \upLambda on input line 96.
+LaTeX Font Info:    Redeclaring math symbol \upXi on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \upPi on input line 98.
+LaTeX Font Info:    Redeclaring math symbol \upSigma on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \upUpsilon on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \upPhi on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \upPsi on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \upOmega on input line 103.
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count391
+\Gm@cntv=\count392
+\c@Gm@tempcnt=\count393
+\Gm@bindingoffset=\dimen349
+\Gm@wd@mp=\dimen350
+\Gm@odd@mp=\dimen351
+\Gm@even@mp=\dimen352
+\Gm@layoutwidth=\dimen353
+\Gm@layoutheight=\dimen354
+\Gm@layouthoffset=\dimen355
+\Gm@layoutvoffset=\dimen356
+\Gm@dimlist=\toks57
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip95
+\f@nch@O@elh=\skip96
+\f@nch@O@erh=\skip97
+\f@nch@O@olh=\skip98
+\f@nch@O@orh=\skip99
+\f@nch@O@elf=\skip100
+\f@nch@O@erf=\skip101
+\f@nch@O@olf=\skip102
+\f@nch@O@orf=\skip103
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen357
+\captionmargin=\dimen358
+\caption@leftmargin=\dimen359
+\caption@rightmargin=\dimen360
+\caption@width=\dimen361
+\caption@indent=\dimen362
+\caption@parindent=\dimen363
+\caption@hangindent=\dimen364
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count394
+\c@continuedfloat=\count395
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box88
+\beforetitleunit=\skip104
+\aftertitleunit=\skip105
+\ttl@plus=\dimen365
+\ttl@minus=\dimen366
+\ttl@toksa=\toks58
+\titlewidth=\dimen367
+\titlewidthlast=\dimen368
+\titlewidthfirst=\dimen369
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 105.
 )
 runsystem(command -v pygmentize && touch main.aex)...executed.
 
 runsystem(rm main.aex)...executed.
 
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'italian'.
 LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
@@ -937,7 +1152,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 
 LaTeX Warning: Label `fig:esempio' multiply defined.
 
-) (./capitoli/design_protocollo.aux) (./capitoli/requisiti.aux) (./capitoli/implementazione_hardware.aux) (./capitoli/implementazione_software.aux) (./capitoli/sperimentazione_protocollo.aux) (./capitoli/sperimentazione_propagazione_suono.aux) (./capitoli/sviluppi_futuri.aux) (./capitoli/conclusioni.aux) (./appendici/appendiceA.aux))
+) (./capitoli/design_protocollo.aux) (./capitoli/implementazione_hardware.aux) (./capitoli/implementazione_software.aux) (./capitoli/sperimentazione_protocollo.aux) (./capitoli/sperimentazione_propagazione_suono.aux) (./capitoli/sviluppi_futuri.aux) (./capitoli/conclusioni.aux) (./ringraziamenti.aux) (./appendici/appendiceA.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 6.
@@ -966,6 +1181,70 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 6.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 6.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/lmsntxsy.fd
@@ -988,17 +1267,17 @@ Package hyperref Info: Link coloring ON on input line 6.
 Package translations Info: no dictionary file `translations-basic-dictionary-italian.trsl' found. on input line 6.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count385
-\scratchdimen=\dimen349
-\scratchbox=\box87
-\nofMPsegments=\count386
-\nofMParguments=\count387
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count388
-\MPscratchDim=\dimen350
-\MPnumerator=\count389
-\makeMPintoPDFobject=\count390
-\everyMPtoPDFconversion=\toks57
+\scratchcounter=\count396
+\scratchdimen=\dimen370
+\scratchbox=\box89
+\nofMPsegments=\count397
+\nofMParguments=\count398
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count399
+\MPscratchDim=\dimen371
+\MPnumerator=\count400
+\makeMPintoPDFobject=\count401
+\everyMPtoPDFconversion=\toks60
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1007,10 +1286,46 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-\c@mv@tabular=\count391
-\c@mv@boldtabular=\count392
+\c@mv@tabular=\count402
+\c@mv@boldtabular=\count403
 LaTeX Info: Command `\dddot' is already robust on input line 6.
 LaTeX Info: Command `\ddddot' is already robust on input line 6.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 24.88pt on input line 10.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
@@ -1018,9 +1333,21 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (./main.toc
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 3.
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 3.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1minntx.fd
-File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 3.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
@@ -1033,25 +1360,42 @@ File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 3.
  (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-) [1
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+
+Missing character: There is no π in font zptmcm7y!
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- [2{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
+ [2{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 \openout2 = `capitoli/introduzione.aux'.
 
  (./capitoli/introduzione.tex
 Capitolo 1.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 17.28pt on input line 4.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 17.28pt on input line 4.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 1.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 4.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 12.0pt on input line 6.
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 14.
-(/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
@@ -1060,11 +1404,25 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 File: immagini/corner_loss_em.jpg Graphic file (type jpg)
 <use immagini/corner_loss_em.jpg>
 Package pdftex.def Info: immagini/corner_loss_em.jpg  used on input line 18.
-(pdftex.def)             Requested size: 136.50238pt x 145.54297pt.
+(pdftex.def)             Requested size: 149.37958pt x 159.2764pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 19.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 19.
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 19.
  [3
 
 
-{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [4 <./immagini/corner_loss_em.jpg>]) [5]
+{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./immagini/corner_loss_em.jpg>]
+Missing character: There is no ù in font zptmcm7y!
+Missing character: There is no ù in font zptmcm7y!
+[4]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.0pt on input line 59.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.0pt on input line 59.
+ [5]) [6]
 \openout2 = `capitoli/stato_arte.aux'.
 
  (./capitoli/stato_arte.tex
@@ -1074,35 +1432,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
  []
 
-[6
+[7
 
 
 
 
 ]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 27.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 27.
-<immagini/corner_em.jpg, id=377, 289.08pt x 252.4632pt>
+<immagini/corner_em.jpg, id=382, 289.08pt x 252.4632pt>
 File: immagini/corner_em.jpg Graphic file (type jpg)
 <use immagini/corner_em.jpg>
-Package pdftex.def Info: immagini/corner_em.jpg  used on input line 40.
-(pdftex.def)             Requested size: 136.50238pt x 119.21243pt.
- [7 <./immagini/corner_em.jpg>] [8]) [9] [10]
+Package pdftex.def Info: immagini/corner_em.jpg  used on input line 45.
+(pdftex.def)             Requested size: 128.0387pt x 111.81993pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--52
+
+ []
+
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.0pt on input line 59.
+[8 <./immagini/corner_em.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 66--72
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--83
+
+ []
+
+[9])
+Underfull \hbox (badness 10000) in paragraph at lines 98--15
+
+ []
+
+[10]
 \openout2 = `capitoli/design_protocollo.aux'.
 
  (./capitoli/design_protocollo.tex
 Capitolo 3.
-<immagini/layers.png, id=469, 1027.84pt x 1027.84pt>
+<immagini/layers.png, id=438, 1027.84pt x 1027.84pt>
 File: immagini/layers.png Graphic file (type png)
 <use immagini/layers.png>
 Package pdftex.def Info: immagini/layers.png  used on input line 6.
-(pdftex.def)             Requested size: 136.50238pt x 136.49397pt.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 18.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 18.
+(pdftex.def)             Requested size: 149.37958pt x 149.37018pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
@@ -1118,271 +1495,337 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-<immagini/audacity_spectrum.png, id=482, 3694.80376pt x 752.8125pt>
+<immagini/audacity_spectrum.png, id=451, 3694.80376pt x 752.8125pt>
 File: immagini/audacity_spectrum.png Graphic file (type png)
 <use immagini/audacity_spectrum.png>
 Package pdftex.def Info: immagini/audacity_spectrum.png  used on input line 46.
-(pdftex.def)             Requested size: 350.99762pt x 71.50644pt.
-[12]
-<immagini/fft_spectrum.png, id=494, 1248.665pt x 756.8275pt>
+(pdftex.def)             Requested size: 384.1096pt x 78.26077pt.
+[12 <./immagini/audacity_spectrum.png>]
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no ∫ in font zptmcm7y!
+<immagini/fft_spectrum.png, id=465, 1248.665pt x 756.8275pt>
 File: immagini/fft_spectrum.png Graphic file (type png)
 <use immagini/fft_spectrum.png>
-Package pdftex.def Info: immagini/fft_spectrum.png  used on input line 68.
-(pdftex.def)             Requested size: 253.49762pt x 153.63782pt.
- [13 <./immagini/audacity_spectrum.png> <./immagini/fft_spectrum.png>] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 175--180
+Package pdftex.def Info: immagini/fft_spectrum.png  used on input line 69.
+(pdftex.def)             Requested size: 277.41176pt x 168.14241pt.
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+[13 <./immagini/fft_spectrum.png>]
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+Missing character: There is no ù in font zptmcm7y!
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 177--182
 
  []
 
-<immagini/fft_regression_check.png, id=515, 1282.7925pt x 1011.78pt>
+Missing character: There is no œ in font zptmcm7y!
+Missing character: There is no œ in font zptmcm7y!
+Missing character: There is no œ in font zptmcm7y!
+<immagini/fft_regression_check.png, id=481, 1282.7925pt x 1011.78pt>
 File: immagini/fft_regression_check.png Graphic file (type png)
 <use immagini/fft_regression_check.png>
-Package pdftex.def Info: immagini/fft_regression_check.png  used on input line 189.
-(pdftex.def)             Requested size: 253.49762pt x 199.92856pt.
+Package pdftex.def Info: immagini/fft_regression_check.png  used on input line 191.
+(pdftex.def)             Requested size: 213.39568pt x 168.31052pt.
 [15]
-<immagini/local_peak.png, id=522, 1027.84pt x 1027.84pt>
+Missing character: There is no Õ in font zptmcm7v!
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+<immagini/local_peak.png, id=488, 1027.84pt x 1027.84pt>
 File: immagini/local_peak.png Graphic file (type png)
 <use immagini/local_peak.png>
-Package pdftex.def Info: immagini/local_peak.png  used on input line 206.
-(pdftex.def)             Requested size: 195.0pt x 194.99364pt.
+Package pdftex.def Info: immagini/local_peak.png  used on input line 208.
+(pdftex.def)             Requested size: 200.59245pt x 200.59267pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--209
+Underfull \hbox (badness 10000) in paragraph at lines 200--211
 
  []
 
-[16 <./immagini/fft_regression_check.png>]
-<immagini/parabolic_interpolation.png, id=528, 1248.665pt x 894.34125pt>
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no œ in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+[16 <./immagini/fft_regression_check.png> <./immagini/local_peak.png>]
+Missing character: There is no œ in font zptmcm7y!
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no œ in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+Missing character: There is no œ in font zptmcm7y!
+<immagini/parabolic_interpolation.png, id=496, 1248.665pt x 894.34125pt>
 File: immagini/parabolic_interpolation.png Graphic file (type png)
 <use immagini/parabolic_interpolation.png>
-Package pdftex.def Info: immagini/parabolic_interpolation.png  used on input line 222.
-(pdftex.def)             Requested size: 195.0pt x 139.65858pt.
+Package pdftex.def Info: immagini/parabolic_interpolation.png  used on input line 224.
+(pdftex.def)             Requested size: 213.39568pt x 152.84114pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--225
+Underfull \hbox (badness 10000) in paragraph at lines 219--227
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 228.
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 230.
 (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
-LaTeX Font Info:    Trying to load font information for T1+txtt on input line 228.
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 230.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/b/n' in size <12> not available
-(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 228.
+(Font)              Font shape `T1/txtt/bx/n' tried instead on input line 230.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/it' will be
-(Font)              scaled to size 12.0pt on input line 228.
- [17 <./immagini/local_peak.png> <./immagini/parabolic_interpolation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 236--244
+(Font)              scaled to size 12.0pt on input line 230.
+ [17 <./immagini/parabolic_interpolation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 239--247
 
  []
 
-<immagini/window_listening.png, id=542, 1027.84pt x 1027.84pt>
+<immagini/window_listening.png, id=511, 1027.84pt x 1027.84pt>
 File: immagini/window_listening.png Graphic file (type png)
 <use immagini/window_listening.png>
-Package pdftex.def Info: immagini/window_listening.png  used on input line 256.
-(pdftex.def)             Requested size: 195.0pt x 194.99364pt.
-[18] [19 <./immagini/window_listening.png>] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 369--375
+Package pdftex.def Info: immagini/window_listening.png  used on input line 259.
+(pdftex.def)             Requested size: 213.39568pt x 213.39044pt.
+[18 <./immagini/window_listening.png>]
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no ∫ in font zptmcm7y!
+Missing character: There is no œ in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no ∫ in font zptmcm7y!
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 374--380
 
  []
 
+[20]
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 382.
+(Font)              scaled to size 12.0pt on input line 387.
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--389
+Underfull \hbox (badness 10000) in paragraph at lines 389--394
 
  []
 
+Missing character: There is no œ in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no ∫ in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no ∫ in font zptmcm7y!
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
 
  []
 
 [21] [22]
-<immagini/fifo_input_output.png, id=581, 482.80376pt x 282.05376pt>
+<immagini/fifo_input_output.png, id=547, 482.80376pt x 282.05376pt>
 File: immagini/fifo_input_output.png Graphic file (type png)
 <use immagini/fifo_input_output.png>
-Package pdftex.def Info: immagini/fifo_input_output.png  used on input line 457.
-(pdftex.def)             Requested size: 195.0pt x 113.91696pt.
+Package pdftex.def Info: immagini/fifo_input_output.png  used on input line 462.
+(pdftex.def)             Requested size: 213.39568pt x 124.66351pt.
  [23 <./immagini/fifo_input_output.png>]
-<immagini/token_diagram.png, id=589, 594.22pt x 472.76625pt>
+<immagini/token_diagram.png, id=554, 594.22pt x 472.76625pt>
 File: immagini/token_diagram.png Graphic file (type png)
 <use immagini/token_diagram.png>
-Package pdftex.def Info: immagini/token_diagram.png  used on input line 480.
-(pdftex.def)             Requested size: 253.49762pt x 201.68405pt.
- [24 <./immagini/token_diagram.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 525--547
+Package pdftex.def Info: immagini/token_diagram.png  used on input line 486.
+(pdftex.def)             Requested size: 277.41176pt x 220.72133pt.
+ [24 <./immagini/token_diagram.png>] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 532--554
 
  []
 
 
-Overfull \hbox (23.74724pt too wide) in paragraph at lines 548--557
-\T1/ntxtlf/m/n/12 Il ri-tor-no del-l'e-se-cu-zio-ne Ë an-ch'es-so stan-dar-diz-za-to (nel ca-so il-lu-stra-to, \T1/ntxtt/m/n/12 MOVEMENT_YES
+Overfull \hbox (15.28769pt too wide) in paragraph at lines 555--564
+\T1/ntxtt/m/n/12 MOVEMENT_NO\T1/ntxtlf/m/n/12 ), men-tre l'ho-tspot con-fer-ma lo-cal-men-te con un mes-sag-gio di ti-po \T1/ntxtt/m/n/12 ACK->OP:OK\T1/ntxtlf/m/n/12 ,
  []
 
-[25]
-Overfull \hbox (8.80737pt too wide) in paragraph at lines 559--568
-\T1/ntxtlf/m/n/12 no di-gi-ta-re un co-man-do tra-mi-te l'in-ter-fac-cia \T1/ntxtlf/b/n/12 Blynk.io\T1/ntxtlf/m/n/12 , cor-ri-spon-de ad un'\T1/ntxtlf/b/n/12 operazione
- []
-
-<immagini/blynk_interface.png, id=603, 1953.2975pt x 1829.83624pt>
+<immagini/blynk_interface.png, id=567, 1953.2975pt x 1829.83624pt>
 File: immagini/blynk_interface.png Graphic file (type png)
 <use immagini/blynk_interface.png>
-Package pdftex.def Info: immagini/blynk_interface.png  used on input line 571.
-(pdftex.def)             Requested size: 312.00119pt x 292.2772pt.
-) [26 <./immagini/blynk_interface.png>]
-\openout2 = `capitoli/requisiti.aux'.
-
-
-No file capitoli/requisiti.tex.
+Package pdftex.def Info: immagini/blynk_interface.png  used on input line 578.
+(pdftex.def)             Requested size: 341.43437pt x 319.83525pt.
+[26]) [27 <./immagini/blynk_interface.png>]
 \openout2 = `capitoli/implementazione_hardware.aux'.
 
-(./capitoli/implementazione_hardware.tex
+ (./capitoli/implementazione_hardware.tex
 Capitolo 4.
-[27
-
-
-
+[28
 
 
 
 
 ]
-<immagini/esp32_block_diagram.png, id=621, 957.5775pt x 597.23125pt>
+<immagini/esp32_block_diagram.png, id=589, 957.5775pt x 597.23125pt>
 File: immagini/esp32_block_diagram.png Graphic file (type png)
 <use immagini/esp32_block_diagram.png>
 Package pdftex.def Info: immagini/esp32_block_diagram.png  used on input line 37.
-(pdftex.def)             Requested size: 272.99881pt x 170.26735pt.
- [28 <./immagini/esp32_block_diagram.png>]
-<immagini/adafruit_mems.png, id=642, 1003.75pt x 501.875pt>
+(pdftex.def)             Requested size: 298.75264pt x 186.32446pt.
+ [29 <./immagini/esp32_block_diagram.png>]
+<immagini/adafruit_mems.png, id=606, 1003.75pt x 501.875pt>
 File: immagini/adafruit_mems.png Graphic file (type png)
 <use immagini/adafruit_mems.png>
-Package pdftex.def Info: immagini/adafruit_mems.png  used on input line 71.
-(pdftex.def)             Requested size: 272.99881pt x 136.49593pt.
- [29 <./immagini/adafruit_mems.png>]
-Package textcomp Info: Symbol \textmu not provided by
-(textcomp)             font family ntxtlf in TS1 encoding.
-(textcomp)             Default family used instead on input line 78.
-<immagini/adafruit_diaframma.png, id=668, 1027.84pt x 1027.84pt>
+Package pdftex.def Info: immagini/adafruit_mems.png  used on input line 75.
+(pdftex.def)             Requested size: 298.75264pt x 149.37666pt.
+ [30 <./immagini/adafruit_mems.png>]
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no ∫ in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no ∫ in font zptmcm7y!
+[31]
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no ∫ in font zptmcm7y!
+Missing character: There is no • in font zptmcm7y!
+Missing character: There is no œ in font zptmcm7y!
+Missing character: There is no § in font zptmcm7y!
+Missing character: There is no œ in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no ∫ in font zptmcm7y!
+Missing character: There is no ù in font zptmcm7y!
+Missing character: There is no ù in font zptmcm7y!
+Missing character: There is no ù in font zptmcm7y!
+<immagini/adafruit_diaframma.png, id=638, 1027.84pt x 1027.84pt>
 File: immagini/adafruit_diaframma.png Graphic file (type png)
 <use immagini/adafruit_diaframma.png>
-Package pdftex.def Info: immagini/adafruit_diaframma.png  used on input line 112.
-(pdftex.def)             Requested size: 155.99762pt x 155.98863pt.
- [30{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<immagini/adafruit_max.png, id=694, 1158.3275pt x 434.62375pt>
+Package pdftex.def Info: immagini/adafruit_diaframma.png  used on input line 116.
+(pdftex.def)             Requested size: 170.71393pt x 170.69981pt.
+[32 <./immagini/adafruit_diaframma.png>]
+<immagini/adafruit_max.png, id=652, 1158.3275pt x 434.62375pt>
 File: immagini/adafruit_max.png Graphic file (type png)
 <use immagini/adafruit_max.png>
-Package pdftex.def Info: immagini/adafruit_max.png  used on input line 133.
-(pdftex.def)             Requested size: 272.99881pt x 102.42839pt.
- [31 <./immagini/adafruit_diaframma.png> <./immagini/adafruit_max.png>]
-<immagini/max_diagram.png, id=712, 723.70375pt x 201.75375pt>
+Package pdftex.def Info: immagini/adafruit_max.png  used on input line 138.
+(pdftex.def)             Requested size: 298.75264pt x 112.09758pt.
+ [33 <./immagini/adafruit_max.png>]
+<immagini/max_diagram.png, id=664, 723.70375pt x 201.75375pt>
 File: immagini/max_diagram.png Graphic file (type png)
 <use immagini/max_diagram.png>
-Package pdftex.def Info: immagini/max_diagram.png  used on input line 156.
-(pdftex.def)             Requested size: 272.99881pt x 76.10692pt.
+Package pdftex.def Info: immagini/max_diagram.png  used on input line 162.
+(pdftex.def)             Requested size: 298.75264pt x 83.28601pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--171
-
- []
-
-[32 <./immagini/max_diagram.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 172--177
+Underfull \hbox (badness 10000) in paragraph at lines 173--180
 
  []
 
+[34 <./immagini/max_diagram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 181--186
+
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 189.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.36008> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.40009> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+Missing character: There is no π in font zptmcm7y!
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 189.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 180.
+(hyperref)                removing `superscript' on input line 189.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 189.
 
-<immagini/board_microfono.png, id=732, 2353.79375pt x 751.80875pt>
+Missing character: There is no π in font zptmcm7y!
+<immagini/board_microfono.png, id=680, 2353.79375pt x 751.80875pt>
 File: immagini/board_microfono.png Graphic file (type png)
 <use immagini/board_microfono.png>
-Package pdftex.def Info: immagini/board_microfono.png  used on input line 188.
-(pdftex.def)             Requested size: 390.0pt x 124.55931pt.
+Package pdftex.def Info: immagini/board_microfono.png  used on input line 197.
+(pdftex.def)             Requested size: 426.79135pt x 136.31776pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 198.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 198.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 198.
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+[35 <./immagini/board_microfono.png>]
+Missing character: There is no π in font zptmcm7y!
 
-Underfull \hbox (badness 1466) in paragraph at lines 189--189
-[]\T1/ntxtlf/m/n/12 Figura 4.6: []Collegamento fi-si-co tra ESP32 e mi-cro-fo-no I$[]$S (Ada-fruit
+Underfull \hbox (badness 10000) in paragraph at lines 247--252
+
  []
 
-[33]
-Underfull \hbox (badness 1365) in paragraph at lines 234--234
-[]\T1/ntxtlf/m/n/12 Tabella 4.1: []Mappatura hard-ware dei pin I$[]$S tra ESP32 e mi-cro-fo-no
- []
+Missing character: There is no π in font zptmcm7y!
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 238--243
-
- []
-
-[34 <./immagini/board_microfono.png>]
-Overfull \hbox (12.1914pt too wide) in paragraph at lines 245--246
- []\T1/ntxtlf/b/n/12 Dettagli elet-tri-ci e mo-ti-va-zio-ni del-le scel-te.[] \T1/ntxtlf/m/n/12 Il mi-cro-fo-no Ada-fruit SPH0645LM4H
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 262.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 252.
+(hyperref)                removing `superscript' on input line 262.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 252.
+(hyperref)                removing `math shift' on input line 262.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 252.
-
-<immagini/board_amp.png, id=753, 1927.2pt x 520.94624pt>
+Missing character: There is no π in font zptmcm7y!
+[36]
+<immagini/board_amp.png, id=696, 1927.2pt x 520.94624pt>
 File: immagini/board_amp.png Graphic file (type png)
 <use immagini/board_amp.png>
-Package pdftex.def Info: immagini/board_amp.png  used on input line 263.
-(pdftex.def)             Requested size: 390.0pt x 105.4195pt.
-[35 <./immagini/board_amp.png>]
-<immagini/board_led.png, id=767, 2358.8125pt x 896.34875pt>
+Package pdftex.def Info: immagini/board_amp.png  used on input line 273.
+(pdftex.def)             Requested size: 426.79135pt x 115.36368pt.
+
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no œ in font zptmcm7y!
+[37 <./immagini/board_amp.png>]
+<immagini/board_led.png, id=709, 2358.8125pt x 896.34875pt>
 File: immagini/board_led.png Graphic file (type png)
 <use immagini/board_led.png>
-Package pdftex.def Info: immagini/board_led.png  used on input line 334.
-(pdftex.def)             Requested size: 390.0pt x 148.19206pt.
- [36] [37 <./immagini/board_led.png>]
-<immagini/board_bottone.png, id=789, 750.805pt x 729.72626pt>
+Package pdftex.def Info: immagini/board_led.png  used on input line 344.
+(pdftex.def)             Requested size: 426.79135pt x 162.17012pt.
+ [38 <./immagini/board_led.png>] [39]
+<immagini/board_bottone.png, id=724, 750.805pt x 729.72626pt>
 File: immagini/board_bottone.png Graphic file (type png)
 <use immagini/board_bottone.png>
-Package pdftex.def Info: immagini/board_bottone.png  used on input line 390.
-(pdftex.def)             Requested size: 136.50238pt x 132.67009pt.
-Package textcomp Info: Symbol \texttwosuperior not provided by
-(textcomp)             font family ntxtlf in TS1 encoding.
-(textcomp)             Default family used instead on input line 405.
-<immagini/board_completa.png, id=791, 2248.4pt x 1386.17876pt>
+Package pdftex.def Info: immagini/board_bottone.png  used on input line 402.
+(pdftex.def)             Requested size: 149.37958pt x 145.1855pt.
+ [40 <./immagini/board_bottone.png>]
+<immagini/board_completa.png, id=733, 2248.4pt x 1386.17876pt>
 File: immagini/board_completa.png Graphic file (type png)
 <use immagini/board_completa.png>
-Package pdftex.def Info: immagini/board_completa.png  used on input line 416.
-(pdftex.def)             Requested size: 390.0pt x 240.42747pt.
-Package textcomp Info: Symbol \texttwosuperior not provided by
-(textcomp)             font family ntxtlf in TS1 encoding.
-(textcomp)             Default family used instead on input line 417.
-Package textcomp Info: Symbol \texttwosuperior not provided by
-(textcomp)             font family ntxtlf in TS1 encoding.
-(textcomp)             Default family used instead on input line 417.
- [38 <./immagini/board_bottone.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 424--432
+Package pdftex.def Info: immagini/board_completa.png  used on input line 430.
+(pdftex.def)             Requested size: 426.79135pt x 263.12288pt.
+
+Missing character: There is no π in font zptmcm7y!
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--446
 
  []
 
-<immagini/pcb_completo.png, id=801, 2339.74126pt x 1680.2775pt>
+<immagini/pcb_completo.png, id=735, 2339.74126pt x 1680.2775pt>
 File: immagini/pcb_completo.png Graphic file (type png)
 <use immagini/pcb_completo.png>
-Package pdftex.def Info: immagini/pcb_completo.png  used on input line 435.
-(pdftex.def)             Requested size: 272.99881pt x 196.03531pt.
-) [39 <./immagini/board_completa.png>] [40 <./immagini/pcb_completo.png>]
+Package pdftex.def Info: immagini/pcb_completo.png  used on input line 449.
+(pdftex.def)             Requested size: 298.75264pt x 214.54662pt.
+) [41 <./immagini/board_completa.png>] [42 <./immagini/pcb_completo.png>]
 \openout2 = `capitoli/implementazione_software.aux'.
 
  (./capitoli/implementazione_software.tex
@@ -1402,7 +1845,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
  []
 
-[41
+Missing character: There is no π in font zptmcm7y!
+[43
 
 
 
@@ -1415,13 +1859,20 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.0pt on input line 2.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 6.0pt on input line 7.
+
+Missing character: There is no π in font zptmcm7y!
 )
 \openout3 = `main.pyg'.
 
  (./_minted-main/6BC43FD3B897F903D80386E9E300878A8EF27FAE920C65D7B903E741E9673588.pygtex)
+Missing character: There is no π in font zptmcm7y!
 \openout3 = `main.pyg'.
 
- (./_minted-main/3EAD47CCCF909C1731717A578DA99AD68EF27FAE920C65D7B903E741E9673588.pygtex [42])
+(./_minted-main/3EAD47CCCF909C1731717A578DA99AD68EF27FAE920C65D7B903E741E9673588.pygtex [44]
+Missing character: There is no π in font zptmcm7y!
+)
+Missing character: There is no π in font zptmcm7y!
+
 Underfull \hbox (badness 10000) in paragraph at lines 77--83
 
  []
@@ -1435,7 +1886,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
 \openout3 = `main.pyg'.
 
-(./_minted-main/FFC276E490FAB8DBF0C570523E927AF78EF27FAE920C65D7B903E741E9673588.pygtex [43])
+(./_minted-main/FFC276E490FAB8DBF0C570523E927AF78EF27FAE920C65D7B903E741E9673588.pygtex [45]
+Missing character: There is no π in font zptmcm7y!
+)
 Underfull \hbox (badness 10000) in paragraph at lines 119--122
 
  []
@@ -1443,25 +1896,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--122
 \openout3 = `main.pyg'.
 
 (./_minted-main/5D11F86A81F923011E39E686CA27BB428EF27FAE920C65D7B903E741E9673588.pygtex)
-<immagini/swapping_array.png, id=832, 563.10374pt x 332.24126pt>
+<immagini/swapping_array.png, id=765, 563.10374pt x 332.24126pt>
 File: immagini/swapping_array.png Graphic file (type png)
 <use immagini/swapping_array.png>
 Package pdftex.def Info: immagini/swapping_array.png  used on input line 132.
-(pdftex.def)             Requested size: 234.00238pt x 138.06511pt.
- [44]
+(pdftex.def)             Requested size: 256.07741pt x 151.08888pt.
+ [46]
 Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
 
 \openout3 = `main.pyg'.
 
-(./_minted-main/E2C6A6216225A74B0838CFD48BD749EE8EF27FAE920C65D7B903E741E9673588.pygtex [45 <./immagini/swapping_array.png>])
+(./_minted-main/E2C6A6216225A74B0838CFD48BD749EE8EF27FAE920C65D7B903E741E9673588.pygtex [47 <./immagini/swapping_array.png>])
 \openout3 = `main.pyg'.
 
- (./_minted-main/16EDE740CD3443B1AB0311646190D37A8EF27FAE920C65D7B903E741E9673588.pygtex [46])
+ (./_minted-main/16EDE740CD3443B1AB0311646190D37A8EF27FAE920C65D7B903E741E9673588.pygtex [48])
 \openout3 = `main.pyg'.
 
  (./_minted-main/489A04B06CB523A5AFEABF7AE108EF028EF27FAE920C65D7B903E741E9673588.pygtex)
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no ª in font zptmcm7y!
+Missing character: There is no º in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no ∫ in font zptmcm7y!
+Missing character: There is no ù in font zptmcm7y!
+Missing character: There is no π in font zptmcm7y!
+Missing character: There is no ∫ in font zptmcm7y!
+Missing character: There is no ù in font zptmcm7y!
+
 Underfull \hbox (badness 10000) in paragraph at lines 223--227
 
  []
@@ -1469,81 +1932,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--227
 \openout3 = `main.pyg'.
 
 (./_minted-main/B72605C9DE4F09362FF9770813234A5A8EF27FAE920C65D7B903E741E9673588.pygtex
-Overfull \hbox (25.7992pt too wide) in paragraph at lines 8--8
-[]\T1/ntxtt/m/n/12 detected_freq.dynamic_amplitude_threshold[] 
- []
-
-[47])
+Missing character: There is no π in font zptmcm7y!
+[49])
 Underfull \hbox (badness 10000) in paragraph at lines 242--248
 
  []
 
-[48]
-\openout3 = `main.pyg'.
-
- (./_minted-main/D820F5871EADBC2EE3C0F4980B29E94D8EF27FAE920C65D7B903E741E9673588.pygtex)
-\openout3 = `main.pyg'.
-
- (./_minted-main/0610A37068E52960D28D2161AD85EF358EF27FAE920C65D7B903E741E9673588.pygtex [49])
-\openout3 = `main.pyg'.
-
- (./_minted-main/24A47466C92549D084183BAD20754AE18EF27FAE920C65D7B903E741E9673588.pygtex)
-Underfull \hbox (badness 10000) in paragraph at lines 352--354
-
- []
-
 [50]
+Missing character: There is no π in font zptmcm7y!
 \openout3 = `main.pyg'.
 
- (./_minted-main/DAF47B14902D5CA1CDF153B95F19DF508EF27FAE920C65D7B903E741E9673588.pygtex
-Overfull \hbox (6.89923pt too wide) in paragraph at lines 6--6
-[]\T1/ntxtt/m/n/12 no_new_bit_this_tick){|  
- []
+(./_minted-main/D820F5871EADBC2EE3C0F4980B29E94D8EF27FAE920C65D7B903E741E9673588.pygtex) [51]
+\openout3 = `main.pyg'.
 
+ (./_minted-main/0610A37068E52960D28D2161AD85EF358EF27FAE920C65D7B903E741E9673588.pygtex
+Missing character: There is no π in font zptmcm7y!
 )
-Underfull \hbox (badness 10000) in paragraph at lines 389--395
+\openout3 = `main.pyg'.
+
+ (./_minted-main/24A47466C92549D084183BAD20754AE18EF27FAE920C65D7B903E741E9673588.pygtex [52])
+Underfull \hbox (badness 10000) in paragraph at lines 353--355
 
  []
 
-[51]
-<immagini/run_length.png, id=878, 824.07875pt x 402.50375pt>
+[53]
+\openout3 = `main.pyg'.
+
+ (./_minted-main/DAF47B14902D5CA1CDF153B95F19DF508EF27FAE920C65D7B903E741E9673588.pygtex)
+Underfull \hbox (badness 10000) in paragraph at lines 391--397
+
+ []
+
+<immagini/run_length.png, id=808, 824.07875pt x 402.50375pt>
 File: immagini/run_length.png Graphic file (type png)
 <use immagini/run_length.png>
-Package pdftex.def Info: immagini/run_length.png  used on input line 398.
-(pdftex.def)             Requested size: 292.5pt x 142.86218pt.
+Package pdftex.def Info: immagini/run_length.png  used on input line 400.
+(pdftex.def)             Requested size: 320.0935pt x 156.34323pt.
+[54]
+\openout3 = `main.pyg'.
 
-Overfull \hbox (33.95616pt too wide) in paragraph at lines 403--405
-[]\T1/ntxtlf/m/n/12 Nel se-guen-te fram-men-to Ë mo-stra-ta la par-te con-clu-si-va di \T1/ntxtlf/b/n/12 bit_output_packer_convert
+ (./_minted-main/53701E32903AD8C8A0F78650BB78C0A78EF27FAE920C65D7B903E741E9673588.pygtex) [55 <./immagini/run_length.png>]
+\openout3 = `main.pyg'.
+
+ (./_minted-main/390BB05AF51FEA83E7F50BF632EC3AFF8EF27FAE920C65D7B903E741E9673588.pygtex)
+Overfull \hbox (44.06396pt too wide) in paragraph at lines 446--452
+[]\T1/ntxtlf/m/n/12 La fun-zio-ne cal-co-la an-che il tem-po ne-ces-sa-rio al-la tra-smis-sio-ne at-tra-ver-so \T1/ntxtlf/b/n/12 esti-ma-te_send_duration\T1/ntxtlf/m/n/12 ,
  []
 
-\openout3 = `main.pyg'.
-
-(./_minted-main/53701E32903AD8C8A0F78650BB78C0A78EF27FAE920C65D7B903E741E9673588.pygtex) [52 <./immagini/run_length.png>]
-\openout3 = `main.pyg'.
-
- (./_minted-main/390BB05AF51FEA83E7F50BF632EC3AFF8EF27FAE920C65D7B903E741E9673588.pygtex)) [53] [54]
+) [56]
 \openout2 = `capitoli/sperimentazione_protocollo.aux'.
 
  (./capitoli/sperimentazione_protocollo.tex
 Capitolo 6.
-[55
+Missing character: There is no π in font zptmcm7y!
+
+Overfull \hbox (2.1203pt too wide) in paragraph at lines 41--55
+\T1/ntxtlf/b/n/12 ID:0000{MOVEMENT_YES}k{0471} \T1/ntxtlf/m/n/12 to-ta-liz-za-no 239 si-gnal co-de, equi-va-len-ti a $\OT1/ztmcm/m/n/12 36\OML/ztmcm/m/it/12 :\OT1/ztmcm/m/n/12 568$$s$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--55
+
+ []
+
+[57
 
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 41--55
-
- []
-
 Package pgfplots info on input line 74: Using 'lua backend=false' for axis: x coord trafo unsupported.
 Package pgfplots info on input line 90: Using 'lua backend=false' for axis: x coord trafo unsupported.
 
-Overfull \hbox (35.88632pt too wide) in paragraph at lines 93--94
+Overfull \hbox (35.81277pt too wide) in paragraph at lines 93--94
  [][] 
  []
 
-[56]) [57]
+[58]) [59]
 \openout2 = `capitoli/sperimentazione_propagazione_suono.aux'.
 
  (./capitoli/sperimentazione_propagazione_suono.tex
@@ -1553,7 +2018,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--19
 
  []
 
-[58
+[60
 
 
 
@@ -1563,7 +2028,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--72
 
  []
 
-[59]) [60]
+[61]) [62]
 \openout2 = `capitoli/sviluppi_futuri.aux'.
 
  (./capitoli/sviluppi_futuri.tex
@@ -1578,7 +2043,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--25
 
  []
 
-[61
+[63
 
 
 
@@ -1593,27 +2058,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--33
 
  []
 
-[62]
-Underfull \hbox (badness 10000) in paragraph at lines 96--98
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--106
+Underfull \hbox (badness 10000) in paragraph at lines 102--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
-[63]
-Underfull \hbox (badness 10000) in paragraph at lines 117--121
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
-) [64]
+) [66]
 \openout2 = `capitoli/conclusioni.aux'.
 
  (./capitoli/conclusioni.tex
@@ -1628,9 +2093,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--22
 
  []
 
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 39.
-[65
+[67
 
 
 
@@ -1641,46 +2104,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--70
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 78--23
+Underfull \hbox (badness 10000) in paragraph at lines 78--22
 
  []
 
-[66] [67] (./main.lof
-Overfull \hbox (35.67738pt too wide) in paragraph at lines 24--24
- [][] [][][]\T1/ntxtlf/m/n/12 Collegamento fi-si-co tra ESP32 e mi-cro-fo-no I$[]$S (Ada-fruit SPH0645LM4H) 
+[68] [69]
+\openout2 = `ringraziamenti.aux'.
+
+ (./ringraziamenti.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
  []
 
 
-Overfull \hbox (37.4774pt too wide) in paragraph at lines 25--25
- [][] [][][]\T1/ntxtlf/m/n/12 Collegamento fi-si-co tra ESP32 e am-pli-fi-ca-to-re I$[]$S (Ada-fruit MAX98357A) 
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
+
  []
 
-[68
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
+
+(/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.bdg
+File: UTF8.bdg 2021/10/16 4.8.5
+) (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.enc
+File: UTF8.enc 2021/10/16 4.8.5
+) (/usr/share/texmf/tex/latex/CJK/UTF8/UTF8.chr
+File: UTF8.chr 2021/10/16 4.8.5
+)
+LaTeX Font Info:    Trying to load font information for C70+min on input line 15.
+ (/usr/share/texmf/tex/latex/CJK/UTF8/c70min.fd
+File: c70min.fd 2008/12/29 4.8.2
+) (/usr/share/texmf/tex/latex/CJK/UTF8/c70min.fdx
+File: c70min.fdx 2008/12/29 4.8.2
+)
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+
+ []
+
+[70
+
+
 
 
 ]
-Package textcomp Info: Symbol \texttwosuperior not provided by
-(textcomp)             font family ntxtlf in TS1 encoding.
-(textcomp)             Default family used instead on input line 28.
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
+
+ []
+
 )
+Underfull \hbox (badness 10000) in paragraph at lines 31--23
+
+ []
+
+[71] (./main.lof
+Overfull \hbox (0.78606pt too wide) in paragraph at lines 25--25
+ [][] [][][]\T1/ntxtlf/m/n/12 Collegamento fi-si-co tra ESP32 e am-pli-fi-ca-to-re I$[]$S (Ada-fruit MAX98357A) 
+ []
+
+[72
+
+
+])
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- (./main.lot [69]
-Overfull \hbox (13.17732pt too wide) in paragraph at lines 12--12
- [][] [][][]\T1/ntxtlf/m/n/12 Mappatura hard-ware dei pin I$[]$S tra ESP32 e mi-cro-fo-no SPH0645LM4H.[][] []  
- []
-
-
-Overfull \hbox (14.97734pt too wide) in paragraph at lines 13--13
- [][] [][][]\T1/ntxtlf/m/n/12 Mappatura hard-ware dei pin I$[]$S tra ESP32 e am-pli-fi-ca-to-re MAX98357A.[][] []  
- []
-
-)
+ [73] (./main.lot)
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [70]
+ [74]
 \openout2 = `appendici/appendiceA.aux'.
 
  (./appendici/appendiceA.tex
@@ -1690,29 +2189,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-) [71
+)
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 8--32
+\T1/ntxtlf/m/n/12 del fun-zio-na-men-to del si-ste-ma, con-sul-ta-bi-le al se-guen-te in-di-riz-zo: [][]\T1/ntxtt/m/n/12 youtu.be/F4CkQpIOkls[][]\T1/ntxtlf/m/n/12 .
+ []
+
+[75
 
 
 ] (./main.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 17--21
-[]\T1/ntxtlf/m/n/12 Adafruit lear-ning sy-stem: I2s mems mi-cro-pho-ne brea-kout
+Underfull \hbox (badness 1609) in paragraph at lines 9--13
+[]\T1/ntxtlf/m/n/12 Sph0645lm4h mems mi-cro-pho-ne da-ta-sheet, 2015.  URL [][]$\T1/ntxtt/m/n/12 https : / / cdn-[]shop .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--21
-\T1/ntxtlf/m/n/12 sph0645, 2020a.  URL [][]$\T1/ntxtt/m/n/12 https : / / learn . adafruit . com /
+Underfull \hbox (badness 3312) in paragraph at lines 15--18
+[]\T1/ntxtlf/m/n/12 Q&a: Using sph0645lm4h with nor-dic socs (i2s ti-ming and osr), 2019.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--35
-\T1/ntxtt/m/n/12 sites / default / files / documentation / esp32 _ technical _ reference _
+Underfull \hbox (badness 10000) in paragraph at lines 15--18
+\T1/ntxtlf/m/n/12 URL [][]$\T1/ntxtt/m/n/12 https : / / devzone . nordicsemi . com / f / nordic-[]q-[]a / 65863 /
  []
 
-[72
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--47
+\T1/ntxtt/m/n/12 simonebianchi . net / wp-[]content / uploads / 2023 / 01 / acustica _ ambient . pdf$[][]\T1/ntxtlf/m/n/12 .
+ []
+
+[76
 
 
 
-] [73] [74]) [75] (./main.aux (./capitoli/introduzione.aux) (./capitoli/stato_arte.aux) (./capitoli/design_protocollo.aux) (./capitoli/requisiti.aux) (./capitoli/implementazione_hardware.aux) (./capitoli/implementazione_software.aux) (./capitoli/sperimentazione_protocollo.aux) (./capitoli/sperimentazione_propagazione_suono.aux) (./capitoli/sviluppi_futuri.aux) (./capitoli/conclusioni.aux) (./appendici/appendiceA.aux))
+]
+Underfull \hbox (badness 6758) in paragraph at lines 93--98
+[]\T1/ntxtlf/m/n/12 Adafruit In-du-stries.  Ada-fruit max98357 i2s class-d mo-no amp gui-de,
+ []
+
+[77]) [78] (./main.aux (./capitoli/introduzione.aux) (./capitoli/stato_arte.aux) (./capitoli/design_protocollo.aux) (./capitoli/implementazione_hardware.aux) (./capitoli/implementazione_software.aux) (./capitoli/sperimentazione_protocollo.aux) (./capitoli/sperimentazione_propagazione_suono.aux) (./capitoli/sviluppi_futuri.aux) (./capitoli/conclusioni.aux) (./ringraziamenti.aux) (./appendici/appendiceA.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1727,18 +2241,18 @@ runsystem(rm main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 45250 strings out of 474222
- 1045733 string characters out of 5748733
- 1947975 words of memory out of 5000000
- 66379 multiletter control sequences out of 15000+600000
- 644187 words of font info for 148 fonts, out of 8000000 for 9000
+ 49912 strings out of 474222
+ 1118994 string characters out of 5748733
+ 1948975 words of memory out of 5000000
+ 70881 multiletter control sequences out of 15000+600000
+ 687002 words of font info for 272 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,19n,96p,823b,2402s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrb1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on main.pdf (75 pages, 9891667 bytes).
+ 107i,19n,120p,823b,2425s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjhira.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjka.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjkb.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjkc.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjkd.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjke.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjkf.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjkg.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjkh.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjki.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjkj.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjkk.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjkl.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dmjsy.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmbi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (78 pages, 10010651 bytes).
 PDF statistics:
- 1279 PDF objects out of 1440 (max. 8388607)
- 1109 compressed objects within 12 object streams
- 269 named destinations out of 1000 (max. 500000)
- 610 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1304 PDF objects out of 1440 (max. 8388607)
+ 1074 compressed objects within 11 object streams
+ 230 named destinations out of 1000 (max. 500000)
+ 702 words of extra memory for PDF output out of 10000 (max. 10000000)
 

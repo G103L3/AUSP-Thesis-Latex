@@ -136,7 +136,7 @@ L’uso di \textbf{swap\_array} consente di non perdere alcun campione e di gara
 
 \section{Trasformata veloce di Fourier}
 Altro aspetto critico del Livello Fisico è la trasformata rapida di Fourier (FFT), che converte i campioni temporali in rappresentazioni spettrali. 
-Cosi come discusso nella \autoref{par: fft_calcolo}, l’implementazione adottata è una versione personalizzata dell’algoritmo di Cooley–Tukey, ottimizzata per
+Cosi come discusso nella \label{sec: livello_fisico}, l’implementazione adottata è una versione personalizzata dell’algoritmo di Cooley–Tukey, ottimizzata per
  il contesto real-time e per la risoluzione richiesta. \\
  L'analisi frequenziale viene eseguita nel modulo \textbf{fft.c}, questa include due funzioni principali \textbf{FFT\_get\_twiddle\_factors} e \textbf{FFT\_calculate}. \\
 
@@ -249,6 +249,7 @@ per sopperire alla bassa risoluzione spettrale, questa tecnica, quindi fornisce 
  
  Infine, se nessuna frequenza valida è trovata, la funzione ritorna la struttura con i valori -1.0.  
  
+ \newpage
  \section{Traduzione frequenza-bit}
  
  Una volta isolati i picchi, i moduli riguardanti il Livello Fisico lasciano spazio ai \textbf{moduli del Livello Bit} il primo passo è tradurli in 
@@ -266,24 +267,24 @@ per sopperire alla bassa risoluzione spettrale, questa tecnica, quindi fornisce 
     \hline
     \textbf{Frequenza} & \textbf{Signal Code (0)} & \textbf{Signal Code (1)} \\
     \hline
-    1400 & (0) & \\
-    1800 & (1) & \\
-    2200 & (2) & \\
-    2600 & (3) & \\
-    3000 & (4) & \\
-    3400 & (5) & \\
-    3800 & (6) & \\
-    4200 & (7) & \\
-    4600 & (8) & \\
-    5000 & & (9) \\
-    5400 & & (10) \\
-    5800 & & (11) \\
-    6200 & & (12) \\
-    6600 & & (13) \\
-    7000 & & (14) \\
-    7400 & & (15) \\
-    7800 & & (16) \\
-    8200 & & (17) \\
+    1000 & (0) & \\
+    1400 & (1) & \\
+    1800 & (2) & \\
+    2200 & (3) & \\
+    2600 & (4) & \\
+    3000 & (5) & \\
+    3400 & (6) & \\
+    3800 & (7) & \\
+    4200 & (8) & \\
+    4600 & (9) & \\
+    5000 & & (10) \\
+    5400 & & (11) \\
+    5800 & & (12) \\
+    6200 & & (13) \\
+    6600 & & (14) \\
+    7000 & & (15) \\
+    7400 & & (16) \\
+    7800 & & (17) \\
     \hline
     \end{tabular}
     \caption{Mappatura frequenze con divisione dei Signal Code in 0 e 1}
@@ -364,6 +365,7 @@ ma è condizionato da un timeout, utile quando i toni cessano di arrivare ma il 
  L’algoritmo controlla costantemente l’istante dell’ultimo bit per ogni canale, e se per più di un secondo non sopraggiungono nuovi simboli effettua la conversione in ASCII.
 Questa ne è l'implementazione:
 
+\newpage
 \begin{minted}[linenos,breaklines]{c}
 static bool timeout_flush_if_needed(BitPacker* packer,
                                      const char* label,
@@ -419,7 +421,9 @@ I messaggi, incapsulati con la sintassi \textbf{ID:\{dest\}\{OP\}k\{src\}}, come
  vengono convogliati 
 all’uscita del canale appropriato tramite \textbf{send\_master}, \textbf{send\_slave} o \textbf{send\_config}.\\
  Ogni funzione di trasmissione sfrutta 
-\textbf{bit\_output\_packer} ed \textbf{emit\_tones}, ma si differenzia per la portante adottata. Il frammento seguente illustra la procedura di invio
+\textbf{bit\_output\_packer} ed \textbf{emit\_tones}, ma si differenzia per la portante adottata.
+\newpage
+Il frammento seguente illustra la procedura di invio
  sul canale master:
 
 \begin{minted}[linenos,breaklines]{c}
@@ -452,5 +456,4 @@ La funzione calcola anche il tempo necessario alla trasmissione attraverso \text
   protocollo in senso stretto, ma è la prima applicazione del \textbf{Livello Applicativo}. 
   La routine \textbf{movement\_sensor\_detect} attiva il sensore PIR per un intervallo prefissato e restituisce \textbf{true} o \textbf{false} 
   a seconda della rilevazione. Alla ricezione del comando \textbf{MOVEMENT:ON\_xxx}, il protocollo esegue la chiamata e risponde con \textbf{MOVEMENT:YES} 
-  o \textbf{MOVEMENT:NO}, questo per offrire all'utilizzatore del sistema un'astrazione sulla quale sfruttando le potezialità di
-  un browser web, si può costruire un'interfaccia utente.
+  o \textbf{MOVEMENT:NO}.

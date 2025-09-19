@@ -1,43 +1,43 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Corner Loss \textasciitilde 30 dB in un condotto con angolo di 90° per radio frequenze HF/SHF \citep {jacksha2016}.}}{4}{figure.1.1}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Corner Loss \textasciitilde 30 dB in un condotto con angolo di 90° per radio frequenze HF/SHF \citep {jacksha2016}.}}{3}{figure.caption.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Mappa Tunnel U.S. National Institure for Occupational Safety and Health's\citep {jacksha2016}.}}{7}{figure.2.1}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Mappa Tunnel U.S. National Institure for Occupational Safety and Health's\citep [sec.~3]{jacksha2016}.}}{8}{figure.caption.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Livelli del Protocollo}}{11}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Verifica della cattura del tono a 9kHz con campionamento a 48kHz nel periodo 0-0.010 secondi, utilizzando finestra di Hann su 512 elementi}}{13}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Grafico contentente lo spettro di frequenza calcolato tramite FFT}}{13}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Grafico contenente lo spettro di frequenza di tre frequenze (bassa, media, alta), utilizzato per identificare l'attenuazione in frequenza del microfono.}}{16}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Picco Locale nell'intorno dei sei Bins}}{17}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Interpolazione Parabolica \citep {QuadraticInterpolationSpectralPeaks}}}{17}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Finestra d'ascolto della FFT sul segnale emesso}}{19}{figure.3.7}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Schema del flusso dei pacchetti tra FIFO Input, Livello Link e FIFO Output}}{23}{figure.3.8}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Schema del flusso dei Token tra hotspot e nodi non-hotspot}}{24}{figure.3.9}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Utilizzo del Livello Applicazione tramite l'interfaccia Blynk.io}}{26}{figure.3.10}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Livelli del Protocollo}}{11}{figure.caption.3}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Verifica della cattura del tono a 9kHz con campionamento a 48kHz nel periodo 0-0.010 secondi, utilizzando finestra di Hann su 512 elementi}}{12}{figure.caption.4}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Grafico contentente lo spettro di frequenza calcolato tramite FFT}}{13}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Grafico contenente lo spettro di frequenza di tre frequenze (bassa, media, alta), utilizzato per identificare l'attenuazione in frequenza del microfono.}}{16}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Picco Locale nell'intorno dei sei Bins}}{16}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Interpolazione Parabolica \citep {QuadraticInterpolationSpectralPeaks}}}{17}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Finestra d'ascolto della FFT sul segnale emesso}}{18}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Schema del flusso dei pacchetti tra FIFO Input, Livello Link e FIFO Output}}{23}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Schema del flusso dei Token tra hotspot e nodi non-hotspot}}{24}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Utilizzo del Livello Applicazione tramite l'interfaccia Blynk.io}}{27}{figure.caption.17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Componenti hardware principali di un microcontrollore ESP32.}}{28}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Microfono MEMS I2S digitale Adafruit SPH0645LM4H-B.}}{29}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Sezione verticale del microfono Adafruit MEMS.}}{31}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Amplificatore digitale Classe-D Adafruit MAX98357A.}}{31}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Funzionamento interno del MAX98357A.}}{32}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Collegamento fisico tra ESP32 e microfono I$^2$S (Adafruit SPH0645LM4H) su breadboard.}}{34}{figure.4.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Collegamento fisico tra ESP32 e amplificatore I$^2$S (Adafruit MAX98357A) su breadboard.}}{35}{figure.4.7}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Collegamento fisico tra ESP32 e LED di segnalazione su breadboard.}}{37}{figure.4.8}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Schema di collegamento del bottone e dei LED di stato per la modalità hotspot.}}{38}{figure.4.9}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Schema del circuito completo con ESP32, microfono I²S, amplificatore MAX98357A, LED di stato e pulsante di hotspot.}}{39}{figure.4.10}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Layout del circuito stampato (PCB), con ESP32, LED di stato, pulsante di hotspot e connettori di alimentazione.}}{40}{figure.4.11}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Componenti hardware principali di un microcontrollore ESP32.}}{29}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Microfono MEMS I2S digitale Adafruit SPH0645LM4H-B.}}{30}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Sezione verticale del microfono Adafruit MEMS.}}{32}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Amplificatore digitale Classe-D Adafruit MAX98357A.}}{33}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Funzionamento interno del MAX98357A.}}{34}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Collegamento fisico tra ESP32 e microfono I$^2$S (Adafruit SPH0645LM4H) su breadboard.}}{35}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Collegamento fisico tra ESP32 e amplificatore I$^2$S (Adafruit MAX98357A) su breadboard.}}{37}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Collegamento fisico tra ESP32 e LED di segnalazione su breadboard.}}{38}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Schema di collegamento del bottone e dei LED di stato per la modalità hotspot.}}{40}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Schema del circuito completo con ESP32, microfono I²S, amplificatore MAX98357A, LED di stato e pulsante di hotspot.}}{41}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Layout del circuito stampato (PCB), con ESP32, LED di stato, pulsante di hotspot e connettori di alimentazione.}}{42}{figure.caption.31}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Swapping degli array di campioni}}{45}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Compressione ed impacchettamento mediante Algoritmo Run-Length S= Silenzio}}{52}{figure.5.2}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Swapping degli array di campioni}}{47}{figure.caption.32}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Compressione ed impacchettamento mediante Algoritmo Run-Length S= Silenzio}}{55}{figure.caption.34}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Trend del bitrate utile e della percentuale di ritrasmissioni misurati nelle tre casistiche di prova}}{57}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Sequenza temporale semplificata con l'unica ritrasmissione registrata durante la fase di configurazione}}{57}{figure.6.2}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Trend del bitrate utile e della percentuale di ritrasmissioni misurati nelle tre casistiche di prova}}{58}{figure.caption.36}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Sequenza temporale semplificata con l'unica ritrasmissione registrata durante la fase di configurazione}}{59}{figure.caption.37}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Planimetria del corridoio sotterraneo. La porta sul lato destro è stata mantenuta aperta durante la prova.}}{59}{figure.7.1}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Andamento medio dei livelli sonori misurati lungo il corridoio e corrispondente packet loss. La linea blu mostra la perdita quasi lineare nel tratto rettilineo, la linea rossa il crollo dopo la curva a novanta gradi, la linea tratteggiata il rumore di fondo e le curve verdi e arancioni riportano il tasso di pacchetti persi rilevato con il fonometro accanto alla scheda ricevente.}}{60}{figure.7.2}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Planimetria del corridoio sotterraneo. La porta sul lato destro è stata mantenuta aperta durante la prova.}}{61}{figure.caption.38}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Andamento medio dei livelli sonori misurati lungo il corridoio e corrispondente packet loss. La linea blu mostra la perdita quasi lineare nel tratto rettilineo, la linea rossa il crollo dopo la curva a novanta gradi, la linea tratteggiata il rumore di fondo e le curve verdi e arancioni riportano il tasso di pacchetti persi rilevato con il fonometro accanto alla scheda ricevente.}}{62}{figure.caption.39}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Roadmap di evoluzione del frame, dal formato attuale verso blocchi compatti e pronti alla compressione run-length attuale}}{63}{figure.8.1}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Roadmap di evoluzione del frame, dal formato attuale verso blocchi compatti e pronti alla compressione run-length attuale}}{65}{figure.caption.40}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Flusso progettuale e sperimentale della tesi.}}{66}{figure.9.1}%
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Flusso progettuale e sperimentale della tesi.}}{68}{figure.caption.41}%
 \addvspace {10\p@ }

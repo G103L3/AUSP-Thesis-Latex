@@ -15,8 +15,8 @@ A differenza di un microprocessore (CPU), i microcontrollori non sono pensati pe
 il più possibile con l’ambiente esterno, gestendo numerosi scambi fra le periferiche di Input/Output.
 
 L’ESP32, sviluppato da Espressif Systems, rappresenta un microcontrollore avanzato con architettura dual-core Tensilica LX6 a 32 bit
- (alcune varianti hanno anche core single-core o LX7), integrando al suo interno Wi-Fi e Bluetooth a basso consumo. Questa caratteristica
-  lo rende particolarmente adatto per applicazioni IoT (Internet of Things), domotica e sistemi embedded complessi (Espressif, 2024 \citep{Espressif2024}).
+ (alcune varianti hanno anche core single-core o LX7), integrando al suo interno Wi-Fi e Bluetooth. Questa caratteristica
+  lo rende particolarmente adatto per applicazioni IoT (Internet of Things), domotica e sistemi embedded complessi \citep{esp32techref}.
 
 \subsubsection{Famiglie di ESP32}
 I microcontrollori sono suddivisi in famiglie a seconda del processore e delle periferiche integrate. Nel caso dell’ESP32,
@@ -25,7 +25,7 @@ Queste versioni condividono la stessa architettura di base ma differiscono per r
  supporto a periferiche aggiuntive o funzionalità avanzate come acceleratori AI.  
 
 La scelta del modulo da utilizzare deve essere fatta non sulla base delle prestazioni massime, ma dell’ottimalità rispetto al
- progetto in questione (Patti, 2024 \citep{Patti2024}).
+ progetto in questione \citep{Patti2024}.
 
 \subsubsection{Componenti hardware}
 Ogni ESP32 integra al suo interno non solo la CPU, ma anche le memorie e una grande quantità di periferiche digitali e analogiche, 
@@ -40,7 +40,8 @@ Questa elevata integrazione consente di ridurre i costi, semplificare il design 
 \end{figure}
 
 \subsubsection{Memorie}
-Le memorie di un microcontrollore possono essere di tipo volatile e non volatile. Le volatili includono SRAM e DRAM; le non volatili comprendono ROM, EEPROM, Flash e, in alcuni casi, NVRAM.
+Le memorie di un microcontrollore possono essere di tipo volatile e non volatile. Le volatili includono SRAM e DRAM; le non volatili comprendono ROM, EEPROM, 
+Flash e, in alcuni casi, NVRAM.
 
 L’ESP32 tipicamente dispone di:
 \begin{itemize}
@@ -50,22 +51,25 @@ L’ESP32 tipicamente dispone di:
     \item opzionalmente, PSRAM esterna fino a 8 MB, utile per applicazioni che richiedono elaborazioni multimediali o server web embedded.
 \end{itemize}
 
-Rispetto ad altre schede, l’ESP32 si distingue per la disponibilità di memoria e per la presenza di connettività wireless integrata, rendendolo una soluzione più completa per progetti IoT e sistemi embedded avanzati (Patti, 2024 \citep{Patti2024}; Espressif, 2024 \citep{Espressif2024}).
+
 
 \subsection{Periferiche di Input/Output}
 Le periferiche di Input/Output (I/O) sono componenti essenziali che permettono al microcontrollore di interagire con il mondo esterno.
 Per la realizzazione del progetto sono state utilizzate diverse periferiche, in questa sezione se ne approfondiscono le loro caratteristiche.\\
 \noindent
 Tutta la componentistica impiegata in questo progetto è stata selezionata dal catalogo \textbf{Adafruit Industries}. 
-La scelta è motivata dall'elevata qualità dei loro moduli, dalla cura del layout dei circuiti stampati e dalla ricca documentazione tecnica a corredo, che garantiscono affidabilità in fase di prototipazione e semplicità di integrazione. 
-L'utilizzo di componenti a marchio Adafruit riduce i rischi di incompatibilità o malfunzionamenti tipici dei cloni economici e assicura un supporto didattico di livello professionale.
+La scelta è motivata dall'elevata qualità dei loro moduli, dalla cura del layout dei circuiti stampati e dalla ricca documentazione tecnica a corredo, che 
+garantiscono affidabilità in fase di prototipazione e semplicità di integrazione. 
+L'utilizzo di componenti a marchio Adafruit riduce i rischi di incompatibilità o malfunzionamenti tipici dei cloni economici e assicura un supporto didattico 
+di livello professionale.
 
 
 \subsubsection{Microfono MEMS I2S digitale Adafruit -- SPH0645LM4H}
 \label{subsec:mic}
-Il breakout Adafruit (cod. 3421) monta il microfono MEMS digitale \textbf{Knowles SPH0645LM4H-B}, bottom–port, con uscita \textbf{I$^2$S} \citep{adafruit-guide,adafruit-product}. 
+Il breakout Adafruit monta il microfono MEMS digitale \textbf{SPH0645LM4H-B}, bottom–port, con uscita \textbf{I$^2$S}
+ \citep[p.~1]{adafruit-sph0645-datasheet}. 
 È un dispositivo \emph{slave} che richiede dal master le linee di clock (\texttt{BCLK}, \texttt{LRCLK}) \citep{nordic-devzone}. 
-Fornisce direttamente campioni PCM a 24 bit (con 18 bit effettivi), evitando stadi analogici esterni \citep{knowles-datasheet}.
+Fornisce direttamente campioni PCM a 24 bit (con 18 bit effettivi), evitando stadi analogici esterni \citep[p.~3]{adafruit-sph0645-datasheet}.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{adafruit_mems.png}
@@ -73,22 +77,22 @@ Fornisce direttamente campioni PCM a 24 bit (con 18 bit effettivi), evitando sta
   \label{fig:adafruit_mems}
   \end{figure}
 
+  \newpage
 \paragraph{Caratteristiche principali.}
 \begin{itemize}
-  \item Alimentazione: \SIrange{1.62}{3.6}{V}, logica \SI{3.3}{V}, tipico consumo \SI{600}{\micro A} \citep{digikey-sheet}.
+  \item Alimentazione: \SIrange{1.62}{3.6}{V}, logica \SI{3.3}{V}, tipico consumo \SI{600}{\micro A} \citep[p.~2]{adafruit-sph0645-datasheet}.
   \item Interfaccia: I$^2$S, pin \texttt{BCLK}, \texttt{LRCLK}, \texttt{DOUT}, \texttt{SEL}, più \texttt{3V} e \texttt{GND}.
-  \item Formato dati: parole a 24 bit (MSB first, complemento a due), 18 bit utili, oversampling ratio (OSR) = 64 \citep{knowles-datasheet}.
-  \item Prestazioni: SNR tip. \SI{65}{dB(A)}, AOP \SI{120}{dB\,SPL}, sensibilità $\sim -26$ dBFS @ \SI{94}{dB\,SPL} \citep{knowles-datasheet}.
+  \item Formato dati: parole a 24 bit (MSB first, complemento a due), 18 bit utili, oversampling ratio (OSR) = 64 \citep[p.~3]{adafruit-sph0645-datasheet}.
+  \item Prestazioni: SNR tip. \SI{65}{dB(A)}, AOP \SI{120}{dB\,SPL}, sensibilità $\sim -26$ dBFS @ \SI{94}{dB\,SPL} \citep[p.~2]{adafruit-sph0645-datasheet}.
 \end{itemize}
 
 \paragraph{Pinout e collegamenti.} 
 Due moduli possono essere usati in stereo condividendo \texttt{BCLK}, \texttt{LRCLK}, \texttt{DOUT}; \texttt{SEL} basso/alto definisce L/R. 
-In modalità mono basta un solo modulo con \texttt{SEL} a GND (Left di default) \citep{adafruit-guide}.
+In modalità mono basta un solo modulo con \texttt{SEL} a GND (Left di default) \citep{adafruit-sph0645-datasheet}.
 
 \paragraph{Interfaccia I$^2$S.} 
 Il microfono trasmette in formato \emph{Philips}: ogni semiperiodo di \texttt{LRCLK} contiene una parola da 24 bit. 
 La relazione fondamentale è $\mathrm{BCLK}=64f_s$ \citep{nordic-devzone}. 
-Tipici: \SI{3.072}{MHz} per \SI{48}{kHz}, \SI{2.8224}{MHz} per \SI{44.1}{kHz}.
 
 \paragraph{Catena del segnale interna.}
 \begin{enumerate}
@@ -99,14 +103,14 @@ Tipici: \SI{3.072}{MHz} per \SI{48}{kHz}, \SI{2.8224}{MHz} per \SI{44.1}{kHz}.
   \item Serializer: prepara le parole I$^2$S.
 \end{enumerate}
 
+\newpage
 \paragraph{Fondamenti fisici.}
-La pressione $p(t)$ agisce sul diaframma (massa $m$, molla $k$, smorzamento $b$) \citep{mems-acoustics}:
+La pressione $p(t)$ agisce sul diaframma (massa $m$, molla $k$, smorzamento $b$) \citep[pp.~192--195]{mems-acoustics}:
 \[
 m\ddot{x}+b\dot{x}+kx=S\,p(t)
 \]
 La variazione di capacità è $\Delta C/C_0 \approx x/d_0$, con risonanza a $\omega_0=\sqrt{k/m}$. 
 Il rumore complessivo deriva da contributi termico–meccanici, elettronici e quantizzazione. 
-Il back–volume e la porta acustica modellano la risposta in frequenza (roll–off alle basse, ondulazioni agli alti) \citep{mems-acoustics}.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.4\textwidth]{adafruit_diaframma.png}
@@ -114,20 +118,21 @@ Il back–volume e la porta acustica modellano la risposta in frequenza (roll–
   \label{fig:adafruit_diaframma}
   \end{figure}
 
-\paragraph{Limiti.} Non tollera \SI{5}{V}, banda garantita $\sim$\SI{20}{Hz}--\SI{10}{kHz} (utilizzabile fino a $\sim$\SI{15}{kHz} secondo Adafruit) \citep{adafruit-product}, OSR fisso (meno flessibile di PDM).
+\paragraph{Limiti.} Non tollera \SI{5}{V}, banda garantita $\sim$\SI{20}{Hz}--\SI{10}{kHz} (utilizzabile fino a $\sim$\SI{15}{kHz} secondo Adafruit) 
+\citep[p.~2]{adafruit-sph0645-datasheet}.
 
 \paragraph{Relazione dBFS--SPL.}
-\SI{94}{dB\,SPL} = \SI{1}{Pa} $\Rightarrow$ $\approx -26$ dBFS RMS \citep{knowles-datasheet}. 
+\SI{94}{dB\,SPL} = \SI{1}{Pa} $\Rightarrow$ $\approx -26$ dBFS RMS \citep[p.~2]{adafruit-sph0645-datasheet}. 
 L’AOP a \SI{120}{dB\,SPL} ($\sim$\SI{20}{Pa}) indica il massimo senza distorsione significativa.
 
-
+\newpage
 \subsubsection{Adafruit MAX98357A I$^2$S Amplificatore Classe-D}
 \label{subsec:amplificatore}
 
 Il breakout Adafruit basato sul chip \textbf{MAX98357A} è un amplificatore audio digitale in classe D, in grado di convertire direttamente un flusso
  I$^2$S in segnale audio analogico amplificato per pilotare altoparlanti a bassa impedenza. 
 La caratteristica principale è l’eliminazione della necessità di un DAC esterno: il MAX98357A integra al suo interno la conversione digitale-analogica, 
-il filtraggio, e la sezione di potenza \citep{maxim-datasheet,adafruit-guide-max98357}.
+il filtraggio, e la sezione di potenza \citep{adafruit-max98357-datasheet}.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{adafruit_max.png}
@@ -140,9 +145,10 @@ il filtraggio, e la sezione di potenza \citep{maxim-datasheet,adafruit-guide-max
   \item \textbf{Potenza d’uscita}: fino a \SI{3.2}{W} su \SI{4}{\ohm} a \SI{5}{V}, THD+N $\approx$ \SI{1}{\%}.
   \item \textbf{Interfaccia}: I$^2$S standard (\texttt{BCLK}, \texttt{LRCLK}, \texttt{DIN}); pin aggiuntivi per modalità (\texttt{GAIN}, \texttt{SD}, \texttt{DMP}).
   \item \textbf{Efficienza}: superiore all’$\SI{85}{\%}$ grazie all’architettura in classe D.
-  \item \textbf{Gamma dinamica}: $\approx \SI{98}{dB}$, con rumore di fondo contenuto \citep{maxim-datasheet}.
+  \item \textbf{Gamma dinamica}: $\approx \SI{98}{dB}$, con rumore di fondo contenuto \citep[p.~16]{adafruit-max98357-datasheet}.
 \end{itemize}
 
+\newpage
 \paragraph{Funzionamento.}
 Il MAX98357A riceve un flusso I$^2$S in formato PCM (\SI{16}{}, \SI{24}{} o \SI{32}{bit}, standard Philips). L’architettura interna comprende:
 \begin{enumerate}
@@ -158,7 +164,10 @@ Il MAX98357A riceve un flusso I$^2$S in formato PCM (\SI{16}{}, \SI{24}{} o \SI{
   \label{fig:max_diagram}
   \end{figure}
 \paragraph{Motivazioni fisiche del funzionamento.}
-L’amplificatore in classe D si basa su modulazione a \emph{duty cycle} dei MOSFET: il segnale analogico ricostruito corrisponde al valore medio del PWM. L’elevata efficienza deriva dal fatto che i transistor lavorano quasi sempre in saturazione o interdizione, riducendo le perdite per dissipazione. L’integrazione del DAC sigma–delta consente un noise-shaping che sposta il rumore di quantizzazione fuori banda audio, garantendo un’ottima qualità percepita \citep{texas-classd}.
+L’amplificatore in classe D si basa su modulazione a \emph{duty cycle} dei MOSFET: il segnale analogico ricostruito corrisponde al valore medio del PWM.
+ L’elevata efficienza deriva dal fatto che i transistor lavorano quasi sempre in saturazione o interdizione, riducendo le perdite per dissipazione.
+ L’integrazione del DAC sigma–delta consente un noise-shaping che sposta il rumore di quantizzazione fuori banda audio, garantendo un’ottima qualità
+  percepita \citep{adafruit-max98357-datasheet}.
 
 \section{Progettazione digitale}
 Per la progettazione digitale del sistema è stato utilizzato il software \textbf{Fritzing}, un tool open-source
@@ -195,7 +204,7 @@ Per la realizzazione del circuito elettronico sono stati utilizzati due breakout
   DOUT è un’uscita a logica \SI{3.3}{\volt}; LRCLK e BCLK sono ingressi di clock; SEL è un ingresso statico per selezionare su quale slot (sinistro o destro) il microfono presenta i campioni sul bus I$^2$S.
   
   \paragraph{Mappatura dei segnali sull'ESP32.}
-  La \autoref{tab:i2s_pins} riassume la corrispondenza dei pin usati, come nella figura. Le scelte rispettano i vincoli dell'ESP32 (evitando pin con funzioni di strapping all'avvio come GPIO15-12 o limitazioni di sola-lettura).
+  La seguente tabella riassume la corrispondenza dei pin usati, come nella figura. Le scelte rispettano i vincoli dell'ESP32 (evitando pin con funzioni di strapping all'avvio come GPIO15-12 o limitazioni di sola-lettura).
   
   \definecolor{lightgray}{RGB}{235,235,235}
   \definecolor{white}{RGB}{255,255,255}
@@ -242,7 +251,8 @@ Per la realizzazione del circuito elettronico sono stati utilizzati due breakout
   Questo a seguito di alcuni test dove si è verificato che per qualche difformita nel IC il canale destro garantiva maggiore precisione.\\
   
   \paragraph{Dettagli elettrici e motivazioni delle scelte.}
-  Il microfono Adafruit SPH0645LM4H funziona solo a 3.3 V: non sono previsti level shifter e un’alimentazione a 5 V lo danneggerebbe \citep{digikey-sheet}. L’assorbimento è dell’ordine dei mA, quindi l’uscita 3V3 dell’ESP32 è più che sufficiente \citep{digikey-sheet}.
+  Il microfono Adafruit SPH0645LM4H funziona con una tensione fino a 3.6 V e un’alimentazione a 5 V lo danneggerebbe 
+  \citep[p.~2]{adafruit-sph0645-datasheet}.
     
   Per l’ESP32 si è scelto \textbf{GPIO14 come BCLK, GPIO25 come LRCLK e GPIO32} per il dato in ingresso.
     
@@ -271,7 +281,7 @@ Il pin \textbf{DIN} è l’ingresso dati audio seriali (logica \SI{3.3}{\volt});
 I pin GAIN e SD sono opzionali: GAIN permette di configurare il guadagno interno tramite resistenze, mentre SD forza il chip in modalità risparmio energetico.
 
 \paragraph{Mappatura dei segnali sull'ESP32.}
-La \autoref{tab:i2s_pins_amp} riassume la corrispondenza dei pin usati, come nello schema. Anche in questo caso la scelta dei GPIO tiene conto delle raccomandazioni di Espressif, evitando pin con funzioni critiche all’avvio.
+La seguente tabella riassume la corrispondenza dei pin usati, come nello schema. Anche in questo caso la scelta dei GPIO tiene conto delle raccomandazioni di Espressif, evitando pin con funzioni critiche all’avvio.
 
 
 \begin{table}[H]
@@ -316,7 +326,7 @@ Essendo un amplificatore in classe D capace di pilotare piccoli altoparlanti (4�
  non è necessaria ulteriore elettronica per il collegamento all'altoparlante.
 
 \paragraph{Dettagli elettrici e motivazioni delle scelte.}
-Il MAX98357A accetta alimentazione sia a 3.3 V che a 5 V \citep{maxim-datasheet}: in questo schema si è scelto di usare il \textbf{3V3 dell’ESP32} per semplicità,
+Il MAX98357A accetta alimentazione sia a 3.3 V che a 5 V \citep[p.~4]{adafruit-max98357-datasheet}: in questo schema si è scelto di usare il \textbf{3V3 dell’ESP32} per semplicità,
  tenendo conto che ciò limita la potenza massima erogabile all’altoparlante e considerando che in
   una reale applicazione a scopo industriale si utilizzerebbero amplificatori da \~ 230 V.  
 Il consumo è nell’ordine di poche decine di mA a volume medio, quindi l’uscita 3V3 dell’ESP32 è sufficiente in prototipazione.  
@@ -336,6 +346,7 @@ Il sistema fornisce un feedback visivo sullo stato di decodifica del segnale aud
   \label{fig:board_led}
 \end{figure} 
 
+\newpage
 \paragraph{Funzionamento del sistema.}
 Sono stati utilizzati tre LED di colore diverso (verde, blu e rosso) per rappresentare in modo immediato lo stato di elaborazione:  
 \begin{itemize}
@@ -345,7 +356,7 @@ Sono stati utilizzati tre LED di colore diverso (verde, blu e rosso) per rappres
 \end{itemize}
 
 \paragraph{Mappatura dei segnali sull'ESP32.}
-La \autoref{tab:led_pins} riassume la corrispondenza dei pin usati per il pilotaggio dei tre LED, come nello schema in figura.  
+La seguente tabella riassume la corrispondenza dei pin usati per il pilotaggio dei tre LED, come nello schema in figura.  
 Ogni LED è collegato in serie a una resistenza di limitazione, necessaria a ridurre la corrente entro i limiti di sicurezza per i GPIO dell’ESP32 (massimo \SI{12}{mA} consigliati).
 
 \definecolor{lightgray}{RGB}{235,235,235}
@@ -379,6 +390,7 @@ Ogni LED è collegato in serie a una resistenza di limitazione, necessaria a rid
 Ciascun LED è collegato al rispettivo GPIO tramite una resistenza da \SI{220}{\ohm}, sufficiente a limitare la corrente senza ridurre eccessivamente la luminosità.  
 I pin \textbf{GPIO14, GPIO27 e GPIO26} sono stati scelti in quanto liberi da vincoli di boot e comunemente usati per uscite digitali.  
 
+\newpage
 \subsection{Bottone di Hotspot}
 \label{subsec:button_hotspot}
 
@@ -407,7 +419,9 @@ che a sua volta lo riproduce attraverso l’amplificatore digitale \textbf{MAX98
  In parallelo, il sistema integra un’interfaccia visiva con tre LED che indicano lo stato della decodifica, insieme a un
   pulsante dedicato all’attivazione della modalità \textit{hotspot}, il cui stato è reso evidente da un ulteriore LED giallo. \\
   Tutti i collegamenti sono realizzati su breadboard, con le linee di alimentazione distribuite ai vari moduli e i segnali instradati 
-  verso i pin dell’ESP32, tra cui il \textbf{GPIO34}, correttamente utilizzato come ingresso per il pulsante. In questo modo il circuito 
+  verso i pin dell’ESP32, tra cui il \textbf{GPIO34}, correttamente utilizzato come ingresso per il pulsante.
+  \newpage
+   In questo modo il circuito 
   offre un esempio completo di integrazione tra acquisizione, elaborazione, riproduzione e interfaccia utente, consentendo il passaggio 
   fluido dall’ascolto alla decodifica, fino alla segnalazione visiva e al controllo della connessione wireless.
 

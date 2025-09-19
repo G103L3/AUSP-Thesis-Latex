@@ -21,10 +21,10 @@ lungo le gallerie possono offrire un canale acustico di comunicazione per raggiu
 L'idea si espande anche ad ambienti marini, adattando il l'hardware e dotandolo di trasduttori infrasonici ad alta sensibilità in grado 
 gestire frequenze compresse tra 0 e \SI{20}{\hertz}, come per la versione "terrestre" ispirati alla natura, in particolare ai pappagalli, la versione sottomarina
 potrebbe sfruttare le onde ELF (Extremely Low Frequency, 3--30 Hz) per comunicare a grandi profondità, ispirandosi alle balenottere azzurre che 
-usano queste frequenze per coprire distanze oceaniche \citep{Dziak2017}, questo permetterebbe la comunicazione con sommergibili o con sensori di profondità. \\
+usano queste frequenze per coprire distanze oceaniche \citep[sec.~2]{Dziak2017}, questo permetterebbe la comunicazione con sommergibili o con sensori di profondità. \\
 
  Studi specifici sulla propagazione in banda ELF confermano che segnali così lenti, se filtrati correttamente,
-  riescono a raggiungere sommergibili che stazionano a grande profondità senza dover riemergere \citep{ferguson1986elf}. \\
+  riescono a raggiungere sommergibili che stazionano a grande profondità senza dover riemergere. \\
 
   In maniera quasi speculare, in una situazione estrema, il protocollo potrebbe tornare utile come backup terrestre: nel caso di una tempesta solare capace di
    mandare fuori gioco i ponti radio, una dorsale acustica basata su condensatori (microfoni digitali a condensatori) e attuatori elettrodinamici, come 
@@ -48,7 +48,8 @@ ha delle criticità che rendono il protocollo più lento di quello che potrebbe 
  Le modifiche sopra verebbero implementate nel "frame" attuale, mentre un ulteriore modifica al di fuori di quest'ultimo sarebbe la compressione \textbf{Huffman}
     del pacchetto binario così da ridurre ulteriormente la dimensione del messaggio.\\
     La compressione di Huffman è un algoritmo di compressione senza perdita che assegna codici di lunghezza variabile ai simboli in base alla loro frequenza di occorrenza. \\
-     I simboli più frequenti ricevono codici più corti, mentre quelli meno frequenti ricevono codici più lunghi.  
+     I simboli più frequenti ricevono codici più corti, mentre quelli meno frequenti ricevono codici più lunghi.
+     \newpage  
      Questo permetterebbe di assegnare ai comandi più frequenti quali: delimitatori, ID di rete ed operazioni più frequenti o più importanti per l'azienda commitrice
         codici più corti, riducendo la dimensione complessiva del pacchetto.\\
         Un esempio di questa evoluzione è mostrato in \autoref{fig:roadmap_pacchetto}.

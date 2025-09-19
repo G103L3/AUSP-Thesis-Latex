@@ -2,63 +2,69 @@ This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: plainnat.bst
+Illegal, another \bibstyle command---line 8 of file main.aux
+ : \bibstyle
+ :          {plainnat}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: capitoli/introduzione.aux
 A level-1 auxiliary file: capitoli/stato_arte.aux
 A level-1 auxiliary file: capitoli/design_protocollo.aux
-A level-1 auxiliary file: capitoli/requisiti.aux
 A level-1 auxiliary file: capitoli/implementazione_hardware.aux
 A level-1 auxiliary file: capitoli/implementazione_software.aux
 A level-1 auxiliary file: capitoli/sperimentazione_protocollo.aux
 A level-1 auxiliary file: capitoli/sperimentazione_propagazione_suono.aux
 A level-1 auxiliary file: capitoli/sviluppi_futuri.aux
 A level-1 auxiliary file: capitoli/conclusioni.aux
+A level-1 auxiliary file: ringraziamenti.aux
 A level-1 auxiliary file: appendici/appendiceA.aux
 Database file #1: bibliografia.bib
+I was expecting a `,' or a `}'---line 124 of file bibliografia.bib
+ :   
+ :   url       = {https://webusers.imj-prg.fr/~antoine.chambert-loir/enseignement/2020-21/shannon/shannon1949.pdf}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in esp32techref
-Warning--to sort, need author or key in adafruit-guide
-Warning--to sort, need author or key in adafruit-product
+Warning--to sort, need author or key in adafruit-sph0645-datasheet
 Warning--to sort, need author or key in nordic-devzone
-Warning--to sort, need author or key in knowles-datasheet
-Warning--to sort, need author or key in digikey-sheet
-You've used 35 entries,
+You've used 21 entries,
             2773 wiz_defined-function locations,
-            822 strings with 11273 characters,
-and the built_in function-call counts, 13807 in all, are:
-= -- 1244
-> -- 761
-< -- 22
-+ -- 268
-- -- 231
-* -- 1076
-:= -- 2113
-add.period$ -- 123
-call.type$ -- 35
-change.case$ -- 175
-chr.to.int$ -- 33
-cite$ -- 82
-duplicate$ -- 630
-empty$ -- 1173
-format.name$ -- 281
-if$ -- 2903
-int.to.chr$ -- 3
+            749 strings with 9486 characters,
+and the built_in function-call counts, 8426 in all, are:
+= -- 785
+> -- 445
+< -- 16
++ -- 157
+- -- 135
+* -- 648
+:= -- 1302
+add.period$ -- 87
+call.type$ -- 21
+change.case$ -- 106
+chr.to.int$ -- 20
+cite$ -- 48
+duplicate$ -- 369
+empty$ -- 706
+format.name$ -- 167
+if$ -- 1775
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 25
-newline$ -- 201
-num.names$ -- 116
-pop$ -- 389
+missing$ -- 11
+newline$ -- 137
+num.names$ -- 72
+pop$ -- 217
 preamble$ -- 1
-purify$ -- 144
+purify$ -- 85
 quote$ -- 0
-skip$ -- 511
+skip$ -- 310
 stack$ -- 0
-substring$ -- 276
-swap$ -- 39
+substring$ -- 166
+swap$ -- 23
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 355
-warning$ -- 6
-while$ -- 106
+type$ -- 226
+warning$ -- 3
+while$ -- 65
 width$ -- 0
-write$ -- 482
-(There were 6 warnings)
+write$ -- 318
+(There were 2 error messages)

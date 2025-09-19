@@ -8,7 +8,6 @@
 \usepackage[table]{xcolor}
 \usepackage{array}
 \usepackage{tabularx}
-\usepackage{graphicx}
 \usepackage[table]{xcolor} % nel preambolo
 \usepackage{minted}
 \usepackage{tikz}
@@ -16,6 +15,10 @@
 \usepackage{adjustbox}
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{arrows.meta,calc,patterns,positioning, matrix}
+\usepackage[italian]{babel}
+\usepackage{csquotes}
+% Pacchetto per giapponese
+\usepackage{CJKutf8}
 
 %Table of Contents
 \usepackage{tocloft}
@@ -49,3 +52,165 @@
 }
 
 
+% -------------------------------------------------------
+% PACCHETTI UNICT
+% ----------------------------------------------------------------------------------------------------
+
+% -------------------------------------------------------------------
+% FONT (Times New Roman per testo, Arial per titoli)
+% -------------------------------------------------------------------
+\usepackage{mathptmx} % Times New Roman più stabile di newtx
+\usepackage{helvet}   % Helvetica (simile ad Arial)
+
+% -------------------------------------------------------------------
+% COLORI (usando solo xcolor base)
+% -------------------------------------------------------------------
+\usepackage{xcolor}
+\definecolor{unict-blue}{HTML}{243f61}
+\definecolor{unict-black}{HTML}{000000}
+
+% -------------------------------------------------------------------
+% GEOMETRIA E LAYOUT
+% -------------------------------------------------------------------
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+
+
+% -------------------------------------------------------------------
+% TABELLE
+% -------------------------------------------------------------------
+\usepackage{array}
+\usepackage{booktabs}
+
+% -------------------------------------------------------------------
+% FIGURE E CAPTION
+% -------------------------------------------------------------------
+\usepackage{caption}
+
+% -------------------------------------------------------------------
+% TITOLI PERSONALIZZATI
+% -------------------------------------------------------------------
+\usepackage{titlesec}
+
+% -------------------------------------------------------------------
+% HYPERREF (verso la fine)
+% -------------------------------------------------------------------
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=unict-blue,
+    citecolor=unict-blue,
+    urlcolor=unict-blue
+}
+
+% -------------------------------------------------------------------
+% CONFIGURAZIONI STILE UNICT
+% -------------------------------------------------------------------
+
+% Interlinea 1.5
+\onehalfspacing
+
+% Paragrafi
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10.5pt}
+
+% Margini
+\geometry{
+    a4paper,
+    top=3cm,
+    bottom=3cm,
+    left=3cm,
+    right=3cm
+}
+
+% Numerazione sezioni fino al terzo livello
+\setcounter{secnumdepth}{3}
+
+% Grafica e figure
+\graphicspath{{immagini/}}
+
+% -------------------------------------------------------------------
+% STILI TITOLI SECONDO LINEE GUIDA UNICT
+% -------------------------------------------------------------------
+
+% CAPITOLI: Times New Roman, grassetto, 28pt (numero) + 25pt (titolo), centrato
+\titleformat{\chapter}[hang]
+    {\fontfamily{ptm}\selectfont\bfseries\centering\color{unict-black}\fontsize{25}{30}\selectfont}
+    {\thechapter.}
+    {0.5em}
+    {}
+
+% SEZIONI: Arial, grassetto, 14pt, nero (come da linee guida originali)
+\titleformat{\section}
+    {\fontfamily{phv}\selectfont\bfseries\fontsize{14}{17}\selectfont\color{unict-black}}
+    {\thesection}
+    {0.5em}{}
+
+% SOTTOSEZIONI: Arial, grassetto, 14pt, BLU #243f61
+\titleformat{\subsection}
+    {\fontfamily{phv}\selectfont\bfseries\fontsize{14}{17}\selectfont\color{unict-blue}}
+    {\thesubsection}
+    {0.5em}{}
+
+    % Subsubsection title formatting (12pt underlined)
+\titleformat{\subsubsection}
+{\fontfamily{phv}\selectfont\bfseries\fontsize{12pt}{15pt}\selectfont}
+{\thesubsubsection}
+{1em}
+{}
+
+% PARAGRAFI: 12pt, BLU #243f61
+\titleformat{\paragraph}[runin]
+    {\fontfamily{ptm}\selectfont\fontsize{12}{14}\selectfont\color{unict-blue}\bfseries}
+    {\theparagraph}
+    {0.5em}{}
+
+% SOTTO-PARAGRAFI: 12pt, BLU #243f61, corsivo
+\titleformat{\subparagraph}[runin]
+    {\fontfamily{ptm}\selectfont\fontsize{12}{14}\selectfont\color{unict-blue}\itshape}
+    {\thesubparagraph}
+    {0.5em}{}
+
+% -------------------------------------------------------------------
+% FIGURE E TABELLE
+% -------------------------------------------------------------------
+
+% Numerazione per capitolo
+\numberwithin{figure}{chapter}
+\numberwithin{table}{chapter}
+
+% Stile caption
+\captionsetup{
+    font=small,
+    labelfont=bf,
+    labelformat=simple,
+    labelsep=period
+}
+
+% -------------------------------------------------------------------
+% BIBLIOGRAFIA
+% -------------------------------------------------------------------
+\bibliographystyle{plainnat}
+
+% -------------------------------------------------------------------
+% INTESTAZIONI E PIÈ DI PAGINA
+% -------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+% -------------------------------------------------------------------
+% COMANDI PERSONALIZZATI PER RIFERIMENTI
+% -------------------------------------------------------------------
+% Comando per riferimenti ai paragrafi con simbolo §
+\newcommand{\pref}[1]{§\ref{#1}}
+
+% -------------------------------------------------------------------
+% SPAZIATURE TITOLI (evita titoli isolati a fine pagina)
+% -------------------------------------------------------------------
+\titlespacing*{\chapter}{0pt}{0pt}{30pt}
+\titlespacing*{\section}{0pt}{20pt}{10pt}
+\titlespacing*{\subsection}{0pt}{15pt}{8pt}
+\titlespacing*{\subsubsection}{0pt}{12pt}{6pt}

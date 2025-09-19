@@ -18,7 +18,7 @@ Il microfono I2S (descritto nel \autoref{chap:implementazione_hardware}) è coll
 Il segnale audio viene campionato a $48\,\text{kHz}$ con una risoluzione di 16 bit, per poi essere gestito mediante due array in swapping, concetto che verrà approfondito successivamente. \\
 
 \noindent
-La scelta della frequenza di campionamento deriva dal \textbf{teorema di Nyquist-Shannon} \citep{shannon1949}, secondo il quale un segnale può essere ricostruito senza ambiguità se la frequenza di campionamento $f_s$ è almeno doppia rispetto alla massima frequenza del segnale $f_{\max}$:
+La scelta della frequenza di campionamento deriva dal \textbf{teorema di Nyquist-Shannon} \citep[pp.448--449]{shannon1949}, secondo il quale un segnale può essere ricostruito senza ambiguità se la frequenza di campionamento $f_s$ è almeno doppia rispetto alla massima frequenza del segnale $f_{\max}$:
 \[
 f_s \geq 2 f_{\max}.
 \]
@@ -48,20 +48,21 @@ Questa durata, successivamente a una attenta analisi effettuata sul software Aud
     \label{fig:spettro_audacity}
 \end{figure}
 
-
-\paragraph{}
-\label{par: fft_calcolo}
-\noindent
-Una volta acquisito il blocco, viene calcolata la \textbf{trasformata veloce di Fourier (FFT)} \citep{cooley1965fft} per analizzare lo spettro in frequenza. La complessità della FFT cresce come $N \log_2 N$, e per $N=512$ si hanno circa:
+\newpage
+Una volta acquisito il blocco, viene calcolata la \textbf{trasformata veloce di Fourier (FFT)} \citep[pp.~297--301]{cooley1965fft} per 
+analizzare lo spettro in frequenza. La complessità della FFT cresce come $N \log_2 N$, e per $N=512$ si hanno circa:
 \[
 512 \cdot \log_2(512) = 512 \cdot 9 = 4608
 \]
 operazioni complesse.  
 
-Sul microcontrollore ESP32 \citep{esp32techref}, operante a $120\,\text{MHz}$, questo si traduce in un tempo di elaborazione di circa $0.42\,\text{ms}$ per blocco, ovvero $\sim 0.83\,\mu\text{s}$ per campione. In termini di carico computazionale: $\sim 20$ moltiplicazioni, $\sim 29$ addizioni/sottrazioni e un’operazione di radice quadrata per campione, pari a $\sim 99$ cicli di clock.  
+Sul microcontrollore ESP32 dual-core operante a $240\,\text{MHz}$  questo si traduce in un tempo di elaborazione di circa $0.21\,\text{ms}$ 
+per blocco, ovvero $\sim 0.415\,\mu\text{s}$ per campione. In termini di carico computazionale: $\sim 20$ moltiplicazioni, $\sim 29$ a
+ddizioni/sottrazioni e un’operazione di radice quadrata per campione, pari a $\sim 99$ cicli di clock \citep[p.~30]{esp32techref}.  
 
 \noindent
-Questo significa che, a fronte di una finestra temporale di $10.7\,\text{ms}$, l’FFT viene calcolata in meno del $5\%$ del tempo disponibile, consentendo un’elaborazione in tempo reale anche senza multi-threading.
+Questo significa che, a fronte di una finestra temporale di $10.7\,\text{ms}$, l’FFT viene calcolata in meno del $3\%$ 
+del tempo disponibile, consentendo un’elaborazione in tempo reale anche senza multi-threading.
 
 \begin{figure}[H]
     \centering
@@ -76,6 +77,7 @@ L'algoritmo FFT non calcola direttamente lo spettro in frequenza continua, bens�
 k=0,1,\dots,N-1.
 \]
 Questi bin rappresentano i coefficienti della trasformata discreta e contengono l’informazione spettrale su griglie di frequenza equispaziate. 
+\newpage
 Per $N=512$ e frequenza di campionamento $F_s=48~\mathrm{kHz}$, ciascun bin corrisponde alla frequenza
 \[
 f_k \;=\; k\,\frac{F_s}{N},
@@ -186,7 +188,7 @@ y = \beta_{} + \beta_{}x + \varepsilon \rightarrow y = -301.751324 \times x + 48
 dove $x$ rappresenta il numero del bin. La \autoref{fig:spettro2} mostra lo spettro in frequenza di tre toni (basso, medio e alto) e mette in evidenza l’attenuazione introdotta dalla risposta del microfono.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.65\textwidth]{immagini/fft_regression_check.png}
+    \includegraphics[width=0.50\textwidth]{immagini/fft_regression_check.png}
     \caption{Grafico contenente lo spettro di frequenza di tre frequenze (bassa, media, alta), utilizzato per identificare l'attenuazione in frequenza del microfono.}
     \label{fig:spettro2}
 \end{figure}
@@ -203,7 +205,7 @@ i falsi positivi, ogni frequenza candidata deve corrispondere a un \textbf{massi
  deve avere ampiezza superiore rispetto ai sei \textbf{bin adiacenti a sinistra e a destra}. \\
  \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{immagini/local_peak.png}
+    \includegraphics[width=0.47\textwidth]{immagini/local_peak.png}
     \caption{Picco Locale nell'intorno dei sei Bins}
     \label{fig:bins_local_peak}
 \end{figure}
@@ -232,6 +234,7 @@ Il livello fisico si occupa anche della trasmissione dei dati, convertendo coppi
 Questa operazione viene eseguita mediante la sintesi digitale di due toni sinusoidali, che vengono sommati, sistemati in fase, sistemati in ampiezza
 ed infine inviati attraverso il bus I2S ad un amplificatore di potenza (descritto nel \autoref{chap:implementazione_hardware}).
 
+\newpage
 \paragraph{Sintesi dei toni}
 L'emissione di una coppia di frequenze superimposte è un operazione che coinvole l'utilizzo di diverse tecniche di sintesi digitale.\\
 In primo luogo viene calcolato il numero necessario di campioni che comporanno la \textbf{sinusoide}, 
@@ -259,7 +262,8 @@ Il numero di campioni necessari per la sintesi è quindi
     \end{figure}
 
 A seguito di diversi test, dove è stato riscontrato un "fruscio" tra l'emissione di un tono e l'altro,
- è stato implementato un sistema di allineamento di fase. \\
+ è stato implementato un sistema di allineamento di fase.
+ \newpage
 Questo funziona attraverso una variabile che tiene traccia della fase dell'ultimo campione emesso,
  in questo modo il primo campione del nuovo tono sarà sempre in fase con l'ultimo campione del tono precedente.
  Ciò consente di evitare discontinuità nel segnale che si traducono in rumore udibile.\\
@@ -324,40 +328,41 @@ In ogni gruppo, le frequenze seguono una logica definita come segue:
 
 
 
-    \begin{table}[H]
+\begin{table}[H]
     \centering
-    \label{tab:freq_codici}
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|l|>{\columncolor{lightgray}}l|l|>{\columncolor{lightgray}}l|}
     \hline
     \textbf{Frequenza} & \textbf{Signal Code} & \textbf{Portante} & \textbf{Signal Code} \\
     \hline
-    1000 & & Master Carrier & \\
-    1400 & (0) Bits: 0 & & \\
-    1800 & (1) Bits: 00 & & \\
-    2200 & (2) Bits: 000 & & \\
-    2600 & (3) Bits: 0000 & & \\
-    3000 & (4) Bits: 00000 & & \\
-    3400 & (5) Bits: 000000 & & \\
-    3800 & (6) Bits: 0000000 & & \\
-    4200 & (7) Bits: 0000000 0000000 & & \\
-    4600 & (8) Bits: 0000000 0000000 000000 & & \\
-    5000 & & & (9) Bits: 1 \\
-    5400 & & & (10) Bits: 11 \\
-    5800 & & & (11) Bits: 111 \\
-    6200 & & & (12) Bits: 1111 \\
-    6600 & & & (13) Bits: 11111 \\
-    7000 & & & (14) Bits: 111111 \\
-    7400 & & & (15) Bits: 1111111 \\
-    7800 & & & (16) Bits: 1111111 1111111 \\
-    8200 & & & (17) Bits: 1111111 1111111 111111 \\
+    1000 & (0) Bits: 0 & & \\
+    1400 & (1) Bits: 00 & & \\
+    1800 & (2) Bits: 000 & & \\
+    2200 & (3) Bits: 0000 & & \\
+    2600 & (4) Bits: 00000 & & \\
+    3000 & (5) Bits: 000000 & & \\
+    3400 & (6) Bits: 0000000 & & \\
+    3800 & (7) Bits: 0000000 0000000 & & \\
+    4200 & (8) Bits: 0000000 0000000 0000000 & & \\
+    4600 & (9) <Libero> & & \\
+    5000 & & & (10) Bits: 1 \\
+    5400 & & & (11) Bits: 11 \\
+    5800 & & & (12) Bits: 111 \\
+    6200 & & & (13) Bits: 1111 \\
+    6600 & & & (14) Bits: 11111 \\
+    7000 & & & (15) Bits: 111111 \\
+    7400 & & & (16) Bits: 1111111 \\
+    7800 & & & (17) Bits: 1111111 1111111 \\
+    8200 & & Master Carrier & \\
     8600 & & Config Carrier & \\
     9000 & & Slave Carrier & \\
     \hline
-    \end{tabular}
+    \end{tabular}%
     }
-    \caption{Mappatura frequenze, codici e portanti}
+    \caption{Mappatura frequenze, codici e portanti.}
+    \label{tab:freq_codici}
     \end{table}
+    
 
 
 L'utilizzo di questo schema di codifica, viene dopo l'esecuzione di diversi test, in quanto in origine i dati venivano trasmessi utilizzando 3 frequenze per ogni gruppo:
@@ -463,6 +468,7 @@ Per garantire ordine e separazione dei flussi, il Livello Link mantiene tre code
 
 Un aspetto centrale riguarda la possibilità, per i nodi non-hotspot, di trasmettere i pacchetti contenuti nella propria coda di Output solo quando l’hotspot concede loro un \emph{token} (operazione \texttt{TKN}).  
 
+\newpage
 Quando un nodo riceve un pacchetto \texttt{TKN} in frequenze \emph{master}, acquisisce il diritto di trasmissione per un tempo massimo di \textbf{1 minuto}.  
 Durante questo intervallo, il nodo può: 
 \begin{itemize}
@@ -513,6 +519,7 @@ Gli indirizzi usati dal protocollo sono riassunti nella seguente tabella.
 \label{tab:indirizzi}
 \end{table}
 
+\newpage
 \section{Livello Applicazione}
 \label{sec:livello_applicazione}
 Dato che si conoscono già gli usi futuri di questo protocollo e non è destinato al grande pubblico, 

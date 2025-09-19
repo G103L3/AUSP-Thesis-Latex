@@ -5,7 +5,7 @@
 Le reti di sensori in ambienti sotterranei pongono sfide peculiari alla comunicazione wireless. 
 La propagazione delle \emph{onde elettromagnetiche} nel sottosuolo soffre di attenuazioni elevate dovute alla 
 permittività, alla conducibilità del terreno e all'umidità, con conseguente riduzione drastica della portata e 
-dell'affidabilità dei link radio \citep{akyildiz2006}. 
+dell'affidabilità dei link radio \citep[pp.~24--59]{Lee2000_RadioWavePropagationTunnels}. 
 
 Alcune soluzioni proposte in letteratura includono l'uso di frequenze super-high ed ultra-high (SHF, UHF) con l'obiettivo 
 di implementare sistemi di tracking e monitoraggio in miniere di carbone, gallerie o condotti \citep{jacksha2016}.
@@ -35,23 +35,65 @@ La velocità di propagazione, che in condizioni standard
 è circa \SI{343}{m/s}, dipende da temperatura, pressione e composizione del gas, secondo la relazione 
 $c = \sqrt{\gamma p_0 / \rho_0}$. 
 
-Questa visione permette di trattare l’aria non solo come “spazio vuoto”, ma come un 
-vero e proprio \emph{canale fisico}, caratterizzato da attenuazioni dovute a dispersione geometrica, assorbimento atmosferico 
-e riverberi dovuti alle superfici \citep{Kinsler,MorseIngard,Pierce}. 
 
-Il fine ultimo della rete sarà quello di permettere lo scambio di dati tra nodi utilizzando frequenze sonore sub-9kHz, appartenenti al range 1-10kHz: 
-queste frequenze sono scelte per il loro compromesso tra portata e qualità del segnale \citep{Heifetz2017ANL}. 
-L'applicazione principale è destinata al monitoraggio post-disastro, considerando che in altri contesti l'utilizzo di segnali acustici potrebbe risultare disturbante. 
-I sensori saranno, inoltre, in grado di rilevare la presenza di corpi umani o gas tossici a seguito di crolli o esplosioni,
-e trasmettere queste informazioni a un nodo master situato in superficie o in una zona sicura. 
+
+Inoltre \enquote{Schroeder ha definito l'omonima frequenza limite $F_{sch}$,
+diversa per ogni singolo ambiente, che distingue la regione a bassa frequenza
+da quella ad alta.}\citep[pp.~1]{bianchi2023spazio}, pertanto il calcolo di tale frequenza 
+risulta fondamentale per far si che le frequenze utilizzate siano più alte della frequenza di Schroeder,
+ in modo da poter sfruttare al meglio le proprietà statiche dell'ambiente.
+ Questa visione permette di trattare l’aria non solo come “spazio vuoto”, ma come un 
+vero e proprio \emph{canale fisico}, caratterizzato da attenuazioni dovute a dispersione geometrica, assorbimento atmosferico 
+, la letteratura non considera, quindi, il suono come un'onda, bensì come un \textbf{raggio sonoro}, in grado di riflettersi su una 
+superficie \citep[pp.~3--4]{bianchi2023spazio}.
+
+\newpage
+\subsection*{Frequenza di Schroeder nei tunnel minerari}
+
+Per delimitare il regime modale da quello statistico si adotta la frequenza di Schroeder \citep[p.~1]{bianchi2023spazio}, stimabile come
+\[
+f_s \approx 2000 \sqrt{\tfrac{T_{60}}{V}},
+\]
+con $T_{60}$ in secondi e $V$ in m$^3$.  
+
+In gallerie o tunnel con superfici rigide si riscontrano comunemente tempi di riverbero $T_{60}$ dell’ordine di $3\,\text{s}$.  
+Considerando un tratto rappresentativo di galleria di sezione $5 \times 5 \,\text{m}$ e lunghezza $100\,\text{m}$, il volume è
+\[
+V \simeq 2500 \,\text{m}^3.
+\]
+Ne segue:
+\[
+f_s \approx 2000 \sqrt{\tfrac{3}{2500}}
+= 2000 \sqrt{0.0012}
+\approx 2000 \times 0.0346
+\approx 69 \,\text{Hz}.
+\]
+
+Per sezioni più piccole (ad esempio $4 \times 4 \,\text{m}$ con lunghezza $50\,\text{m}$, $V \simeq 800\,\text{m}^3$) si ottiene
+\[
+f_s \approx 2000 \sqrt{\tfrac{3}{800}} \approx 122 \,\text{Hz}.
+\]
+
+In sintesi, nei tunnel minerari la frequenza di Schroeder è tra $\sim 70$ e $\sim 120 \,\text{Hz}$; il funzionamentoo di una rete che
+opera tra  $1$--$9 \,\text{kHz}$ 
+risulta, quindi, al di sopra della soglia, riducendo la sensibilità a risonanze modali locali e rendendo più uniforme la propagazione;
+facendo avvenire il fenomeno del \textbf{raggio sonoro} di cui si è parlato in precedenza.
+
 
 \section{Motivazioni sperimentali e obiettivi della tesi}
-La letteratura recente indica che, in scenari confinati, segnali acustici a bassa frequenza possono mantenere 
+
+Il fine ultimo della rete sarà quello di permettere lo scambio di dati tra nodi utilizzando frequenze sonore appartenenti al range $1$--$9 \,\text{kHz}$, 
+la cui applicazione principale è destinata al monitoraggio post-disastro, considerando che in altri contesti l'utilizzo di segnali acustici potrebbe 
+risultare disturbante. 
+I sensori saranno, inoltre, in grado di rilevare la presenza di corpi umani o gas tossici a seguito di crolli o esplosioni,
+e trasmettere queste informazioni a un nodo master situato in superficie o in una zona sicura. \\
+La letteratura recente indica che, in scenari confinati, segnali acustici a media frequenza possono mantenere 
 un rapporto segnale/rumore utilizzabile su distanze dell'ordine delle decine di metri, con modalità di propagazione 
 \emph{lungo condotti} (ad esempio tubazioni o gallerie) e con modelli di attenuazione prevedibili 
 \citep{acoustic2024}.  
 
-Queste evidenze motivano la definizione di un protocollo leggero e robusto (rilevazione spettrale, soglie adattive con ausilio di machine learning) che faccia uso di componenti economici e facilmente integrabili (microfoni/codec, 
+Queste evidenze motivano la definizione di un protocollo leggero e robusto (rilevazione spettrale, soglie adattive con ausilio di machine learning) 
+che faccia uso di componenti economici e facilmente integrabili (microfoni/codec, 
 amplificatori, altoparlanti) per creare un \emph{layer fisico} acustico e il relativo \emph{protocollo di accesso}.
 
 \section{Contributi attesi}
